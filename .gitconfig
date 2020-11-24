@@ -1,0 +1,24 @@
+[include]
+  path = .gituser-default
+
+# custom git config based on path
+; [includeIf "gitdir:~/some_folder/"]
+;   path = .gitconfig_custom
+
+[core]
+    editor = nvim
+    autocrlf = input
+[alias]
+	uncommit = reset --soft HEAD^
+	g   = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+	gd  = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --date-order
+	gs  = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --decorate --simplify-by-decoration
+	ga  = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	gad = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --date-order
+	gas = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --decorate --simplify-by-decoration
+
+[filter "lfs"]
+	clean 	  = git-lfs clean -- %f
+	smudge 	  = git-lfs smudge -- %f
+	process   = git-lfs filter-process
+	required  = true

@@ -1,0 +1,293 @@
+{
+    "editor.autoClosingBrackets": "always",
+    "editor.columnSelection": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 2,
+    "editor.codeLens": true,
+    "editor.detectIndentation": true,
+    "editor.foldingHighlight": false,
+    "editor.fontFamily": "'JetBrains Mono', 'Input Mono', 'FontAwesome', 'Material Design Icons Desktop'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.fontWeight": "500",
+    "editor.formatOnSave": false,
+    "editor.folding": true,
+    "editor.glyphMargin": false,
+    "editor.insertSpaces": true,
+    "editor.largeFileOptimizations": false,
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "selection",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.smoothScrolling": false,
+    "editor.snippetSuggestions": "inline",
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "off",
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.markdownlint": true
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": ["comment"],
+                "settings": { "fontStyle": "italic" }
+            }
+        ],
+    },
+
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "IDEA like light Theme",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.showTabs": true,
+    "workbench.enableExperiments": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.list.keyboardNavigation": "filter",
+    "workbench.settings.editor": "json",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": true,
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always",
+
+    "window.customMenuBarAltFocus": false,
+    "window.menuBarVisibility": "hidden",
+    "window.title": "${rootName}",
+    "window.titleBarStyle": "native",
+    "window.zoomLevel": 0,
+
+    "files.autoSave": "off",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": { // defaults
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+    "terminal.integrated.experimentalLinkProvider": true,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "terminal.external.linuxExec": "/usr/bin/alacritty",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "terminal.integrated.copyOnSelection": true,
+    // "terminal.integrated.env.linux": {
+    //     "WORKSPACE": "${workspaceFolder}"
+    // },
+    "terminal.integrated.shellArgs.linux": [
+        // "--command", "/usr/bin/fish",
+        // dynamicly change env based on opened workspace window
+        // combination with "terminal.integrated.env.linux"
+        // "--command", "set WORKSPACE=$WORKSPACE",
+        // "--command", "tmux set-enviroment -g WORKSPACE $WORKSPACE",
+        "--command", "tmux new-session -A -s main"
+    ],
+
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+
+    "explorer.autoReveal": false,
+    "explorer.incrementalNaming": "smart",
+    "explorer.sortOrder": "type",
+
+    "debug.console.wordWrap": false,
+    "debug.console.fontSize": 11,
+
+    "problems.autoReveal": false,
+
+    "zenMode.centerLayout": true,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.semanticHighlighting.enabled": true,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/home/filip/.jdks/adopt-openjdk-1.8.0_265",
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64",
+        },
+        {
+            "name": "JavaSE-14",
+            "path": "/usr/lib/jvm/java-1.14.0-openjdk-amd64",
+        }
+    ],
+
+    "javascript.format.semicolons": "insert",
+    "javascript.preferences.quoteStyle": "double",
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
+
+    "typescript.format.semicolons": "insert",
+    "typescript.preferences.quoteStyle": "double",
+    "typescript.preferences.useAliasesForRenames": false,
+    "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    "typescriptHero.imports.disableImportRemovalOnOrganize": true,
+    "typescriptHero.imports.grouping": ["Modules", "Workspace", "Plains"],
+    "typescriptHero.imports.multiLineTrailingComma": false,
+    "typescriptHero.imports.multiLineWrapThreshold": 80,
+    "typescriptHero.imports.organizeOnSave": false,
+    "typescriptHero.imports.stringQuoteStyle": "'",
+
+    "python.defaultInterpreterPath": "usr/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--in-place",
+        "--max-line-length",
+        "80"
+    ],
+
+    "prettier.printWidth": 80,
+    "prettier.proseWrap": "always",
+    "prettier.singleQuote": false,
+    "prettier.useTabs": false,
+    "prettier.tabWidth": 4,
+
+    "eslint.alwaysShowStatus": true,
+    "eslint.run": "onSave",
+    "eslint.validate": [
+        "css",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+
+    "scss.lint.emptyRules": "ignore",
+
+    "markdownlint.config": {
+        "default": true,
+        "spaces": true,
+        "line-length": true,
+        "MD036": false,
+        "MD007": { "indent": 4 }
+    },
+
+    "emmet.excludeLanguages": [
+        "markdown",
+        "typescript"
+    ],
+    "emmet.includeLanguages": {
+        "typescript": "typescriptreact",
+        "javascript": "javascriptreact"
+    },
+
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "git.untrackedChanges": "separate",
+
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.views.repositories.files.layout": "tree",
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.maxComputationTime": 0,
+
+    "svg.preview.mode": "svg",
+
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "extensions.autoCheckUpdates": true,
+    "extensions.autoUpdate": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+
+    "npm-intellisense.importQuotes": "\"",
+
+    "mdb.sendTelemetry": false,
+
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[handlebars]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[java]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false,
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false,
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": false
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "off"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true
+    },
+    "[shellscript]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 4
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2
+    },
+    "[yml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2
+    },
+    "[fish]": {
+        "editor.tabSize": 2
+    },
+    "[tex]": {
+        "editor.tabSize": 2
+    },
+    "[xml]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+}

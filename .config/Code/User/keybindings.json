@@ -1,0 +1,135 @@
+[
+    {
+        "command": "workbench.action.navigateBack",
+        "key": "alt+left"
+    },
+    {
+        "command": "workbench.action.navigateForward",
+        "key": "alt+right"
+    },
+    {
+        "command": "workbench.action.files.saveAll",
+        "key": "ctrl+alt+s"
+    },
+    {
+        "command": "workbench.action.terminal.focusNext",
+        "key": "ctrl+shift+right",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.terminal.focusPrevious",
+        "key": "ctrl+shift+left",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "-typescriptHero.imports.organize",
+        "key": "ctrl+alt+o",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "typescriptHero.imports.organize",
+        "key": "shift+cmd+o",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "vikyd.FoldLevel.level1",
+        "key": "alt+1"
+    },
+    {
+        "command": "vikyd.FoldLevel.level2",
+        "key": "alt+2"
+    },
+    {
+        "command": "vikyd.FoldLevel.level3",
+        "key": "alt+3"
+    },
+    {
+        "command": "vikyd.FoldLevel.level4",
+        "key": "alt+4"
+    },
+    {
+        "command": "vikyd.FoldLevel.level5",
+        "key": "alt+5"
+    },
+    {
+        "command": "vikyd.FoldLevel.level6",
+        "key": "alt+6"
+    },
+    {
+        "command": "editor.action.deleteLines",
+        "key": "ctrl+shift+d",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "command": "-workbench.action.terminal.scrollUp",
+        "key": "ctrl+shift+up",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.toggleMaximizedPanel",
+        "key": "ctrl+shift+up",
+        "when": "!editorTextFocus"
+    },
+    {
+        "command": "-workbench.action.terminal.scrollDown",
+        "key": "ctrl+shift+down",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.closePanel",
+        "key": "ctrl+`",
+        "when": "activePanel || terminalFocus"
+    },
+    {
+        "command": "-editor.action.insertCursorBelow",
+        "key": "shift+alt+down",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "-editor.action.insertCursorAbove",
+        "key": "shift+alt+up",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "editor.action.copyLinesDownAction",
+        "key": "shift+alt+down",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "-editor.action.copyLinesDownAction",
+        "key": "ctrl+shift+alt+down",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "editor.action.copyLinesUpAction",
+        "key": "shift+alt+up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "-editor.action.copyLinesUpAction",
+        "key": "ctrl+shift+alt+up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "ctrl+`",
+        "when": "!terminalFocus"
+    },
+    {
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "key": "ctrl+`"
+    },
+    {
+        "command": "workbench.action.terminal.new",
+        "key": "ctrl+shift+`",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "-workbench.action.terminal.new",
+        "key": "ctrl+shift+`"
+    },
+    {
+        "command": "-workbench.action.togglePanel",
+        "key": "ctrl+j"
+    }
+]

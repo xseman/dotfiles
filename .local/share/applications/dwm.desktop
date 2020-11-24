@@ -1,0 +1,8 @@
+# gdm desktop entry
+# put inside /usr/share/xsessions/dwm.desktop
+
+[Desktop Entry]
+Type=XSession
+Encoding=UTF-8
+Name=DWM
+Exec=/usr/libexec/xinit-compat
