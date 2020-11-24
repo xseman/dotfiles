@@ -131,5 +131,25 @@
     {
         "command": "-workbench.action.togglePanel",
         "key": "ctrl+j"
+    },
+    {
+        "command": "editor.action.jumpToBracket",
+        "key": "ctrl+\\",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "-editor.action.jumpToBracket",
+        "key": "ctrl+shift+\\",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "workbench.action.terminal.split",
+        "key": "ctrl+\\",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.split",
+        "key": "ctrl+shift+5",
+        "when": "terminalFocus && terminalProcessSupported"
     }
 ]

@@ -1,4 +1,25 @@
 {
+	"React element component": {
+		"prefix": "tsxel",
+		"body": [
+			"import React from 'react';",
+			"",
+			"export interface Props {",
+			"}",
+			"",
+			"function ${1:name}(props: Props) {",
+			"    return (",
+			"        <>",
+			"            Hello!",
+			"        </>",
+			"    );",
+			"}",
+			"",
+			"export default ${1:name};",
+			""
+		],
+		"description": "React element component"
+	},
 	"React functional component": {
 		"prefix": "tsxfc",
 		"body": [
@@ -59,5 +80,39 @@
 			""
 		],
 		"description": "React class component"
+	},
+	"Storybook basic skeleton": {
+		"prefix": "tsxstory",
+		"body": [
+			"import { Meta, Story } from \"@storybook/react/types-6-0\";",
+			"import React from \"react\";",
+			"",
+			"interface Props {",
+			"",
+			"}",
+			"",
+			"function Hello(props: Props) {",
+			"    return (",
+			"        <div>Hello world!</div>",
+			"    );",
+			"}",
+			"",
+			"export default {",
+			"    title: \"Hello\",",
+			"    component: Hello,",
+			"} as Meta;",
+			"",
+			"const Template: Story<Props> = (args) =>(",
+			"    <Hello {...args} />",
+			");",
+			"",
+			"export const view = Template.bind({});",
+			"",
+			"view.args = {",
+			"",
+			"} as Props;",
+			""
+		],
+		"description": "Storybook basic skeleton"
 	}
 }
