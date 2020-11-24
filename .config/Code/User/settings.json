@@ -86,14 +86,14 @@
     // "terminal.integrated.env.linux": {
     //     "WORKSPACE": "${workspaceFolder}"
     // },
-    "terminal.integrated.shellArgs.linux": [
-        // "--command", "/usr/bin/fish",
-        // dynamicly change env based on opened workspace window
-        // combination with "terminal.integrated.env.linux"
-        // "--command", "set WORKSPACE=$WORKSPACE",
-        // "--command", "tmux set-enviroment -g WORKSPACE $WORKSPACE",
-        "--command", "tmux new-session -A -s main"
-    ],
+    // "terminal.integrated.shellArgs.linux": [
+    //     "--command", "/usr/bin/fish",
+    //     // dynamicly change env based on opened workspace window
+    //     // combination with "terminal.integrated.env.linux"
+    //     "--command", "set WORKSPACE=$WORKSPACE",
+    //     "--command", "tmux set-enviroment -g WORKSPACE $WORKSPACE",
+    //     "--command", "tmux new-session -A -s main"
+    // ],
 
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",

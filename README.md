@@ -103,7 +103,6 @@ permission 644, otherwise they may not be usable.
 - `sent` -- Simple plaintext presentation tool
 - `slock` -- Simple X display locker
 - `st` -- Simple terminal implementation for X
-
 - `surf` -- Simple web browser based on WebKit2/GTK+
 
 ### Other
