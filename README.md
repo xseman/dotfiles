@@ -31,93 +31,97 @@ directory.
 
 **`~/.fonts`**
 
-Install a font manually by downloading the appropriate .ttf or otf files and
-placing them into `/usr/local/share/fonts` (system-wide),`~/.local/share/fonts`
-(user-specific) or `~/.fonts` (user-specific). These files should have the
-permission 644, otherwise they may not be usable.
+Install a font manually by downloading the appropriate `.ttf` or `.otf` files and
+placing them into:
+
+- `/usr/local/share/fonts` — system-wide
+- `~/.local/share/fonts` — user-specific
+- `~/.fonts` — user-specific
+
+These files should have the permission 644, otherwise they may not be usable.
 
 ## Software
 
 ### Package managers
 
 - `apt`
-- `aptitude` -- High-level interface to the package manager
+- `aptitude` — High-level interface to the package manager
 
 ### Browsers
 
 - `chromium`
 - `firefox`
-- `links` -- Lynx-like alternative character mode WWW browser
+- `links` — Lynx-like alternative character mode WWW browser
 
 ### Office
 
-- `onlyoffice` -- Office suite
-- `pandoc` -- Universal markup converter
-- `poppler-utils` -- Manipulation tools for pdf
-- `troff` -- Processor of the groff text formatting system
+- `onlyoffice` — Office suite
+- `pandoc` — Universal markup converter
+- `poppler-utils` — Manipulation tools for pdf
+- `troff` — Processor of the groff text formatting system
 
 ### Monitors
 
-- `mons` -- POSIX Shell script to quickly manage monitors on X
-- `arandr` -- Another XRandR GUI
-- `light` -- Backlight controllers
+- `mons` — POSIX Shell script to quickly manage monitors on X
+- `arandr` — Another XRandR GUI
+- `light` — Backlight controllers
 
 ### Audio
 
-- `alsamixer` -- Graphical mixer program for the Linux Sound Architecture
-- `amixer` -- Command-line control of the mixer for the ALSA soundcard driver
+- `alsamixer` — Graphical mixer program for the Linux Sound Architecture
+- `amixer` — Command-line control of the mixer for the ALSA soundcard driver
 
 ### System tray
 
-- `ibus` -- Intelligent Input Bus for Linux/Unix
-- `nm-applet` -- GTK‐based GUI applet to monitor network status and devices
-- `pasystray` -- PulseAudio system tray
+- `ibus` — Intelligent Input Bus for Linux/Unix
+- `nm-applet` — GTK‐based GUI applet to monitor network status and devices
+- `pasystray` — PulseAudio system tray
 
 ### Media
 
-- `calibre` -- Suite of e-book
-- `gimp` -- Raster graphics editor
-- `inkscape` -- Vector graphics editor
-- `mpv` -- Media player software based on MPlayer, mplayer2 and FFmpeg
-- `sxiv` -- Simple X Image Viewer
-- `vlc` -- Media player, supports many audio and video compression
-- `imagemagick` -- Suite for the creation, modification and display of bitmap images
+- `calibre` — Suite of e-book
+- `gimp` — Raster graphics editor
+- `inkscape` — Vector graphics editor
+- `mpv` — Media player software based on MPlayer, mplayer2 and FFmpeg
+- `sxiv` — Simple X Image Viewer
+- `vlc` — Media player, supports many audio and video compression
+- `imagemagick` — Suite for the creation, modification and display of bitmap images
 
 ### Development
 
-- `alacritty` -- GPU accelerated terminal emulator
-- `code` -- Visual Studio Code, open-source editor made by Microsoft
-- `git-lfs` -- Git Large File Storage (LFS)
-- `gitg` -- GNOME GUI client to view git repositories
-- `insomnia` -- API Client platform for GraphQL and REST
-- `mysql-workbench` -- MySQL Workbench is a visual database design tool
-- `netcat` -- Networking utility for reading from and writing to network connections using TCP or UDP
-- `nvim, vim` -- Simple text editor
-- `postman` -- API Client platform for GraphQL and REST
-- `scrcpy` -- Display and control your Android device
+- `alacritty` — GPU accelerated terminal emulator
+- `code` — Visual Studio Code, open-source editor made by Microsoft
+- `git-lfs` — Git Large File Storage (LFS)
+- `gitg` — GNOME GUI client to view git repositories
+- `insomnia` — API Client platform for GraphQL and REST
+- `mysql-workbench` — MySQL Workbench is a visual database design tool
+- `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
+- `nvim, vim` — Simple text editor
+- `postman` — API Client platform for GraphQL and REST
+- `scrcpy` — Display and control your Android device
 
 ### Suckless
 
-- `dmenu` -- Dynamic menu for X
-- `dwm` -- Dynamic window manager for X
-- `sent` -- Simple plaintext presentation tool
-- `slock` -- Simple X display locker
-- `st` -- Simple terminal implementation for X
-- `surf` -- Simple web browser based on WebKit2/GTK+
+- `dmenu` — Dynamic menu for X
+- `dwm` — Dynamic window manager for X
+- `sent` — Simple plaintext presentation tool
+- `slock` — Simple X display locker
+- `st` — Simple terminal implementation for X
+- `surf` — Simple web browser based on WebKit2/GTK+
 
 ### Other
 
-- `apg` -- Generates several random passwords
-- `font-manager` -- Simple font manager
-- `grabc` -- Grab the color of some pixel in X11
-- `lf` -- Terminal file manager
-- `lxappearance` -- Standard theme switcher of LXDE
-- `network-manager-pptp` -- PPTP support for NetworkManager
-- `nmtui` -- Text User Interface for controlling NetworkManager
-- `picom` -- A lightweight compositor for X11
-- `powertop` -- Measure, explain and minimise electrical power consumption
-- `system-config-printer` -- Graphical user interface for CUPS administration
-- `xclip` -- Command line interface to the X11 clipboard
+- `apg` — Generates several random passwords
+- `font-manager` — Simple font manager
+- `grabc` — Grab the color of some pixel in X11
+- `lf` — Terminal file manager
+- `lxappearance` — Standard theme switcher of LXDE
+- `network-manager-pptp` — PPTP support for NetworkManager
+- `nmtui` — Text User Interface for controlling NetworkManager
+- `picom` — A lightweight compositor for X11
+- `powertop` — Measure, explain and minimise electrical power consumption
+- `system-config-printer` — Graphical user interface for CUPS administration
+- `xclip` — Command line interface to the X11 clipboard
 
 ## Links
 
