@@ -1,4 +1,4 @@
 [Desktop Entry]
+Name=Zathura
 Type=Application
-Name=zathura (PDF viewer)
 Exec=/usr/bin/zathura %u

@@ -1,4 +1,4 @@
 [Desktop Entry]
+Name=Alacritty
 Type=Application
-Name=alacritty (Terminal)
 Exec=/usr/bin/alacritty -e nvim %u
