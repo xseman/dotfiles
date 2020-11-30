@@ -1,8 +1,7 @@
 #!/bin/sh
 
 # Install all the dependencies
-sudo apt update
-sudo apt upgrade -y
+sudo apt update && upgrade -y
 sudo apt install --fix-broken -y
 
 sudo apt install -y \
