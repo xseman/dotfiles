@@ -122,6 +122,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `powertop` — Measure, explain and minimise electrical power consumption
 - `system-config-printer` — Graphical user interface for CUPS administration
 - `xclip` — Command line interface to the X11 clipboard
+- `fd` — Fast and user friendly alternative to find
 
 ## Links
 

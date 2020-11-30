@@ -2,54 +2,34 @@
 
 <https://suckless.org/>
 
-This is my setup running on Debian 10
-
-## Dependencies
-
-```sh
-sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
-```
-
-## Install
-
-Simple, in directory of tool just run:
-
-```sh
-sudo make install
-```
-
 ## Tools
 
-My suckless toolbox
+List of suckless software I use the most:
 
-- dwm
-- dmenu
-- slock
-- surf
-- sent
+- `dwm`
+- `dmenu`
+- `slock`
+- `surf`
+- `sent`
 
 ## Patches
 
-Patched tools
+**`dwm`** — <https://gitlab.com/xseman/dwm>
 
-**dwm**
-
-- system-tray
-- per-tag
-- move-stack
-- awesome-bar
+- systray
+- pertag
+- movestack
+- awesomebar
 - focusonnetactive
 
-**dmenu**
+**`dmenu`** — <https://gitlab.com/xseman/dmenu>
 
-- 1
-
-**sent**
-
-- 1
+- border
+- center
 
 ## Links
 
-- <https://johnjago.com/blog/dwm/>
 - <https://github.com/LukeSmithxyz/voidrice>
 - <https://jacekkowalczyk.wordpress.com/2018/11/20/how-to-install-dwm-from-suckless-org-at-fedora-29/>
+- <https://johnjago.com/blog/dwm/>
+- <https://www.reddit.com/r/unixporn/>
