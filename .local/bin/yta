@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# youtube-dl audio with search
+# To find and stream audio from terminal
+
+mpv --ytdl-format=bestaudio ytdl://ytsearch:"$1"
