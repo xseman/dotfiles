@@ -57,8 +57,20 @@ These files should have the permission 644, otherwise they may not be usable.
 
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
-- `poppler-utils` — Manipulation tools for pdf
 - `troff` — Processor of the groff text formatting system
+- `poppler-utils` — Manipulation tools for pdf
+    - `pdfdetach` — lists or extracts embedded files (attachments)
+    - `pdffonts` — font analyzer
+    - `pdfimages` — image extractor
+    - `pdfinfo` — document information
+    - `pdfseparate` — page extraction tool
+    - `pdfsig` — verifies digital signatures
+    - `pdftocairo` — PDF to PNG/JPEG/PDF/PS/EPS/SVG converter using Cairo
+    - `pdftohtml` — PDF to HTML converter
+    - `pdftoppm` — PDF to PPM/PNG/JPEG image converter
+    - `pdftops` — PDF to PostScript (PS) converter
+    - `pdftotext` — text extraction
+    - `pdfunite` — document merging tool
 
 ### Monitors
 
