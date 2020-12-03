@@ -135,15 +135,12 @@
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
 
     "typescript.format.semicolons": "insert",
-    "typescript.preferences.quoteStyle": "double",
+    "typescript.preferences.quoteStyle": "auto",
     "typescript.preferences.useAliasesForRenames": false,
     "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
 
-    "typescriptHero.imports.disableImportRemovalOnOrganize": true,
-    "typescriptHero.imports.grouping": ["Modules", "Workspace", "Plains"],
-    "typescriptHero.imports.multiLineTrailingComma": false,
-    "typescriptHero.imports.multiLineWrapThreshold": 80,
+    "typescriptHero.imports.grouping": ["Plains", "Modules", "Workspace"],
     "typescriptHero.imports.organizeOnSave": false,
     "typescriptHero.imports.stringQuoteStyle": "'",
 
@@ -215,6 +212,9 @@
     "extensions.showRecommendationsOnlyOnDemand": true,
 
     "npm-intellisense.importQuotes": "\"",
+
+    "i18n-ally.displayLanguage": "en",
+    "i18n-ally.keystyle": "nested",
 
     "mdb.sendTelemetry": false,
 
@@ -289,5 +289,5 @@
     "[xml]": {
         "editor.tabSize": 4,
         "editor.defaultFormatter": "redhat.vscode-xml"
-    },
+    }
 }
