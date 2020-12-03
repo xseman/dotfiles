@@ -112,15 +112,6 @@ These files should have the permission 644, otherwise they may not be usable.
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
 
-### Suckless
-
-- `dmenu` — Dynamic menu for X
-- `dwm` — Dynamic window manager for X
-- `sent` — Simple plaintext presentation tool
-- `slock` — Simple X display locker
-- `st` — Simple terminal implementation for X
-- `surf` — Simple web browser based on WebKit2/GTK+
-
 ### Other
 
 - `apg` — Generates several random passwords
@@ -136,13 +127,44 @@ These files should have the permission 644, otherwise they may not be usable.
 - `xclip` — Command line interface to the X11 clipboard
 - `fd` — Fast and user friendly alternative to find
 
+### Suckless
+
+<https://suckless.org/>
+
+- `dmenu` — Dynamic menu for X
+- `dwm` — Dynamic window manager for X
+- `sent` — Simple plaintext presentation tool
+- `slock` — Simple X display locker
+- `st` — Simple terminal implementation for X
+- `surf` — Simple web browser based on WebKit2/GTK+
+
+#### Patches
+
+**`dwm`** — <https://gitlab.com/xseman/dwm>
+
+- systray
+- pertag
+- movestack
+- awesomebar
+- focusonnetactive
+
+**`dmenu`** — <https://gitlab.com/xseman/dmenu>
+
+- border
+- center
+
 ## Links
 
 - <http://dotshare.it/>
+- <https://github.com/alebcay/awesome-shell>
 - <https://github.com/dikiaap/dotfiles>
+- <https://github.com/inputsh/awesome-linux>
 - <https://github.com/jlevy/the-art-of-command-line>
 - <https://github.com/LukeSmithxyz/voidrice>
 - <https://github.com/luong-komorebi/Awesome-Linux-Software>
 - <https://github.com/saleone/configs>
+- <https://jacekkowalczyk.wordpress.com/2018/11/20/how-to-install-dwm-from-suckless-org-at-fedora-29/>
+- <https://johnjago.com/blog/dwm/>
 - <https://suckless.org/rocks/>
 - <https://www.freedesktop.org/software/systemd/man/file-hierarchy.html>
+- <https://www.reddit.com/r/unixporn/>

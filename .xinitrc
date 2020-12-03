@@ -1,15 +1,18 @@
 #!/bin/bash
 
-# Graphical login (dwm.desktop)
-# =============================
+# Install
+# =======
+
 # ln -s ~/.xinitrc ~/.xsession
 # chmod 755 .xsession
 
 # ~/.xinitrc is executed by xinit, which is usually invoked via startx.
 # ~/.xsession is executed when you log in in graphical mode (ex. gdm)
-# =============================
 
-# Icons requirements
+# Requirements
+# ============
+
+# Fonts:
 # - FontAwesome
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
