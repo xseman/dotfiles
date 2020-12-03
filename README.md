@@ -1,5 +1,7 @@
 # ./dotfiles
 
+![screenshot](./screenshot.png)
+
 Your dotfiles are how you personalize your system. These are mine.
 
 ## Components
@@ -112,20 +114,23 @@ These files should have the permission 644, otherwise they may not be usable.
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
 
+### Networking
+
+- `network-manager-pptp` — PPTP support for NetworkManager
+- `nmtui` — Text User Interface for controlling NetworkManager
+
 ### Other
 
 - `apg` — Generates several random passwords
+- `fd` — Fast and user friendly alternative to find
 - `font-manager` — Simple font manager
 - `grabc` — Grab the color of some pixel in X11
 - `lf` — Terminal file manager
 - `lxappearance` — Standard theme switcher of LXDE
-- `network-manager-pptp` — PPTP support for NetworkManager
-- `nmtui` — Text User Interface for controlling NetworkManager
 - `picom` — A lightweight compositor for X11
 - `powertop` — Measure, explain and minimise electrical power consumption
 - `system-config-printer` — Graphical user interface for CUPS administration
 - `xclip` — Command line interface to the X11 clipboard
-- `fd` — Fast and user friendly alternative to find
 
 ### Suckless
 
