@@ -147,11 +147,14 @@ These files should have the permission 644, otherwise they may not be usable.
 
 **`dwm`** — <https://gitlab.com/xseman/dwm>
 
-- systray
-- pertag
-- movestack
 - awesomebar
 - focusonnetactive
+- fullscreen
+- movestack
+- noborder
+- pertag
+- scratchpad
+- systray
 
 **`dmenu`** — <https://gitlab.com/xseman/dmenu>
 
