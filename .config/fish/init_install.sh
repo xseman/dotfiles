@@ -7,6 +7,9 @@ else
     curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 end
 
+# Paths
+set -x fish_user_paths ~/.local/bin /usr/local/bin /usr/sbin /usr/sbin /bin
+
 # Plugins install
 fisher install rafaelrinaldi/pure
 

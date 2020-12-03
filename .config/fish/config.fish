@@ -5,9 +5,6 @@ set -x VEDITOR code
 # IntelliJ fix, UI blurr/freez
 set -x _JAVA_AWT_WM_NONREPARENTING 1
 
-# Paths
-set -x fish_user_paths ~/.local/bin /usr/local/bin /usr/sbin /usr/sbin /bin
-
 alias xclip="xclip -selection clipboard"
 alias ll='ls -Flh --group-directories-first --color'
 alias l='ls -Fhla --group-directories-first --color'
