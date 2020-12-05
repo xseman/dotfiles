@@ -1,19 +1,25 @@
 #!/bin/bash
 
-# Install
+# xinitrc
 # =======
 
-# ln -s ~/.xinitrc ~/.xsession
-# chmod 755 .xsession
+# Run desktop environment. Executed by startx.
+# See startx(1) and xinit(1) for details.
 
-# ~/.xinitrc is executed by xinit, which is usually invoked via startx.
-# ~/.xsession is executed when you log in in graphical mode (ex. gdm)
+# Install
+# -------
+
+#   ln -s ~/.xinitrc ~/.xsession
+#   chmod 755 .xsession
+
+#   ~/.xinitrc is executed by xinit, which is usually invoked via startx.
+#   ~/.xsession is executed when you log in in graphical mode (ex. gdm)
 
 # Requirements
-# ============
+# ------------
 
 # Fonts:
-# - FontAwesome
+#   - FontAwesome
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
     for f in /etc/X11/xinit/xinitrc.d/*; do
@@ -47,10 +53,11 @@ exec dunst -geom '300x5-25+35' &
 exec xautolock -time 30 -locker slock &
 
 # Systray
-exec start-pulseaudio-x11 &
-exec nm-applet &
-exec pasystray &
 exec ibus-daemon -d -r &
+exec pasystray &
+exec start-pulseaudio-x11 &
+exec blueman-applet &
+exec nm-applet &
 
 # Compositor
 # exec picom --backend glx --vsync &
