@@ -79,6 +79,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `mons` — POSIX Shell script to quickly manage monitors on X
 - `arandr` — Another XRandR GUI
 - `light` — Backlight controllers
+- `xbacklight` — Adjust backlight brightness using RandR extension
 
 ### Audio
 
@@ -90,6 +91,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `ibus` — Intelligent Input Bus for Linux/Unix
 - `nm-applet` — GTK‐based GUI applet to monitor network status and devices
 - `pasystray` — PulseAudio system tray
+- `blueman-applet` — Blueman applet
 
 ### Media
 
@@ -111,6 +113,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
 - `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
 - `nvim, vim` — Simple text editor
+- `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
 
@@ -122,6 +125,7 @@ These files should have the permission 644, otherwise they may not be usable.
 ### Other
 
 - `apg` — Generates several random passwords
+- `blueman` — GTK+ Bluetooth Manager
 - `fd` — Fast and user friendly alternative to find
 - `font-manager` — Simple font manager
 - `grabc` — Grab the color of some pixel in X11
@@ -170,6 +174,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - <https://github.com/jlevy/the-art-of-command-line>
 - <https://github.com/LukeSmithxyz/voidrice>
 - <https://github.com/luong-komorebi/Awesome-Linux-Software>
+- <https://github.com/mitchweaver/suckless>
 - <https://github.com/saleone/configs>
 - <https://jacekkowalczyk.wordpress.com/2018/11/20/how-to-install-dwm-from-suckless-org-at-fedora-29/>
 - <https://johnjago.com/blog/dwm/>
