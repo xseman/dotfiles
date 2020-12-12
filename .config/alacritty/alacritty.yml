@@ -1,6 +1,7 @@
 # JetBrains Mono - https://www.jetbrains.com/lp/mono/
 
 env:
+  TERM: "xterm-256color"
   LC_CTYPE: "en_US.UTF-8"
 
 scrolling:
