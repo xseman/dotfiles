@@ -8,10 +8,10 @@
 
 # Install
 # -------
-
+#
 #   ln -s ~/.xinitrc ~/.xsession
 #   chmod 755 .xsession
-
+#
 #   ~/.xinitrc is executed by xinit, which is usually invoked via startx.
 #   ~/.xsession is executed when you log in in graphical mode (ex. gdm)
 
@@ -60,7 +60,7 @@ exec blueman-applet &
 exec nm-applet &
 
 # Compositor
-# exec picom --backend glx --vsync &
+# exec picom &
 
 # Menu info
 while :; do
@@ -68,23 +68,20 @@ while :; do
     BAT_INT=$(cat /sys/class/power_supply/BAT1/capacity)
     CHARGING=$(cat /sys/class/power_supply/AC/online)
     case $CHARGING in
-        1) BAT=" $BAT_EXT% / $BAT_INT%" ;;
-        0) BAT=" $BAT_EXT% / $BAT_INT%"
+        1) BAT=" $BAT_EXT% | $BAT_INT%" ;;
+        0) BAT=" $BAT_EXT% | $BAT_INT%"
     esac
 
     IP_WIFI=$(ip addr show dev wlp3s0 | grep "inet " | cut -d ' ' -f 6 | cut -f 1 -d '/')
-    [[ -n "$IP_WIFI" ]] && {
-        IP_WIFI=" $IP_WIFI"
-    }
+    [[ -n "$IP_WIFI" ]] && IP_WIFI=" $IP_WIFI"
+
 
     IP_ETH=$(ip addr show dev enp0s31f6 | grep "inet " | cut -d ' ' -f 6 | cut -f 1 -d '/')
-    [[ -n "$IP_ETH" ]] && {
-        IP_ETH="󰈀 $IP_ETH"
-    }
+    [[ -n "$IP_ETH" ]] && IP_ETH="󰈀 $IP_ETH"
 
     DATE="󱑎 $(date "+%d.%m.%Y %H:%M")"
 
-    xsetroot -name "$IP_ETH $IP_WIFI $VOL $BAT $DATE"
+    xsetroot -name "$IP_ETH / $IP_WIFI / $VOL / $BAT / $DATE"
     sleep 30s
 done &
 

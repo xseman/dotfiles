@@ -209,7 +209,7 @@
 
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
-    "extensions.showRecommendationsOnlyOnDemand": true,
+    "extensions.ignoreRecommendations": true,
 
     "npm-intellisense.importQuotes": "\"",
 

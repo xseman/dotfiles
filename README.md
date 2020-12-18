@@ -60,6 +60,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
 - `troff` — Processor of the groff text formatting system
+- `pdftk` — A handy tool for manipulating PDF
 - `poppler-utils` — Manipulation tools for pdf
     - `pdfdetach` — lists or extracts embedded files (attachments)
     - `pdffonts` — font analyzer
