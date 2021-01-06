@@ -59,6 +59,7 @@
     "workbench.tree.renderIndentGuides": "always",
 
     "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
     "window.menuBarVisibility": "hidden",
     "window.title": "${rootName}",
     "window.titleBarStyle": "native",
@@ -77,7 +78,7 @@
     "terminal.integrated.cursorWidth": 2,
     "terminal.integrated.experimentalLinkProvider": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.lineHeight": 1.1,
     "terminal.integrated.rendererType": "experimentalWebgl",
     "terminal.external.linuxExec": "/usr/bin/alacritty",
@@ -114,12 +115,9 @@
 
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.project.importOnFirstTimeStartup": "automatic",
+    "java.refactor.renameFromFileExplorer": "preview",
     "java.semanticHighlighting.enabled": true,
     "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-1.8",
-            "path": "/home/filip/.jdks/adopt-openjdk-1.8.0_265",
-        },
         {
             "name": "JavaSE-11",
             "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64",
@@ -211,6 +209,14 @@
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
 
+    "xml.format.emptyElements": "collapse",
+    "xml.format.joinCommentLines": true,
+    "xml.format.joinContentLines": true,
+    "xml.format.preserveAttributeLineBreaks": true,
+    "xml.format.spaceBeforeEmptyCloseTag": true,
+    "xml.format.splitAttributes": true,
+    "xml.format.xsiSchemaLocationSplit":"onElement",
+
     "npm-intellisense.importQuotes": "\"",
 
     "i18n-ally.displayLanguage": "en",
@@ -289,5 +295,5 @@
     "[xml]": {
         "editor.tabSize": 4,
         "editor.defaultFormatter": "redhat.vscode-xml"
-    }
+    },
 }
