@@ -86,6 +86,7 @@ These files should have the permission 644, otherwise they may not be usable.
 
 - `alsamixer` — Graphical mixer program for the Linux Sound Architecture
 - `amixer` — Command-line control of the mixer for the ALSA soundcard driver
+- `audacity` — Audacity is open-source digital audio editor and recording application
 
 ### System tray
 
@@ -117,6 +118,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
+- `xxd` — Creates a hex dump of a given file or standard input
 
 ### Networking
 
