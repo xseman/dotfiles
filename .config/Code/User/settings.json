@@ -39,7 +39,7 @@
                 "scope": ["comment"],
                 "settings": { "fontStyle": "italic" }
             }
-        ],
+        ]
     },
 
     "workbench.activityBar.visible": true,
@@ -68,7 +68,8 @@
     "files.autoSave": "off",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "files.watcherExclude": { // defaults
+    "files.watcherExclude": {
+        // defaults
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
         "**/node_modules/*/**": true
@@ -118,13 +119,17 @@
     "java.refactor.renameFromFileExplorer": "preview",
     "java.semanticHighlighting.enabled": true,
     "java.configuration.runtimes": [
+        // {
+        //     "name": "JavaSE-1.8",
+        //     "path": "/home/filip/.jdks/adopt-openjdk-1.8.0_265",
+        // },
         {
             "name": "JavaSE-11",
-            "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64",
+            "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64"
         },
         {
             "name": "JavaSE-14",
-            "path": "/usr/lib/jvm/java-1.14.0-openjdk-amd64",
+            "path": "/usr/lib/jvm/java-1.14.0-openjdk-amd64"
         }
     ],
 
@@ -170,6 +175,8 @@
     ],
 
     "scss.lint.emptyRules": "ignore",
+    "less.lint.emptyRules": "ignore",
+    "css.lint.emptyRules": "ignore",
 
     "markdownlint.config": {
         "default": true,
@@ -179,10 +186,7 @@
         "MD007": { "indent": 4 }
     },
 
-    "emmet.excludeLanguages": [
-        "markdown",
-        "typescript"
-    ],
+    "emmet.excludeLanguages": ["markdown", "typescript"],
     "emmet.includeLanguages": {
         "typescript": "typescriptreact",
         "javascript": "javascriptreact"
@@ -215,7 +219,7 @@
     "xml.format.preserveAttributeLineBreaks": true,
     "xml.format.spaceBeforeEmptyCloseTag": true,
     "xml.format.splitAttributes": true,
-    "xml.format.xsiSchemaLocationSplit":"onElement",
+    "xml.format.xsiSchemaLocationSplit": "onElement",
 
     "npm-intellisense.importQuotes": "\"",
 
@@ -235,6 +239,18 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
     "[java]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 4
@@ -249,11 +265,11 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",
@@ -287,13 +303,13 @@
         "editor.tabSize": 2
     },
     "[fish]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[tex]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[xml]": {
         "editor.tabSize": 4,
         "editor.defaultFormatter": "redhat.vscode-xml"
-    },
+    }
 }

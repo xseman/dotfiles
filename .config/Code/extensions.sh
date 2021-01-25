@@ -8,7 +8,6 @@ code --install-extension abusaidm.html-snippets
 code --install-extension akamud.vscode-theme-onelight
 code --install-extension AlexShen.classdiagram-ts
 code --install-extension angryobject.react-pure-to-class-vscode
-code --install-extension antfu.i18n-ally
 code --install-extension bmalehorn.vscode-fish
 code --install-extension BogdanIonita.cxx-light-theme
 code --install-extension christian-kohler.npm-intellisense
@@ -30,18 +29,18 @@ code --install-extension humao.rest-client
 code --install-extension IBM.output-colorizer
 code --install-extension ilich8086.Untabify
 code --install-extension James-Yu.latex-workshop
+code --install-extension janisdd.vscode-edit-csv
 code --install-extension jebbs.plantuml
 code --install-extension jkeys089.plantuml
 code --install-extension jock.svg
 code --install-extension kamikillerto.vscode-colorize
 code --install-extension karsany.vscode-ideal-theme
-code --install-extension liviuschera.noctis
+code --install-extension lokalise.i18n-ally
 code --install-extension mads-hartmann.bash-ide-vscode
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
 code --install-extension mongodb.mongodb-vscode
-code --install-extension mrmlnc.vscode-less
 code --install-extension mrmlnc.vscode-scss
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
@@ -59,6 +58,7 @@ code --install-extension quicktype.quicktype
 code --install-extension raynigon.nginx-formatter
 code --install-extension rbbit.typescript-hero
 code --install-extension redhat.java
+code --install-extension redhat.vscode-extension-bpmn-editor
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension Remisa.shellman
@@ -78,7 +78,6 @@ code --install-extension vscjava.vscode-maven
 code --install-extension vscjava.vscode-spring-initializr
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension wayou.vscode-todo-highlight
-code --install-extension xabikos.JavaScriptSnippets
 code --install-extension XadillaX.viml
 code --install-extension yatki.vscode-surround
 code --install-extension yzhang.markdown-all-in-one
