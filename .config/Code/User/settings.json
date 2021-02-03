@@ -85,6 +85,7 @@
     "terminal.external.linuxExec": "/usr/bin/alacritty",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
     // "terminal.integrated.env.linux": {
     //     "WORKSPACE": "${workspaceFolder}"
     // },
@@ -144,6 +145,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     "typescriptHero.imports.grouping": ["Plains", "Modules", "Workspace"],
+    "typescriptHero.imports.multiLineWrapThreshold": 80,
     "typescriptHero.imports.organizeOnSave": false,
     "typescriptHero.imports.stringQuoteStyle": "'",
 

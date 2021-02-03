@@ -151,5 +151,55 @@
         "command": "-workbench.action.terminal.split",
         "key": "ctrl+shift+5",
         "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.terminal.focusNextPane",
+        "key": "ctrl+pagedown",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.focusNextPane",
+        "key": "alt+down",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.focusNextPane",
+        "key": "alt+right",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "key": "ctrl+pageup",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "key": "alt+up",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "key": "alt+left",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "key": "ctrl+shift+pageup",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.resizePaneLeft",
+        "key": "ctrl+shift+left",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.terminal.resizePaneRight",
+        "key": "ctrl+shift+pagedown",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.resizePaneRight",
+        "key": "ctrl+shift+right",
+        "when": "terminalFocus && terminalProcessSupported"
     }
 ]
