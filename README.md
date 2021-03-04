@@ -119,11 +119,17 @@ These files should have the permission 644, otherwise they may not be usable.
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
 - `xxd` — Creates a hex dump of a given file or standard input
+- `objdump` — display information from object files
 
 ### Networking
 
 - `network-manager-pptp` — PPTP support for NetworkManager
 - `nmtui` — Text User Interface for controlling NetworkManager
+
+## Printers
+
+- `system-config-printer` — Graphical user interface for CUPS administration
+- `simple-scan` — Simple scanning utility
 
 ### Other
 
@@ -136,7 +142,6 @@ These files should have the permission 644, otherwise they may not be usable.
 - `lxappearance` — Standard theme switcher of LXDE
 - `picom` — A lightweight compositor for X11
 - `powertop` — Measure, explain and minimise electrical power consumption
-- `system-config-printer` — Graphical user interface for CUPS administration
 - `xclip` — Command line interface to the X11 clipboard
 
 ### Suckless
@@ -152,7 +157,7 @@ These files should have the permission 644, otherwise they may not be usable.
 
 #### Patches
 
-**`dwm`** — <https://gitlab.com/xseman/dwm>
+**`dwm`** — <https://dwm.suckless.org/patches/>
 
 - awesomebar
 - focusonnetactive
@@ -163,7 +168,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - scratchpad
 - systray
 
-**`dmenu`** — <https://gitlab.com/xseman/dmenu>
+**`dmenu`** — <https://tools.suckless.org/dmenu/patches/>
 
 - border
 - center
