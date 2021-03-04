@@ -119,14 +119,14 @@ These files should have the permission 644, otherwise they may not be usable.
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
 - `xxd` — Creates a hex dump of a given file or standard input
-- `objdump` — display information from object files
+- `objdump` — Display information from object files
 
 ### Networking
 
 - `network-manager-pptp` — PPTP support for NetworkManager
 - `nmtui` — Text User Interface for controlling NetworkManager
 
-## Printers
+### Printers
 
 - `system-config-printer` — Graphical user interface for CUPS administration
 - `simple-scan` — Simple scanning utility
