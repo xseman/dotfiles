@@ -1,9 +1,9 @@
 [include]
-  path = .gituser-default
+	path = .gituser-default
 
 # custom git config based on path
-; [includeIf "gitdir:~/some_folder/"]
-;   path = .gitconfig_custom
+# [includeIf "gitdir:~/some_folder/"]
+	# path = .gitconfig_custom
 
 [core]
     editor = nvim
