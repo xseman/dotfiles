@@ -120,6 +120,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `scrcpy` — Display and control your Android device
 - `xxd` — Creates a hex dump of a given file or standard input
 - `objdump` — Display information from object files
+- `minicom` — friendly serial communication program
 
 ### Networking
 
