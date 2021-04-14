@@ -1,46 +1,51 @@
 {
     "editor.autoClosingBrackets": "always",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.markdownlint": true
+    },
+    "editor.codeLens": true,
     "editor.columnSelection": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 2,
-    "editor.codeLens": true,
     "editor.detectIndentation": true,
+    "editor.folding": true,
     "editor.foldingHighlight": false,
     "editor.fontFamily": "'JetBrains Mono', 'Input Mono', 'FontAwesome', 'Material Design Icons Desktop'",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "500",
     "editor.formatOnSave": false,
-    "editor.folding": true,
     "editor.glyphMargin": false,
     "editor.insertSpaces": true,
     "editor.largeFileOptimizations": false,
     "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": true,
     "editor.renderWhitespace": "selection",
+    "editor.rulers": [
+        80
+    ],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
     "editor.suggestSelection": "first",
-    "editor.wordWrap": "off",
     "editor.tabSize": 4,
-    "editor.rulers": [80],
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.fixAll.markdownlint": true
-    },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": ["comment"],
-                "settings": { "fontStyle": "italic" }
+                "scope": [
+                    "comment"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
             }
         ]
     },
+    "editor.wordWrap": "off",
 
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "IDEA like light Theme",
@@ -63,13 +68,19 @@
     "window.menuBarVisibility": "hidden",
     "window.title": "${rootName}",
     "window.titleBarStyle": "native",
-    "window.zoomLevel": 0,
+
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+
+    "explorer.autoReveal": false,
+    "explorer.incrementalNaming": "smart",
+    "explorer.sortOrder": "type",
 
     "files.autoSave": "off",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.watcherExclude": {
-        // defaults
+        /** defaults */
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
         "**/node_modules/*/**": true
@@ -98,13 +109,6 @@
     //     "--command", "tmux new-session -A -s main"
     // ],
 
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.filePath": "on",
-
-    "explorer.autoReveal": false,
-    "explorer.incrementalNaming": "smart",
-    "explorer.sortOrder": "type",
-
     "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
 
@@ -114,6 +118,16 @@
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
+
+    "python.defaultInterpreterPath": "usr/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--in-place",
+        "--max-line-length",
+        "80"
+    ],
 
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.project.importOnFirstTimeStartup": "automatic",
@@ -149,22 +163,13 @@
     "typescriptHero.imports.organizeOnSave": false,
     "typescriptHero.imports.stringQuoteStyle": "'",
 
-    "python.defaultInterpreterPath": "usr/bin/python3",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.formatting.autopep8Args": [
-        "--aggressive",
-        "--in-place",
-        "--max-line-length",
-        "80"
-    ],
-
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
     "prettier.singleQuote": false,
     "prettier.useTabs": false,
     "prettier.tabWidth": 4,
 
+    "eslint.codeActionsOnSave.mode": "all",
     "eslint.alwaysShowStatus": true,
     "eslint.run": "onSave",
     "eslint.validate": [
@@ -173,7 +178,7 @@
         "javascript",
         "javascriptreact",
         "typescript",
-        "typescriptreact"
+        "typescriptreact",
     ],
 
     "scss.lint.emptyRules": "ignore",
@@ -197,19 +202,16 @@
     "git.confirmSync": false,
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
+    "git.openDiffOnClick": true,
 
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.enabled": false,
     "gitlens.views.repositories.files.layout": "tree",
 
-    "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": true,
     "diffEditor.maxComputationTime": 0,
-
-    "svg.preview.mode": "svg",
-
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
@@ -223,15 +225,36 @@
     "xml.format.splitAttributes": true,
     "xml.format.xsiSchemaLocationSplit": "onElement",
 
+    "i18n-ally.displayLanguage": "sk",
+    "i18n-ally.keystyle": "nested",
+
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
     "npm-intellisense.importQuotes": "\"",
 
-    "i18n-ally.displayLanguage": "en",
-    "i18n-ally.keystyle": "nested",
+    "svg.preview.mode": "svg",
 
     "mdb.sendTelemetry": false,
 
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[fish]": {
+        "editor.defaultFormatter": "bmalehorn.vscode-fish",
+        "editor.tabSize": 4
+    },
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+        },
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
     },
     "[handlebars]": {
         "editor.formatOnSave": false,
@@ -241,35 +264,18 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
     "[java]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 4
+        // "editor.codeActionsOnSave": {
+        //     "source.organizeImports": true
+        // },
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.formatOnSave": false
     },
     "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
@@ -278,6 +284,10 @@
         "editor.formatOnSave": false
     },
     "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
@@ -290,8 +300,31 @@
         "editor.defaultFormatter": "ms-python.python",
         "editor.formatOnSave": true
     },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
     "[shellscript]": {
         "editor.formatOnSave": false,
+        "editor.tabSize": 4
+    },
+    "[tex]": {
+        "editor.tabSize": 4
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+        // "editor.defaultFormatter": "vscode.typescript-language-features",
+        // "editor.formatOnSave": true,
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+        // "editor.defaultFormatter": "vscode.typescript-language-features",
+        // "editor.formatOnSave": true,
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml",
         "editor.tabSize": 4
     },
     "[yaml]": {
@@ -304,14 +337,4 @@
         "editor.formatOnSave": false,
         "editor.tabSize": 2
     },
-    "[fish]": {
-        "editor.tabSize": 4
-    },
-    "[tex]": {
-        "editor.tabSize": 4
-    },
-    "[xml]": {
-        "editor.tabSize": 4,
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    }
 }
