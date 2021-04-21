@@ -1,6 +1,6 @@
 {
-    "React class component": {
-        "description": "React class component",
+    "React - Class component": {
+        "description": "React - Class component",
         "prefix": "tsxcc",
         "body": [
             "import React from 'react';",
@@ -49,8 +49,8 @@
             ""
         ]
     },
-    "React class component translation, router": {
-        "description": "React class component translation, router",
+    "React - Class component with Translation and Router": {
+        "description": "React - Class component with Translation and Router",
         "prefix": "tsxcc_i18n_router",
         "body": [
             "import React from 'react';",
@@ -100,8 +100,8 @@
             "export default withRouter(withTranslation()(${1:name}));"
         ]
     },
-    "React class component with router": {
-        "description": "React class component with router",
+    "React - Class component with Router": {
+        "description": "React - Class component with Router",
         "prefix": "tsxcc_router",
         "body": [
             "import React from 'react';",
@@ -151,8 +151,8 @@
             ""
         ]
     },
-    "React element component": {
-        "description": "React element component",
+    "React - JSX.Element": {
+        "description": "React - JSX.Element",
         "prefix": "tsxel",
         "body": [
             "import React from 'react';",
@@ -160,7 +160,7 @@
             "export interface Props {",
             "}",
             "",
-            "function ${1:name}(props: Props) {",
+            "function ${1:name}(props: Props): JSX.Element {",
             "    return (",
             "        <>",
             "            Hello!",
@@ -172,8 +172,8 @@
             ""
         ]
     },
-    "React element component with translation": {
-        "description": "React element component with translation",
+    "React - JSX.Element with translation": {
+        "description": "React - JSX.Element with translation",
         "prefix": "tsxel_i18",
         "body": [
             "import React from 'react';",
@@ -183,7 +183,7 @@
             "",
             "}",
             "",
-            "function ${1:name}(props: Props) {",
+            "function ${1:name}(props: Props): JSX.Element {",
             "    return (",
             "        <>",
             "            Hello!",
@@ -195,8 +195,8 @@
             ""
         ]
     },
-    "React functional component": {
-        "description": "React functional component",
+    "React - FC component": {
+        "description": "React - FC component",
         "prefix": "tsxfc",
         "body": [
             "import React from 'react';",
@@ -216,8 +216,8 @@
             ""
         ]
     },
-    "Storybook basic skeleton": {
-        "description": "Storybook basic skeleton",
+    "Storybook - Basic skeleton": {
+        "description": "Storybook - Basic skeleton",
         "prefix": "tsxstory",
         "body": [
             "import { Meta, Story } from '@storybook/react/types-6-0';",
@@ -225,35 +225,31 @@
             "import React from 'react';",
             "",
             "interface Props {",
-            "  hello: string;",
+            "    hello: string;",
             "}",
             "",
-            "function Hello(props: Props) {",
-            "    return (",
-            "      <div>{props.hello}</div>",
-            "    );",
+            "function ${1:example}(props: Props) {",
+            "    return <div>{props.hello}</div>;",
             "}",
             "",
             "export default {",
-            "    // title: 'Hello world',",
-            "    // title: `${base}${Hello.name}}`,",
-            "    title: `${base}${filename.split('.')[0]}`,",
-            "        component: Hello,",
+            "    // title: 'Hello world',                    // custom, you have to mainstain",
+            "    // title: `base${Hello.name}}`,             // function name, problematic on HoC components",
+            "    // title: `${base}${filename.split(\".\")}`,  // filename with filetype",
+            "    title: `${base}${filename.split(\".\")[0]}`,  // filename without filetype",
+            "    component: ${1:example},",
             "} as Meta;",
             "",
-            "const Template: Story<Props> = (args) => (",
-            "    <Hello {...args} />",
-            ");",
-            "export const hello = Template.bind({});",
+            "const Template: Story<Props> = (args) => <${1:example} {...args} />;",
             "",
+            "export const hello = Template.bind({});",
             "hello.args = {",
-            "    hello: 'Hello!'",
+            "    hello: \"Hello!\",",
             "};",
             "",
             "export const helloWorld = Template.bind({});",
-            "",
             "helloWorld.args = {",
-            "    hello: 'Hello world!'",
+            "    hello: \"Hello world!\",",
             "};",
             ""
         ]

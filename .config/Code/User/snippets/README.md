@@ -1,4 +1,4 @@
-Online generator
-================
+# Online generator
 
-<https://snippet-generator.app/>
+- site: <https://snippet-generator.app/>
+- source: <https://github.com/pawelgrzybek/snippet-generator>
