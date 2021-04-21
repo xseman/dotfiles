@@ -1,4 +1,4 @@
 [Desktop Entry]
 Name=Alacritty
 Type=Application
-Exec=/usr/bin/alacritty -e nvim %u
+Exec=/usr/bin/alacritty -e vim %u

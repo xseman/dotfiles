@@ -114,7 +114,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `insomnia` — API Client platform for GraphQL and REST
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
 - `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
-- `nvim, vim` — Simple text editor
+- `vim` — Simple text editor
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
@@ -181,9 +181,12 @@ These files should have the permission 644, otherwise they may not be usable.
 - <https://github.com/dikiaap/dotfiles>
 - <https://github.com/inputsh/awesome-linux>
 - <https://github.com/jlevy/the-art-of-command-line>
+- <https://github.com/johnjago/dotfiles>
+- <https://github.com/kaihendry/dotfiles>
 - <https://github.com/LukeSmithxyz/voidrice>
 - <https://github.com/luong-komorebi/Awesome-Linux-Software>
 - <https://github.com/mitchweaver/suckless>
+- <https://github.com/rwxrob/dotfiles>
 - <https://github.com/saleone/configs>
 - <https://jacekkowalczyk.wordpress.com/2018/11/20/how-to-install-dwm-from-suckless-org-at-fedora-29/>
 - <https://johnjago.com/blog/dwm/>

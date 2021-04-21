@@ -4,7 +4,8 @@
 if command -v fisher >/dev/null
     echo "fish installed"
 else
-    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+    curl -sL https://git.io/fisher | source && \
+    fisher install jorgebucaran/fisher
 end
 
 # Plugins install

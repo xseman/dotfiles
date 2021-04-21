@@ -60,7 +60,7 @@ exec blueman-applet &
 exec nm-applet &
 
 # Compositor
-# exec picom &
+exec picom &
 
 # Menu info
 while :; do

@@ -5,7 +5,7 @@ env:
   TERM: "xterm-256color"
 
 scrolling:
-  history: 100000
+  history: 1000
 
 draw_bold_text_with_bright_colors: false
 
@@ -41,7 +41,7 @@ cursor:
   unfocused_hollow: true
 
 schemes:
-  iceberg_light: &basic_light
+  iceberg_light: &iceberg_light
     primary:
       background: '#FFFFFF'
       foreground: '#000000'
@@ -64,7 +64,7 @@ schemes:
       cyan:       '#00E5E5'
       white:      '#E5E5E5'
 
-colors: *basic_light
+colors: *iceberg_light
 
 # background_opacity: 0.5
 

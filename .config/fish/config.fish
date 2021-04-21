@@ -1,5 +1,5 @@
 set -x LC_COLLATE "C"
-set -x EDITOR nvim
+set -x EDITOR vim
 set -x VEDITOR code
 
 # Paths

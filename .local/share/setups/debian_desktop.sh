@@ -24,8 +24,6 @@ apt install -y \
 
     # EDITORS
     # -------
-    neovim \
-    nvim \
     vim \
 
     # TERMINALS

@@ -16,7 +16,7 @@ sudo apt install -y \
 	curl \
 	fish \
 	git \
-	neovim \
+	vim \
 	tmux \
 	wget
 
