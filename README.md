@@ -168,6 +168,9 @@ These files should have the permission 644, otherwise they may not be usable.
 - pertag
 - scratchpad
 - systray
+- alwayscenter
+- statusallmons
+- warp
 
 **`dmenu`** — <https://tools.suckless.org/dmenu/patches/>
 
