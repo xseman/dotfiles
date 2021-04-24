@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# xinitrc
-# =======
-
 # Run desktop environment. Executed by startx.
 # See startx(1) and xinit(1) for details.
 
@@ -17,7 +14,7 @@
 
 # Requirements
 # ------------
-
+#
 # Fonts:
 #   - FontAwesome
 
@@ -68,20 +65,39 @@ while :; do
     BAT_INT=$(cat /sys/class/power_supply/BAT1/capacity)
     CHARGING=$(cat /sys/class/power_supply/AC/online)
     case $CHARGING in
-        1) BAT=" $BAT_EXT% | $BAT_INT%" ;;
-        0) BAT=" $BAT_EXT% | $BAT_INT%"
+        1)
+            BAT=" $BAT_EXT% / $BAT_INT%"
+        ;;
+
+        0)
+            BAT=" $BAT_EXT% / $BAT_INT%"
     esac
+    BAR_INFO="${BAT} ~ "
 
-    IP_WIFI=$(ip addr show dev wlp3s0 | grep "inet " | cut -d ' ' -f 6 | cut -f 1 -d '/')
-    [[ -n "$IP_WIFI" ]] && IP_WIFI=" $IP_WIFI"
+    IP_WIFI=$(
+        ip addr show dev wlp3s0 \
+        |grep "inet " \
+        | cut -d ' ' -f 6 \
+        | cut -f 1 -d '/'
+    )
+    [[ -n "$IP_WIFI" ]] && {
+        BAR_INFO="${BAR_INFO}  ${IP_WIFI} ~ "
+    }
 
-
-    IP_ETH=$(ip addr show dev enp0s31f6 | grep "inet " | cut -d ' ' -f 6 | cut -f 1 -d '/')
-    [[ -n "$IP_ETH" ]] && IP_ETH="󰈀 $IP_ETH"
+    IP_ETH=$(
+        ip addr show dev enp0s31f6 \
+        | grep "inet " \
+        | cut -d ' ' -f 6 \
+        | cut -f 1 -d '/'
+    )
+    [[ -n "$IP_ETH" ]] && {
+        BAR_INFO="${BAR_INFO} 󰈀 ${IP_ETH} ~ "
+    }
 
     DATE="󱑎 $(date "+%d.%m.%Y %H:%M")"
+    BAR_INFO="${BAR_INFO} ${DATE}"
 
-    xsetroot -name "$IP_ETH / $IP_WIFI / $VOL / $BAT / $DATE"
+    xsetroot -name "${BAR_INFO}"
     sleep 30s
 done &
 
