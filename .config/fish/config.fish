@@ -10,7 +10,8 @@ set -x fish_user_paths \
     /usr/sbin \
     /usr/sbin \
     ~/.deno/bin \
-    ~/.local/bin
+    ~/.local/bin \
+    ~/go/bin
 
 # IntelliJ fix, UI blurr/freez
 set -x _JAVA_AWT_WM_NONREPARENTING 1
