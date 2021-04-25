@@ -72,7 +72,7 @@ while :; do
         0)
             BAT=" $BAT_EXT% / $BAT_INT%"
     esac
-    BAR_INFO="${BAT} ~ "
+    BAR_INFO="${BAT} ~"
 
     IP_WIFI=$(
         ip addr show dev wlp3s0 \
@@ -81,7 +81,7 @@ while :; do
         | cut -f 1 -d '/'
     )
     [[ -n "$IP_WIFI" ]] && {
-        BAR_INFO="${BAR_INFO}  ${IP_WIFI} ~ "
+        BAR_INFO="${BAR_INFO}  ${IP_WIFI} ~"
     }
 
     IP_ETH=$(
@@ -91,7 +91,7 @@ while :; do
         | cut -f 1 -d '/'
     )
     [[ -n "$IP_ETH" ]] && {
-        BAR_INFO="${BAR_INFO} 󰈀 ${IP_ETH} ~ "
+        BAR_INFO="${BAR_INFO} 󰈀 ${IP_ETH} ~"
     }
 
     DATE="󱑎 $(date "+%d.%m.%Y %H:%M")"
