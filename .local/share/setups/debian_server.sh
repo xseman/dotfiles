@@ -12,13 +12,13 @@ sudo apt update && upgrade -y
 sudo apt install --fix-broken -y
 
 sudo apt install -y \
-	build-essential \
-	curl \
-	fish \
-	git \
-	vim \
-	tmux \
-	wget
+    build-essential \
+    curl \
+    fish \
+    git \
+    vim \
+    tmux \
+    wget
 
 sudo apt install --fix-broken -y
 

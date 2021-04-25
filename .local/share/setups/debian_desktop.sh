@@ -20,6 +20,8 @@ apt install -y \
     chromium \
     firefox-esr \
     links \
+    links2 \
+    lynx \
     surf \
 
     # EDITORS
@@ -31,6 +33,9 @@ apt install -y \
     st \
     # alacritty \
 
+    # SHELLS
+    fish \
+
     # DEV
     # ---
     build-essenti \
@@ -38,6 +43,7 @@ apt install -y \
     curl \
     deno \
     diff-so-fancy \
+    entr \
     git \
     git-lfs \
     gitg \
@@ -91,7 +97,6 @@ apt install -y \
     arandr \
     blueman \
     findutils \
-    fish \
     font-manager \
     fzf \
     grabc \
@@ -106,14 +111,10 @@ apt install -y \
     tree \
     xclip
 
-echo "Changing to fish shell..."
-
-# Change default shell
+echo "Changing default to fish shell..."
 chsh -s `which fish`
 
 echo "Updating 'locate' database..."
-
-# Update locate database
 updatedb
 
 echo "Done..."

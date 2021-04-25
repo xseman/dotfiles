@@ -122,6 +122,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `objdump` — Display information from object files
 - `minicom` — Friendly serial communication program
 - `smu` — Simple markdown like syntax converter to HTML
+- `entr` — Run arbitrary commands when files change
 
 ### Networking
 
