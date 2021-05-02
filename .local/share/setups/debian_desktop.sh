@@ -53,6 +53,7 @@ apt install -y \
     php \
     plantuml \
     postgresql \
+    sqlite3 \
     tmux \
     wget \
 
