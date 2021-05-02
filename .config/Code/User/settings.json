@@ -91,23 +91,16 @@
     "terminal.integrated.experimentalLinkProvider": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.lineHeight": 1.1,
     "terminal.integrated.rendererType": "experimentalWebgl",
+    /** CTRL + SHIFT + C */
     "terminal.external.linuxExec": "/usr/bin/alacritty",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
-    // "terminal.integrated.env.linux": {
-    //     "WORKSPACE": "${workspaceFolder}"
-    // },
-    // "terminal.integrated.shellArgs.linux": [
-    //     "--command", "/usr/bin/fish",
-    //     // dynamicly change env based on opened workspace window
-    //     // combination with "terminal.integrated.env.linux"
-    //     "--command", "set WORKSPACE=$WORKSPACE",
-    //     "--command", "tmux set-enviroment -g WORKSPACE $WORKSPACE",
-    //     "--command", "tmux new-session -A -s main"
-    // ],
+    "terminal.integrated.shellArgs.linux": [
+        /** Fish arg */
+        "--command", "tmux new-session -A"
+    ],
 
     "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
@@ -227,8 +220,8 @@
     "i18n-ally.displayLanguage": "sk",
     "i18n-ally.keystyle": "nested",
 
-    "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
 
     "npm-intellisense.importQuotes": "\"",
 
@@ -236,16 +229,22 @@
 
     "mdb.sendTelemetry": false,
 
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+    "[shellscript]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 4
     },
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "[bash]": {
+        "editor.tabSize": 4
+    },
+    "[perl]": {
+        "editor.tabSize": 4
     },
     "[fish]": {
         "editor.defaultFormatter": "bmalehorn.vscode-fish",
         "editor.tabSize": 4
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[go]": {
         "editor.codeActionsOnSave": {
@@ -254,14 +253,6 @@
         },
         "editor.formatOnSave": true,
         "editor.tabSize": 4
-    },
-    "[handlebars]": {
-        "editor.formatOnSave": false,
-        "editor.tabSize": 4
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
     },
     "[java]": {
         "editor.insertSpaces": true,
@@ -278,38 +269,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.formatOnSave": false
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-        "editor.formatOnSave": true,
-        "editor.wordWrap": "off"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
-        "editor.formatOnSave": true
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-    },
-    "[shellscript]": {
-        "editor.formatOnSave": false,
-        "editor.tabSize": 4
-    },
-    "[tex]": {
-        "editor.tabSize": 4
-    },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
@@ -322,9 +281,38 @@
         // "editor.defaultFormatter": "vscode.typescript-language-features",
         // "editor.formatOnSave": true,
     },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[handlebars]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml",
         "editor.tabSize": 4
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "off"
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
@@ -335,5 +323,16 @@
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
         "editor.tabSize": 2
+    },
+    "[tex]": {
+        "editor.tabSize": 4
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": false
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
     },
 }
