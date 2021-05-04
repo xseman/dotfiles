@@ -97,10 +97,10 @@
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shellArgs.linux": [
-        /** Fish arg */
-        "--command", "tmux new-session -A"
-    ],
+    /** Automaticly crate/attach to tmux session */
+    // "terminal.integrated.shellArgs.linux": [
+    //     "--command", "tmux new-session -A"
+    // ],
 
     "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
