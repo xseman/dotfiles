@@ -1,4 +1,13 @@
 {
+    "Function": {
+        "body": [
+            "function ${1:name}(arg: ${2:argType}): ${3:returnType} {",
+            "    ${4:logic}",
+            "}"
+        ],
+        "description": "Function",
+        "prefix": "fn"
+    },
     "React - Class component": {
         "body": [
             "import React from \"react\";",
