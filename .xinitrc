@@ -35,13 +35,24 @@ exec hsetroot -solid "#666666" &
 # Increase key repeat rate
 exec xset r rate 150 40 &
 
-# Trackpad
-# - touche click
-# - natural scrolling
-
-SYNAPTICS_ID="$(xinput | grep Synaptics | awk '{print substr($5,4)}')"
-exec xinput set-prop $SYNAPTICS_ID 311 1 & # tap
-exec xinput set-prop $SYNAPTICS_ID 319 1 & # natural-scroll
+# Trackpad T480, (tap click, natural scrolling)
+SYNAPTICS_ID="$(
+    xinput |
+    grep Synaptics |
+    awk '{print substr($5,4)}'
+)"
+PROP_ID_NATURAL="$(
+    xinput list-props ${SYNAPTICS_ID} |
+    grep 'Natural Scrolling Enabled (' |
+    awk -F"[()]" '{print $2}'
+)"
+PROP_ID_TAP="$(
+    xinput list-props ${SYNAPTICS_ID} |
+    grep 'Tapping Enabled (' |
+    awk -F"[()]" '{print $2}'
+)"
+exec xinput set-prop ${SYNAPTICS_ID} ${PROP_ID_NATURAL} 1 &
+exec xinput set-prop ${SYNAPTICS_ID} ${PROP_ID_TAP} 1 &
 
 # Notification daemon
 exec dunst -geom '300x5-25+35' &
@@ -61,17 +72,17 @@ exec picom &
 
 # Menu info
 while :; do
-    BAT_EXT=$(cat /sys/class/power_supply/BAT0/capacity)
-    BAT_INT=$(cat /sys/class/power_supply/BAT1/capacity)
-    CHARGING=$(cat /sys/class/power_supply/AC/online)
-    case $CHARGING in
-        1)
-            BAT=" $BAT_EXT% / $BAT_INT%"
-        ;;
+    CHARGING="$(cat /sys/class/power_supply/AC/online)"
+    [[ "${CHARGING}" == 1 ]] & BAT=" " || BAT=" "
 
-        0)
-            BAT=" $BAT_EXT% / $BAT_INT%"
-    esac
+    [[ -f "/sys/class/power_supply/BAT1/capacity" ]] & {
+        BAT_INTERNAL="$(cat /sys/class/power_supply/BAT1/capacity)"
+        BAT="${BAT} ${BAT_INTERNAL}%"
+    }
+    [[ -f "/sys/class/power_supply/BAT0/capacity" ]] & {
+        BAT_EXTERNAL="$(cat /sys/class/power_supply/BAT0/capacity)"
+        BAT="${BAT} / ${BAT_EXTERNAL}%"
+    }
     BAR_INFO="${BAT} ~"
 
     IP_WIFI=$(
