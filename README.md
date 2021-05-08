@@ -193,6 +193,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - <https://github.com/mitchweaver/suckless>
 - <https://github.com/rwxrob/dotfiles>
 - <https://github.com/saleone/configs>
+- <https://google.github.io/styleguide/shellguide.html>
 - <https://jacekkowalczyk.wordpress.com/2018/11/20/how-to-install-dwm-from-suckless-org-at-fedora-29/>
 - <https://johnjago.com/blog/dwm/>
 - <https://suckless.org/rocks/>
