@@ -3,6 +3,7 @@
 env:
   LC_CTYPE: "en_US.UTF-8"
   TERM: "xterm-256color"
+  WINIT_X11_SCALE_FACTOR: "1"
 
 scrolling:
   history: 1000
@@ -10,6 +11,9 @@ scrolling:
 draw_bold_text_with_bright_colors: false
 
 font:
+  size: 10.0
+  use_thin_strokes: false
+
   normal:
     family: 'JetBrains Mono'
     style: Regular
@@ -26,9 +30,6 @@ font:
     x: 0
     y: 0
 
-  size: 7.0
-  use_thin_strokes: false
-
 window:
   gtk_theme_variant: light
   decorations: none
@@ -37,8 +38,10 @@ window:
     y: 3
 
 cursor:
-  style: Beam
   unfocused_hollow: true
+  style:
+    shape: Block
+    blinking: on
 
 schemes:
   iceberg_light: &iceberg_light
@@ -66,18 +69,20 @@ schemes:
 
 colors: *iceberg_light
 
-# background_opacity: 0.5
+# background_opacity: 0.8
 
 bell:
   animation: EaseOutExpo
   color: '0xFFFFFF'
   duration: 0
 
-mouse:
-  url:
-    modifiers: Control
-    launcher:
-      program: xdg-open
+hints:
+  enabled:
+    - regex: "(https:|http:)[^\u0000-\u001F\u007F-\u009F<>\" {-}\\^⟨⟩`]+"
+      command: xdg-open
+      mouse:
+        enabled: true
+        mods: Control
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
@@ -91,40 +96,41 @@ live_config_reload: true
 
 keybindings:
   # Main
-  - { key: Paste,                                action: Paste          }
-  - { key: Copy,                                 action: Copy           }
-  - { key: L,         mods: Control,             action: ClearLogNotice }
-  - { key: PageUp,    mods: Shift,   mode: ~Alt, action: ScrollPageUp,  }
-  - { key: PageDown,  mods: Shift,   mode: ~Alt, action: ScrollPageDown }
-  - { key: Home,      mods: Shift,   mode: ~Alt, action: ScrollToTop,   }
-  - { key: End,       mods: Shift,   mode: ~Alt, action: ScrollToBottom }
+  - { key: Paste,                               action: Paste          }
+  - { key: Copy,                                action: Copy           }
+  - { key: L,        mods: Control,             action: ClearLogNotice }
+  - { key: PageUp,   mods: Shift,   mode: ~Alt, action: ScrollPageUp,  }
+  - { key: PageDown, mods: Shift,   mode: ~Alt, action: ScrollPageDown }
+  - { key: Home,     mods: Shift,   mode: ~Alt, action: ScrollToTop,   }
+  - { key: End,      mods: Shift,   mode: ~Alt, action: ScrollToBottom }
 
   # (Windows, Linux, and BSD only)
-  - { key: V,        mods: Control|Shift,           action: Paste            }
-  - { key: C,        mods: Control|Shift,           action: Copy             }
-  - { key: F,        mods: Control|Shift,           action: SearchForward    }
-  - { key: Add,      mods: Control,                 action: IncreaseFontSize }
-  - { key: Minus,    mods: Control,                 action: DecreaseFontSize }
+  - { key: V,        mods: Control|Shift, action: Paste            }
+  - { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: F,        mods: Control|Shift, action: SearchForward    }
+  - { key: Add,      mods: Control,       action: IncreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
 
   # Vim mode
-  - { key: Space,  mods: Shift|Control,           action: ToggleViMode            }
-  - { key: Q,                           mode: Vi, action: ToggleViMode            } # not working :(
-  - { key: G,                           mode: Vi, action: ScrollToTop             }
-  - { key: G,      mods: Shift,         mode: Vi, action: ScrollToBottom          }
-  - { key: K,                           mode: Vi, action: Up                      }
-  - { key: J,                           mode: Vi, action: Down                    }
-  - { key: H,                           mode: Vi, action: Left                    }
-  - { key: L,                           mode: Vi, action: Right                   }
-  - { key: Up,                          mode: Vi, action: Up                      }
-  - { key: Down,                        mode: Vi, action: Down                    }
-  - { key: Left,                        mode: Vi, action: Left                    }
-  - { key: Right,                       mode: Vi, action: Right                   }
-  - { key: Slash,                       mode: Vi, action: SearchForward           }
-  - { key: N,                           mode: Vi, action: SearchNext              }
-  - { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
-  - { key: V,      mods: Shift,         mode: Vi, action: ToggleLineSelection     }
-  - { key: V,      mods: Control,       mode: Vi, action: ToggleBlockSelection    }
-  - { key: V,      mods: Alt,           mode: Vi, action: ToggleSemanticSelection }
-  - { key: Y,                           mode: Vi, action: Copy                    }
-  - { key: Y,                           mode: Vi, action: ClearSelection          }
-  - { key: Copy,                        mode: Vi, action: ClearSelection          }
+  - { key: Space, mods: Shift|Control,           action: ToggleViMode            }
+  - { key: G,                          mode: Vi, action: ScrollToTop             }
+  - { key: I,                          mode: Vi, action: ToggleViMode            }
+  - { key: C,     mods: Control,       mode: Vi, action: ToggleViMode            }
+  - { key: G,     mods: Shift,         mode: Vi, action: ScrollToBottom          }
+  - { key: K,                          mode: Vi, action: Up                      }
+  - { key: J,                          mode: Vi, action: Down                    }
+  - { key: H,                          mode: Vi, action: Left                    }
+  - { key: L,                          mode: Vi, action: Right                   }
+  - { key: Up,                         mode: Vi, action: Up                      }
+  - { key: Down,                       mode: Vi, action: Down                    }
+  - { key: Left,                       mode: Vi, action: Left                    }
+  - { key: Right,                      mode: Vi, action: Right                   }
+  - { key: Slash,                      mode: Vi, action: SearchForward           }
+  - { key: N,                          mode: Vi, action: SearchNext              }
+  - { key: N,     mods: Shift,         mode: Vi, action: SearchPrevious          }
+  - { key: V,     mods: Shift,         mode: Vi, action: ToggleLineSelection     }
+  - { key: V,     mods: Control,       mode: Vi, action: ToggleBlockSelection    }
+  - { key: V,     mods: Alt,           mode: Vi, action: ToggleSemanticSelection }
+  - { key: Y,                          mode: Vi, action: Copy                    }
+  - { key: Y,                          mode: Vi, action: ClearSelection          }
+  - { key: Copy,                       mode: Vi, action: ClearSelection          }
