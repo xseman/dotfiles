@@ -75,11 +75,11 @@ while :; do
     CHARGING="$(cat /sys/class/power_supply/AC/online)"
     [[ "${CHARGING}" == 1 ]] & BAT=" " || BAT=" "
 
-    [[ -f "/sys/class/power_supply/BAT1/capacity" ]] & {
+    [[ -L /sys/class/power_supply/BAT1/capacity ]] & {
         BAT_INTERNAL="$(cat /sys/class/power_supply/BAT1/capacity)"
         BAT="${BAT} ${BAT_INTERNAL}%"
     }
-    [[ -f "/sys/class/power_supply/BAT0/capacity" ]] & {
+    [[ -L /sys/class/power_supply/BAT0/capacity ]] & {
         BAT_EXTERNAL="$(cat /sys/class/power_supply/BAT0/capacity)"
         BAT="${BAT} / ${BAT_EXTERNAL}%"
     }
