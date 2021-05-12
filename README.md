@@ -59,8 +59,8 @@ These files should have the permission 644, otherwise they may not be usable.
 
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
-- `troff` — Processor of the groff text formatting system
 - `pdftk` — A handy tool for manipulating PDF
+- `troff` — Processor of the groff text formatting system
 - `poppler-utils` — Manipulation tools for pdf
     - `pdfdetach` — lists or extracts embedded files (attachments)
     - `pdffonts` — font analyzer
@@ -77,9 +77,9 @@ These files should have the permission 644, otherwise they may not be usable.
 
 ### Monitors
 
-- `mons` — POSIX Shell script to quickly manage monitors on X
 - `arandr` — Another XRandR GUI
 - `light` — Backlight controllers
+- `mons` — POSIX Shell script to quickly manage monitors on X
 - `xbacklight` — Adjust backlight brightness using RandR extension
 
 ### Audio
@@ -90,39 +90,39 @@ These files should have the permission 644, otherwise they may not be usable.
 
 ### System tray
 
+- `blueman-applet` — Blueman applet
 - `ibus` — Intelligent Input Bus for Linux/Unix
 - `nm-applet` — GTK‐based GUI applet to monitor network status and devices
 - `pasystray` — PulseAudio system tray
-- `blueman-applet` — Blueman applet
 
 ### Media
 
 - `calibre` — Suite of e-book
 - `gimp` — Raster graphics editor
+- `imagemagick` — Suite for the creation, modification and display of bitmap images
 - `inkscape` — Vector graphics editor
 - `mpv` — Media player software based on MPlayer, mplayer2 and FFmpeg
 - `sxiv` — Simple X Image Viewer
 - `vlc` — Media player, supports many audio and video compression
-- `imagemagick` — Suite for the creation, modification and display of bitmap images
 
 ### Development
 
 - `alacritty` — GPU accelerated terminal emulator
 - `code` — Visual Studio Code, open-source editor made by Microsoft
+- `entr` — Run arbitrary commands when files change
 - `git-lfs` — Git Large File Storage (LFS)
 - `gitg` — GNOME GUI client to view git repositories
 - `insomnia` — API Client platform for GraphQL and REST
+- `minicom` — Friendly serial communication program
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
 - `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
-- `vim` — Simple text editor
+- `objdump` — Display information from object files
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
-- `xxd` — Creates a hex dump of a given file or standard input
-- `objdump` — Display information from object files
-- `minicom` — Friendly serial communication program
 - `smu` — Simple markdown like syntax converter to HTML
-- `entr` — Run arbitrary commands when files change
+- `vim` — Simple text editor
+- `xxd` — Creates a hex dump of a given file or standard input
 
 ### Networking
 
@@ -131,8 +131,8 @@ These files should have the permission 644, otherwise they may not be usable.
 
 ### Printers
 
-- `system-config-printer` — Graphical user interface for CUPS administration
 - `simple-scan` — Simple scanning utility
+- `system-config-printer` — Graphical user interface for CUPS administration
 
 ### Other
 
@@ -143,6 +143,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `grabc` — Grab the color of some pixel in X11
 - `lf` — Terminal file manager
 - `lxappearance` — Standard theme switcher of LXDE
+- `mktemp` — Create a temporary file or directory
 - `picom` — A lightweight compositor for X11
 - `powertop` — Measure, explain and minimise electrical power consumption
 - `xclip` — Command line interface to the X11 clipboard
@@ -162,6 +163,7 @@ These files should have the permission 644, otherwise they may not be usable.
 
 **`dwm`** — <https://dwm.suckless.org/patches/>
 
+- alwayscenter
 - awesomebar
 - focusonnetactive
 - fullscreen
@@ -169,9 +171,8 @@ These files should have the permission 644, otherwise they may not be usable.
 - noborder
 - pertag
 - scratchpad
-- systray
-- alwayscenter
 - statusallmons
+- systray
 - warp
 
 **`dmenu`** — <https://tools.suckless.org/dmenu/patches/>
