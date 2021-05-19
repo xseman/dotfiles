@@ -20,13 +20,13 @@
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
     for f in /etc/X11/xinit/xinitrc.d/*; do
-        [ -x "$f" ] && . "$f"
+        [ -x "${f}" ] && . "${f}"
     done
     unset f
 fi
 
 [[ -f ~/.Xresources ]] && {
-    xrdb -merge -I$HOME ~/.Xresources
+    xrdb -merge -I${HOME} ~/.Xresources
 }
 
 # Background color
@@ -44,12 +44,12 @@ SYNAPTICS_ID="$(
 PROP_ID_NATURAL="$(
     xinput list-props ${SYNAPTICS_ID} |
     grep 'Natural Scrolling Enabled (' |
-    awk -F"[()]" '{print $2}'
+    awk -F"[()]" '{print ${2}}'
 )"
 PROP_ID_TAP="$(
     xinput list-props ${SYNAPTICS_ID} |
     grep 'Tapping Enabled (' |
-    awk -F"[()]" '{print $2}'
+    awk -F"[()]" '{print ${2}}'
 )"
 exec xinput set-prop ${SYNAPTICS_ID} ${PROP_ID_NATURAL} 1 &
 exec xinput set-prop ${SYNAPTICS_ID} ${PROP_ID_TAP} 1 &
@@ -73,7 +73,8 @@ exec picom &
 # Menu info
 while :; do
     CHARGING="$(cat /sys/class/power_supply/AC/online)"
-    [[ "${CHARGING}" == 1 ]] & BAT=" " || BAT=" "
+    [[ "${CHARGING}" == "1" ]] && BAT=""
+    [[ "${CHARGING}" == "0" ]] && BAT=""
 
     [[ -L /sys/class/power_supply/BAT1/capacity ]] & {
         BAT_INTERNAL="$(cat /sys/class/power_supply/BAT1/capacity)"
