@@ -39,17 +39,17 @@ exec xset r rate 150 40 &
 SYNAPTICS_ID="$(
     xinput |
     grep Synaptics |
-    awk '{print substr($5,4)}'
+    awk '{print substr($5, 4)}'
 )"
 PROP_ID_NATURAL="$(
     xinput list-props ${SYNAPTICS_ID} |
     grep 'Natural Scrolling Enabled (' |
-    awk -F"[()]" '{print ${2}}'
+    awk -F"[()]" '{print $2}'
 )"
 PROP_ID_TAP="$(
     xinput list-props ${SYNAPTICS_ID} |
     grep 'Tapping Enabled (' |
-    awk -F"[()]" '{print ${2}}'
+    awk -F"[()]" '{print $2}'
 )"
 exec xinput set-prop ${SYNAPTICS_ID} ${PROP_ID_NATURAL} 1 &
 exec xinput set-prop ${SYNAPTICS_ID} ${PROP_ID_TAP} 1 &
