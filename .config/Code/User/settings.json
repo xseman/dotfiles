@@ -51,6 +51,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.showTabs": true,
+    "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.list.keyboardNavigation": "filter",
