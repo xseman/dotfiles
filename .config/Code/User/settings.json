@@ -1,7 +1,9 @@
 {
-    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingQuotes": "never",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": true
         // "source.fixAll.markdownlint": true
     },
     "editor.codeLens": true,
@@ -99,8 +101,8 @@
     //     "--command", "tmux new-session -A"
     // ],
 
-    "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
+    "debug.console.wordWrap": false,
 
     "problems.autoReveal": false,
 
@@ -108,34 +110,6 @@
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
-
-    "python.defaultInterpreterPath": "usr/bin/python3",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.formatting.autopep8Args": [
-        "--aggressive",
-        "--in-place",
-        "--max-line-length",
-        "80"
-    ],
-
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "java.project.importOnFirstTimeStartup": "automatic",
-    "java.semanticHighlighting.enabled": true,
-    "java.configuration.runtimes": [
-        // {
-        //     "name": "JavaSE-1.8",
-        //     "path": "/home/filip/.jdks/adopt-openjdk-1.8.0_265",
-        // },
-        {
-            "name": "JavaSE-11",
-            "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64"
-        },
-        {
-            "name": "JavaSE-14",
-            "path": "/usr/lib/jvm/java-1.14.0-openjdk-amd64"
-        }
-    ],
 
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "double",
@@ -155,8 +129,8 @@
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
     "prettier.singleQuote": false,
-    "prettier.useTabs": false,
     "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
 
     "eslint.codeActionsOnSave.mode": "all",
     "eslint.alwaysShowStatus": true,
@@ -189,18 +163,18 @@
     },
 
     "git.confirmSync": false,
+    "git.openDiffOnClick": true,
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
-    "git.openDiffOnClick": true,
 
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.views.repositories.files.layout": "tree",
 
-    "diffEditor.renderSideBySide": true,
-    "diffEditor.maxComputationTime": 0,
     "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.maxComputationTime": 0,
+    "diffEditor.renderSideBySide": true,
 
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
