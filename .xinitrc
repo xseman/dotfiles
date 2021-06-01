@@ -72,17 +72,19 @@ exec picom &
 
 # Menu info
 while :; do
-    CHARGING="$(cat /sys/class/power_supply/AC/online)"
-    [[ "${CHARGING}" == "1" ]] && BAT=""
-    [[ "${CHARGING}" == "0" ]] && BAT=""
-
-    [[ -L /sys/class/power_supply/BAT1/capacity ]] & {
-        BAT_INTERNAL="$(cat /sys/class/power_supply/BAT1/capacity)"
+    BAT=""
+    [[ -e /sys/class/power_supply/AC/online ]] && {
+        CHARGING="$(head /sys/class/power_supply/AC/online)"
+        [[ "${CHARGING}" == "1" ]] && BAT=""
+        [[ "${CHARGING}" == "0" ]] && BAT=""
+    }
+    [[ -e /sys/class/power_supply/BAT1/capacity ]] && {
+        BAT_INTERNAL="$(head /sys/class/power_supply/BAT1/capacity)"
         BAT="${BAT} ${BAT_INTERNAL}%"
     }
-    [[ -L /sys/class/power_supply/BAT0/capacity ]] & {
-        BAT_EXTERNAL="$(cat /sys/class/power_supply/BAT0/capacity)"
-        BAT="${BAT} / ${BAT_EXTERNAL}%"
+    [[ -e /sys/class/power_supply/BAT0/capacity ]] && {
+        BAT_EXTERNAL="$(head /sys/class/power_supply/BAT0/capacity)"
+        BAT="${BAT} ${BAT_EXTERNAL}%"
     }
     BAR_INFO="${BAT} ~"
 
