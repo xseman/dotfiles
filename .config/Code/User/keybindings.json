@@ -32,30 +32,6 @@
         "when": "editorTextFocus"
     },
     {
-        "command": "vikyd.FoldLevel.level1",
-        "key": "cmd+1"
-    },
-    {
-        "command": "vikyd.FoldLevel.level2",
-        "key": "cmd+2"
-    },
-    {
-        "command": "vikyd.FoldLevel.level3",
-        "key": "cmd+3"
-    },
-    {
-        "command": "vikyd.FoldLevel.level4",
-        "key": "cmd+4"
-    },
-    {
-        "command": "vikyd.FoldLevel.level5",
-        "key": "cmd+5"
-    },
-    {
-        "command": "vikyd.FoldLevel.level6",
-        "key": "cmd+6"
-    },
-    {
         "command": "editor.action.deleteLines",
         "key": "ctrl+shift+d",
         "when": "textInputFocus && !editorReadonly"

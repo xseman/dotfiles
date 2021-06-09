@@ -1,7 +1,7 @@
 {
-    "editor.autoClosingBrackets": "never",
-    "editor.autoClosingDelete": "never",
-    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.autoClosingDelete": "auto",
+    "editor.autoClosingQuotes": "languageDefined",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
         // "source.fixAll.markdownlint": true
@@ -70,6 +70,7 @@
     "window.menuBarVisibility": "hidden",
     "window.title": "${rootName}",
     "window.titleBarStyle": "native",
+    "window.titleSeparator": " - ",
 
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
@@ -96,13 +97,9 @@
     "terminal.integrated.experimentalLinkProvider": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
-    /** Automaticly crate/attach to tmux session */
-    // "terminal.integrated.shellArgs.linux": [
-    //     "--command", "tmux new-session -A"
-    // ],
 
-    "debug.console.fontSize": 11,
     "debug.console.wordWrap": false,
+    "debug.console.fontSize": 11,
 
     "problems.autoReveal": false,
 
@@ -110,6 +107,24 @@
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
+
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.semanticHighlighting.enabled": true,
+    "java.configuration.runtimes": [
+        // {
+        //     "name": "JavaSE-1.8",
+        //     "path": "/home/filip/.jdks/adopt-openjdk-1.8.0_265",
+        // },
+        {
+            "name": "JavaSE-11",
+            "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64"
+        },
+        {
+            "name": "JavaSE-14",
+            "path": "/usr/lib/jvm/java-1.14.0-openjdk-amd64"
+        }
+    ],
 
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "double",
@@ -129,8 +144,8 @@
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
     "prettier.singleQuote": false,
-    "prettier.tabWidth": 4,
     "prettier.useTabs": false,
+    "prettier.tabWidth": 4,
 
     "eslint.codeActionsOnSave.mode": "all",
     "eslint.alwaysShowStatus": true,
@@ -163,18 +178,18 @@
     },
 
     "git.confirmSync": false,
-    "git.openDiffOnClick": true,
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
+    "git.openDiffOnClick": true,
 
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.views.repositories.files.layout": "tree",
 
-    "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.maxComputationTime": 0,
     "diffEditor.renderSideBySide": true,
+    "diffEditor.maxComputationTime": 0,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
@@ -199,6 +214,7 @@
     "svg.preview.mode": "svg",
 
     "mdb.sendTelemetry": false,
+    "redhat.telemetry.enabled": false,
 
     "[shellscript]": {
         "editor.formatOnSave": false,
@@ -251,10 +267,6 @@
         "editor.formatOnSave": false
         // "editor.defaultFormatter": "vscode.typescript-language-features",
         // "editor.formatOnSave": true,
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
-        "editor.formatOnSave": true
     },
     "[less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
