@@ -1,11 +1,11 @@
 {
-        "Function": {
-                "body": [
-                        "function ${1:name}(arg: ${2:argType}): ${3:returnType} {",
-                        "    ${4:logic}",
-                        "}"
-                ],
-                "description": "Function",
-                "prefix": "fn"
-        }
+    "Function": {
+        "prefix": "fn",
+        "description": "Function",
+        "body": [
+            "function ${1:name}(arg: ${2:argType}): ${3:returnType} {",
+            "    ${4:logic}",
+            "}"
+        ]
+    }
 }
