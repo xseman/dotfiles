@@ -49,7 +49,7 @@
     "editor.wordWrap": "off",
 
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "IDEA like light Theme",
+    "workbench.colorTheme": "Simple light",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.showTabs": true,
@@ -64,9 +64,6 @@
     "workbench.statusBar.visible": true,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorCustomizations": {
-        "list.focusHighlightForeground": "#9DDDFF",
-    },
 
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
@@ -96,10 +93,11 @@
     "terminal.external.linuxExec": "/usr/bin/alacritty",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.defaultProfile.linux": "/usr/bin/fish",
+    "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.experimentalLinkProvider": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.tabs.enabled": false,
 
     "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
@@ -170,8 +168,9 @@
         "default": true,
         "spaces": true,
         "line-length": true,
+        "MD007": { "indent": 4 },
+        "MD033": false,
         "MD036": false,
-        "MD007": { "indent": 4 }
     },
 
     "emmet.excludeLanguages": ["markdown", "typescript"],
@@ -252,7 +251,7 @@
         // },
     },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
     "[javascriptreact]": {
