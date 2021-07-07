@@ -1,13 +1,10 @@
 {
-    "React - Class component with Translation and Router": {
-        "description": "React - Class component with Router and i18n",
-        "prefix": "cc-with-router-i18n",
+    "React - Class component with Router and i18n": {
+        "prefix": "tsx-cc-with-router-i18n",
         "body": [
-            "import React from 'react';",
-            "import { WithTranslation, withTranslation } from 'react-i18next';",
-            "import { RouteComponentProps, withRouter } from 'react-router-dom';",
+            "import React from \"react\";",
             "",
-            "export interface Props extends RouteComponentProps, WithTranslation {}",
+            "export interface Props {}",
             "export interface State {}",
             "",
             "class ${1:ComponentName} extends React.Component<Props, State> {",
@@ -26,9 +23,9 @@
             "",
             "    render() {",
             "        return (",
-            "            <>",
+            "            <div className=\"\">",
             "                TODO",
-            "            </>",
+            "            </div>",
             "        );",
             "    }",
             "",
@@ -36,13 +33,14 @@
             "    private _destroy = (): void => {};",
             "}",
             "",
-            "export default withRouter(withTranslation()(${1:ComponentName}));",
+            "export default ${1:ComponentName};",
             ""
-        ]
+        ],
+        "description": "React - Class component with Router and i18n"
     },
     "React - JSX.Element with translation": {
         "description": "React - JSX.Element with translation",
-        "prefix": "element-with-i18",
+        "prefix": "tsx-element-with-i18",
         "body": [
             "import React from 'react';",
             "import { WithTranslation, withTranslation } from 'react-i18next';",
@@ -51,9 +49,9 @@
             "",
             "function ${1:ComponentName}(props: Props): JSX.Element {",
             "    return (",
-            "        <>",
+            "        <div className=\"\">",
             "            TODO",
-            "        </>",
+            "        </div>",
             "    );",
             "}",
             "",
@@ -63,7 +61,7 @@
     },
     "React - Class component with Router": {
         "description": "React - Class component with Router",
-        "prefix": "cc-with-router",
+        "prefix": "tsx-cc-with-router",
         "body": [
             "import React from \"react\";",
             "import { RouteComponentProps, withRouter } from \"react-router-dom\";",
@@ -87,9 +85,9 @@
             "",
             "    render() {",
             "        return (",
-            "            <>",
+            "            <div className=\"\">",
             "                TODO",
-            "            </>",
+            "            </div>",
             "        );",
             "    }",
             "",
@@ -103,14 +101,12 @@
     },
     "React - SetState with prevState": {
         "description": "Generates a setState function with a callback prevState.",
-        "prefix": "sss",
-        "body": [
-            "this.setState((state): State => ({}));"
-        ]
+        "prefix": "tsx-sss",
+        "body": ["this.setState((state): State => ({}));"]
     },
     "React - JSX.Element with Router": {
         "description": "React - Class component with Router",
-        "prefix": "element-with-router",
+        "prefix": "tsx-element-with-router",
         "body": [
             "import React from 'react';",
             "import { RouteComponentProps, withRouter } from \"react-router-dom\";",
@@ -119,9 +115,9 @@
             "",
             "function ${1:ComponentName}(props: Props): JSX.Element {",
             "    return (",
-            "        <>",
+            "        <div className=\"\">",
             "            TODO",
-            "        </>",
+            "        </div>",
             "    );",
             "}",
             "",
@@ -132,13 +128,11 @@
     "React - SetState with callback": {
         "description": "Generates a setState function with a callback.",
         "prefix": "ssc",
-        "body": [
-            "this.setState({}, () => {});"
-        ]
+        "body": ["this.setState({}, () => {});"]
     },
     "Storybook - Basic skeleton": {
         "description": "Storybook - Basic skeleton",
-        "prefix": "story",
+        "prefix": "tsx-story",
         "body": [
             "import { Meta, Story } from \"@storybook/react/types-6-0\";",
             "import base, { filename } from \"paths.macro\";",
@@ -168,17 +162,11 @@
             "    text: \"Hello!\",",
             "};",
             "",
-            "export const helloWorld = Template.bind({});",
-            "",
-            "helloWorld.args = {",
-            "    text: \"Hello world!\",",
-            "};",
-            ""
         ]
     },
     "React - Class component": {
         "description": "React - Class component",
-        "prefix": "cc",
+        "prefix": "tsx-cc",
         "body": [
             "import React from \"react\";",
             "",
@@ -201,9 +189,9 @@
             "",
             "    render() {",
             "        return (",
-            "            <>",
+            "            <div className=\"\">",
             "                TODO",
-            "            </>",
+            "            </div>",
             "        );",
             "    }",
             "",
@@ -217,7 +205,7 @@
     },
     "React - FC component": {
         "description": "React - FC component",
-        "prefix": "fc",
+        "prefix": "tsx-fc",
         "body": [
             "import React from 'react';",
             "",
@@ -225,9 +213,9 @@
             "",
             "const ${1:ComponentName}: React.FC<Props> = (props) => {",
             "    return (",
-            "        <>",
+            "        <div className=\"\">",
             "            Hello!",
-            "        </>",
+            "        </div>",
             "    );",
             "}",
             "",
@@ -237,7 +225,7 @@
     },
     "React - JSX.Element": {
         "description": "React - JSX.Element",
-        "prefix": "element",
+        "prefix": "tsx-element",
         "body": [
             "import React from 'react';",
             "",
@@ -246,9 +234,9 @@
             "",
             "function ${1:ComponentName}(props: Props): JSX.Element {",
             "    return (",
-            "        <>",
+            "        <div className=\"\">",
             "            TODO",
-            "        </>",
+            "        </div>",
             "    );",
             "}",
             "",
@@ -258,10 +246,8 @@
     },
     "React - SetState": {
         "description": "Generates a setState function.",
-        "prefix": "ss",
-        "body": [
-            "this.setState({});"
-        ]
+        "prefix": "tsx-ss",
+        "body": ["this.setState({});"]
     },
     "Function": {
         "description": "Function",
