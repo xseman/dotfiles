@@ -75,12 +75,18 @@ These files should have the permission 644, otherwise they may not be usable.
     - `pdftotext` — text extraction
     - `pdfunite` — document merging tool
 
-### Monitors
+### X11
 
 - `arandr` — Another XRandR GUI
+- `grabc` — Grab the color of some pixel in X11
 - `light` — Backlight controllers
+- `lxappearance` — Standard theme switcher of LXDE
 - `mons` — POSIX Shell script to quickly manage monitors on X
+- `picom` — A lightweight compositor for X11
+- `wmctrl` — interact with a EWMH/NetWM compatible X Window Manager
 - `xbacklight` — Adjust backlight brightness using RandR extension
+- `xclip` — Command line interface to the X11 clipboard
+- `xdotool` — command-line X11 automation tool
 
 ### Audio
 
@@ -140,13 +146,9 @@ These files should have the permission 644, otherwise they may not be usable.
 - `blueman` — GTK+ Bluetooth Manager
 - `fd` — Fast and user friendly alternative to find
 - `font-manager` — Simple font manager
-- `grabc` — Grab the color of some pixel in X11
 - `lf` — Terminal file manager
-- `lxappearance` — Standard theme switcher of LXDE
 - `mktemp` — Create a temporary file or directory
-- `picom` — A lightweight compositor for X11
 - `powertop` — Measure, explain and minimise electrical power consumption
-- `xclip` — Command line interface to the X11 clipboard
 
 ### [Suckless](https://suckless.org/) software
 
