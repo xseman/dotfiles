@@ -102,30 +102,10 @@
     "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
 
-    "problems.autoReveal": false,
-
     "zenMode.centerLayout": true,
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
-
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "java.project.importOnFirstTimeStartup": "automatic",
-    "java.semanticHighlighting.enabled": true,
-    "java.configuration.runtimes": [
-        // {
-        //     "name": "JavaSE-1.8",
-        //     "path": "/home/filip/.jdks/adopt-openjdk-1.8.0_265",
-        // },
-        {
-            "name": "JavaSE-11",
-            "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64"
-        },
-        {
-            "name": "JavaSE-14",
-            "path": "/usr/lib/jvm/java-1.14.0-openjdk-amd64"
-        }
-    ],
 
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "double",
@@ -208,12 +188,12 @@
     "i18n-ally.displayLanguage": "sk",
     "i18n-ally.keystyle": "nested",
 
+    "svg.preview.mode": "svg",
+
+    "problems.autoReveal": false,
+
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-
-    "npm-intellisense.importQuotes": "\"",
-
-    "svg.preview.mode": "svg",
 
     "mdb.sendTelemetry": false,
     "redhat.telemetry.enabled": false,
