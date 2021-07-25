@@ -6,8 +6,7 @@ Your dotfiles are how you personalize your system. These are mine.
 
 ## Components
 
-There's a few special files in the
-[hierarchy](https://www.freedesktop.org/software/systemd/man/file-hierarchy.html).
+There's a few special files in the [hierarchy]
 
 **`~/.config/`**
 
@@ -33,8 +32,8 @@ directory.
 
 **`~/.fonts`**
 
-Install a font manually by downloading the appropriate `.ttf` or `.otf` files and
-placing them into:
+Install a font manually by downloading the appropriate `.ttf` or `.otf` files
+and placing them into:
 
 - `/usr/local/share/fonts` — system-wide
 - `~/.local/share/fonts` — user-specific
@@ -55,7 +54,39 @@ These files should have the permission 644, otherwise they may not be usable.
 - `firefox`
 - `links` — Lynx-like alternative character mode WWW browser
 
-### Office
+### X11
+
+- `arandr` — Another XRandR GUI
+- `grabc` — Grab the color of some pixel in X11
+- `light` — Backlight controllers
+- `lxappearance` — Standard theme switcher of LXDE
+- `mons` — POSIX Shell script to quickly manage monitors on X
+- `picom` — A lightweight compositor for X11
+- `wmctrl` — interact with a EWMH/NetWM compatible X Window Manager
+- `xbacklight` — Adjust backlight brightness using RandR extension
+- `xclip` — Command line interface to the X11 clipboard
+- `xdotool` — command-line X11 automation tool
+
+### Development
+
+- `alacritty` — GPU accelerated terminal emulator
+- `code` — Visual Studio Code, open-source editor made by Microsoft
+- `entr` — Run arbitrary commands when files change
+- `git-lfs` — Git Large File Storage (LFS)
+- `gitg` — GNOME GUI client to view git repositories
+- `insomnia` — API Client platform for GraphQL and REST
+- `minicom` — Friendly serial communication program
+- `mysql-workbench` — MySQL Workbench is a visual database design tool
+- `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
+- `objdump` — Display information from object files
+- `plantuml` — Intuitive language for defining diagrams
+- `postman` — API Client platform for GraphQL and REST
+- `scrcpy` — Display and control your Android device
+- `smu` — Simple markdown like syntax converter to HTML
+- `vim` — Simple text editor
+- `xxd` — Creates a hex dump of a given file or standard input
+
+### Documents
 
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
@@ -74,19 +105,6 @@ These files should have the permission 644, otherwise they may not be usable.
     - `pdftops` — PDF to PostScript (PS) converter
     - `pdftotext` — text extraction
     - `pdfunite` — document merging tool
-
-### X11
-
-- `arandr` — Another XRandR GUI
-- `grabc` — Grab the color of some pixel in X11
-- `light` — Backlight controllers
-- `lxappearance` — Standard theme switcher of LXDE
-- `mons` — POSIX Shell script to quickly manage monitors on X
-- `picom` — A lightweight compositor for X11
-- `wmctrl` — interact with a EWMH/NetWM compatible X Window Manager
-- `xbacklight` — Adjust backlight brightness using RandR extension
-- `xclip` — Command line interface to the X11 clipboard
-- `xdotool` — command-line X11 automation tool
 
 ### Audio
 
@@ -111,25 +129,6 @@ These files should have the permission 644, otherwise they may not be usable.
 - `sxiv` — Simple X Image Viewer
 - `vlc` — Media player, supports many audio and video compression
 
-### Development
-
-- `alacritty` — GPU accelerated terminal emulator
-- `code` — Visual Studio Code, open-source editor made by Microsoft
-- `entr` — Run arbitrary commands when files change
-- `git-lfs` — Git Large File Storage (LFS)
-- `gitg` — GNOME GUI client to view git repositories
-- `insomnia` — API Client platform for GraphQL and REST
-- `minicom` — Friendly serial communication program
-- `mysql-workbench` — MySQL Workbench is a visual database design tool
-- `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
-- `objdump` — Display information from object files
-- `plantuml` — Intuitive language for defining diagrams
-- `postman` — API Client platform for GraphQL and REST
-- `scrcpy` — Display and control your Android device
-- `smu` — Simple markdown like syntax converter to HTML
-- `vim` — Simple text editor
-- `xxd` — Creates a hex dump of a given file or standard input
-
 ### Networking
 
 - `network-manager-pptp` — PPTP support for NetworkManager
@@ -150,45 +149,9 @@ These files should have the permission 644, otherwise they may not be usable.
 - `mktemp` — Create a temporary file or directory
 - `powertop` — Measure, explain and minimise electrical power consumption
 
-### [Suckless](https://suckless.org/) software
+### My [suckless] setup
 
-> Many (open source) hackers are proud if they achieve large amounts of code,
-> because they believe the more lines of code they've written, the more progress
-> they have made. The more progress they have made, the more skilled they are.
-> This is simply a delusion.
-
-My favourite combination of suckless tools to make fast and productive
-environment.
-
-- `dmenu` — Dynamic menu for X
-- `dwm` — Dynamic window manager for X
-- `sent` — Simple plaintext presentation tool
-- `slock` — Simple X display locker
-- `st` — Simple terminal implementation for X
-- `surf` — Simple web browser based on `WebKit2/GTK+`
-
-#### Patches
-
-— [`dwm`](https://dwm.suckless.org/patches/)
-
-- alwayscenter
-- awesomebar
-- focusonnetactive
-- fullscreen
-- movestack
-- noborder
-- pertag
-- scratchpad
-- statusallmons
-- systray
-- warp
-
-— [`dmenu`](https://tools.suckless.org/dmenu/patches/)
-
-- border
-- center
-
-## Related links
+## Related
 
 - <http://dotshare.it/>
 - <https://github.com/alebcay/awesome-shell>
@@ -209,3 +172,6 @@ environment.
 - <https://suckless.org/rocks/>
 - <https://www.freedesktop.org/software/systemd/man/file-hierarchy.html>
 - <https://www.reddit.com/r/unixporn/>
+
+[suckless]: SUCKLESS.md
+[hierarchy]: <https://www.freedesktop.org/software/systemd/man/file-hierarchy.html>
