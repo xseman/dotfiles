@@ -43,11 +43,6 @@ These files should have the permission 644, otherwise they may not be usable.
 
 ## Software
 
-### Package managers
-
-- `apt`
-- `aptitude` — High-level interface to the package manager
-
 ### Browsers
 
 - `chromium`
@@ -86,6 +81,20 @@ These files should have the permission 644, otherwise they may not be usable.
 - `vim` — Simple text editor
 - `xxd` — Creates a hex dump of a given file or standard input
 
+### System information
+
+- `free` — Display amount of free and used memory in the system
+- `lspci` — List all PCI devices
+- `lsusb` — List USB devices
+- `ps` — Report a snapshot of the current processes.
+
+### System tray
+
+- `blueman-applet` — Blueman applet
+- `ibus` — Intelligent Input Bus for Linux/Unix
+- `nm-applet` — GTK‐based GUI applet to monitor network status and devices
+- `pasystray` — PulseAudio system tray
+
 ### Documents
 
 - `onlyoffice` — Office suite
@@ -112,13 +121,6 @@ These files should have the permission 644, otherwise they may not be usable.
 - `amixer` — Command-line control of the mixer for the ALSA soundcard driver
 - `audacity` — Audacity is open-source digital audio editor and recording application
 
-### System tray
-
-- `blueman-applet` — Blueman applet
-- `ibus` — Intelligent Input Bus for Linux/Unix
-- `nm-applet` — GTK‐based GUI applet to monitor network status and devices
-- `pasystray` — PulseAudio system tray
-
 ### Media
 
 - `calibre` — Suite of e-book
@@ -138,6 +140,15 @@ These files should have the permission 644, otherwise they may not be usable.
 
 - `simple-scan` — Simple scanning utility
 - `system-config-printer` — Graphical user interface for CUPS administration
+
+## Jobs
+
+- `kill` — Send a signal to a process
+- `nohup` — Run a command immune to hangups, with output to a non-tty
+- `jobs` — Print currently running jobs
+- `bg` — Send jobs to background
+- `fg` — Bring job to foreground
+- `disown` — Remove a process from the list of jobs
 
 ### Other
 
