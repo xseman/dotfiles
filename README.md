@@ -12,8 +12,8 @@ There's a few special files in the [hierarchy]
 
 Application configuration and state. pplications should fall back to defaults
 should their configuration or state in this directory be missing. If an
-application finds $XDG_CONFIG_HOME set, it should use the directory specified in
-it instead of this directory.
+application finds `$XDG_CONFIG_HOME` set, it should use the directory specified
+in it instead of this directory.
 
 **`~/.local/bin/`**
 
@@ -27,8 +27,8 @@ invocation from a shell; these should be placed in a subdirectory of
 Resources shared between multiple packages, such as fonts or artwork. Usually,
 the precise location and format of files stored below this directory is subject
 to specifications that ensure interoperability. If an application finds
-$XDG_DATA_HOME set, it should use the directory specified in it instead of this
-directory.
+`$XDG_DATA_HOME` set, it should use the directory specified in it instead of
+this directory.
 
 **`~/.fonts`**
 
@@ -120,6 +120,7 @@ These files should have the permission 644, otherwise they may not be usable.
 - `alsamixer` — Graphical mixer program for the Linux Sound Architecture
 - `amixer` — Command-line control of the mixer for the ALSA soundcard driver
 - `audacity` — Audacity is open-source digital audio editor and recording application
+- `pactl` — Control a running PulseAudio sound server
 
 ### Media
 
@@ -160,7 +161,9 @@ These files should have the permission 644, otherwise they may not be usable.
 - `mktemp` — Create a temporary file or directory
 - `powertop` — Measure, explain and minimise electrical power consumption
 
-### My [suckless] setup
+### Suckless
+
+My [suckless] setup
 
 ## Related
 
