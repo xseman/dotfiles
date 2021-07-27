@@ -37,5 +37,5 @@ environment.
 - warp
 
 [Suckless]: <https://suckless.org/>
-[dmenu]: <https://tools.suckless.org/dmenu/patches/>
-[dwm]: <https://dwm.suckless.org/patches/>
+[dmenu]: <https://tools.suckless.org/dmenu/>
+[dwm]: <https://dwm.suckless.org/>
