@@ -43,6 +43,12 @@ These files should have the permission 644, otherwise they may not be usable.
 
 ## Software
 
+I mainly run on Debian, mostly with open source tools.
+
+The philosophy of Unix is what i seeks to keep, minimalist and modular software
+development. Design for simplicity and increase complexity only where you need
+to.
+
 ### Browsers
 
 - `chromium`

@@ -5,7 +5,7 @@
 > they have made. The more progress they have made, the more skilled they are.
 > This is simply a delusion.
 
-My favourite combination of suckless tools to make fast and productive
+My favorite combination of suckless tools to create a fast and productive
 environment.
 
 - `dmenu` — Dynamic menu for X
