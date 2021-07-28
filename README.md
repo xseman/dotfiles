@@ -86,6 +86,7 @@ to.
 - `smu` — Simple markdown like syntax converter to HTML
 - `vim` — Simple text editor
 - `xxd` — Creates a hex dump of a given file or standard input
+- `shellcheck` — Shell script analysis tool
 
 ### System information
 
