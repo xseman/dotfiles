@@ -13,3 +13,6 @@ insert_final_newline = true
 
 [.git**config]
 indent_style = tab
+
+[*.yml]
+indent_size = 2
