@@ -1,9 +1,10 @@
 # JetBrains Mono - https://www.jetbrains.com/lp/mono/
 
+draw_bold_text_with_bright_colors: false
+live_config_reload: true
+
 env:
   WINIT_X11_SCALE_FACTOR: "1"
-
-draw_bold_text_with_bright_colors: false
 
 font:
   size: 9.0
@@ -64,8 +65,6 @@ schemes:
 
 colors: *iceberg_light
 
-# background_opacity: 0.8
-
 bell:
   animation: EaseOutExpo
   color: '0xFFFFFF'
@@ -83,11 +82,7 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: true
 
-live_config_reload: true
-
-# check keyboard signals
-# ----------------------
-#   cat -v
+# check keyboard signals `cat -v`
 
 keybindings:
   # Main
