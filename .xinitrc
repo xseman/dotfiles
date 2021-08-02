@@ -70,7 +70,7 @@ exec nm-applet &
 # Compositor
 exec picom &
 
-# Menu info
+# Status bar data loop
 while :; do
     BAT=""
     [[ -e /sys/class/power_supply/AC/online ]] && {
@@ -90,7 +90,7 @@ while :; do
 
     IP_WIFI=$(
         ip addr show dev wlp3s0 \
-        |grep "inet " \
+        | grep "inet " \
         | cut -d ' ' -f 6 \
         | cut -f 1 -d '/'
     )
