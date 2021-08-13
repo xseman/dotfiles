@@ -3,6 +3,8 @@
 # Run desktop environment. Executed by startx.
 # See startx(1) and xinit(1) for details.
 
+# TODO: remove all awk
+
 # Install
 # -------
 #
@@ -36,17 +38,17 @@ exec hsetroot -solid "#666666" &
 exec xset r rate 150 40 &
 
 # Trackpad T480, (tap click, natural scrolling)
-SYNAPTICS_ID="$(
+readonly SYNAPTICS_ID="$(
     xinput |
     grep Synaptics |
     awk '{print substr($5, 4)}'
 )"
-PROP_ID_NATURAL="$(
+readonly PROP_ID_NATURAL="$(
     xinput list-props ${SYNAPTICS_ID} |
     grep 'Natural Scrolling Enabled (' |
     awk -F"[()]" '{print $2}'
 )"
-PROP_ID_TAP="$(
+readonly PROP_ID_TAP="$(
     xinput list-props ${SYNAPTICS_ID} |
     grep 'Tapping Enabled (' |
     awk -F"[()]" '{print $2}'
