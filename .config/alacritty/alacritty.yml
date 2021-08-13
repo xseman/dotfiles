@@ -1,13 +1,13 @@
 # JetBrains Mono - https://www.jetbrains.com/lp/mono/
 
-draw_bold_text_with_bright_colors: false
 live_config_reload: true
+draw_bold_text_with_bright_colors: false
 
 env:
   WINIT_X11_SCALE_FACTOR: "1"
 
 font:
-  size: 9.0
+  size: 12.0
   use_thin_strokes: false
 
   normal:
