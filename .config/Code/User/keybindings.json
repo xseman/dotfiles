@@ -101,10 +101,6 @@
         "when": "terminalFocus"
     },
     {
-        "command": "-workbench.action.terminal.new",
-        "key": "ctrl+shift+`"
-    },
-    {
         "command": "-workbench.action.togglePanel",
         "key": "ctrl+j"
     },
@@ -124,57 +120,22 @@
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
-        "command": "-workbench.action.terminal.split",
-        "key": "ctrl+shift+5",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
         "command": "workbench.action.terminal.focusNextPane",
-        "key": "ctrl+pagedown",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "command": "-workbench.action.terminal.focusNextPane",
-        "key": "alt+down",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "command": "-workbench.action.terminal.focusNextPane",
-        "key": "alt+right",
+        "key": "ctrl+a right",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
         "command": "workbench.action.terminal.focusPreviousPane",
-        "key": "ctrl+pageup",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "command": "-workbench.action.terminal.focusPreviousPane",
-        "key": "alt+up",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "command": "-workbench.action.terminal.focusPreviousPane",
-        "key": "alt+left",
+        "key": "ctrl+a left",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
         "command": "workbench.action.terminal.resizePaneLeft",
-        "key": "ctrl+shift+pageup",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "command": "-workbench.action.terminal.resizePaneLeft",
         "key": "ctrl+shift+left",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
         "command": "workbench.action.terminal.resizePaneRight",
-        "key": "ctrl+shift+pagedown",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "command": "-workbench.action.terminal.resizePaneRight",
         "key": "ctrl+shift+right",
         "when": "terminalFocus && terminalProcessSupported"
     }
