@@ -4,7 +4,7 @@
 # See startx(1) and xinit(1) for details.
 
 # TODO: remove all awk
-
+#
 # Install
 # -------
 #
@@ -63,17 +63,17 @@ exec dunst -geom '300x5-25+35' &
 exec xautolock -time 30 -locker slock &
 
 # Systray
+exec start-pulseaudio-x11 &
 exec ibus-daemon -d -r &
 exec pasystray &
-exec start-pulseaudio-x11 &
-exec blueman-applet &
 exec nm-applet &
 
-# Compositor
-exec picom &
+get_local_ip() {
+    echo $(ip -4 addr show "${1}" | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+}
 
 # Status bar data loop
-while :; do
+while true; do
     BAT=""
     [[ -e /sys/class/power_supply/AC/online ]] && {
         CHARGING="$(head /sys/class/power_supply/AC/online)"
@@ -90,22 +90,12 @@ while :; do
     }
     BAR_INFO="${BAT} ~"
 
-    IP_WIFI=$(
-        ip addr show dev wlp3s0 \
-        | grep "inet " \
-        | cut -d ' ' -f 6 \
-        | cut -f 1 -d '/'
-    )
+    IP_WIFI=$(get_local_ip wlp3s0)
     [[ -n "$IP_WIFI" ]] && {
         BAR_INFO="${BAR_INFO}  ${IP_WIFI} ~"
     }
 
-    IP_ETH=$(
-        ip addr show dev enp0s31f6 \
-        | grep "inet " \
-        | cut -d ' ' -f 6 \
-        | cut -f 1 -d '/'
-    )
+    IP_ETH=$(get_local_ip enp0s31f6)
     [[ -n "$IP_ETH" ]] && {
         BAR_INFO="${BAR_INFO} 󰈀 ${IP_ETH} ~"
     }
@@ -117,4 +107,4 @@ while :; do
     sleep 30s
 done &
 
-exec dwm 2> ~/.dwm.log
+exec dbus-launch --exit-with-session /usr/local/bin/dwm 2> ~/.dwm.log
