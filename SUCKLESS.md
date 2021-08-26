@@ -17,11 +17,6 @@ environment.
 
 ## Patches
 
-**[dmenu]**
-
-- border
-- center
-
 **[dwm]**
 
 - alwayscenter
@@ -36,6 +31,20 @@ environment.
 - systray
 - warp
 
-[Suckless]: <https://suckless.org/>
-[dmenu]: <https://tools.suckless.org/dmenu/>
-[dwm]: <https://dwm.suckless.org/>
+**[st]**
+
+- blinking cursor
+- scrollback
+- xresources
+- anysize
+- clipboard
+
+**[dmenu]**
+
+- border
+- center
+
+[Suckless]: https://suckless.org/
+[dmenu]: https://tools.suckless.org/dmenu/
+[dwm]: https://dwm.suckless.org/
+[st]: https://st.suckless.org/

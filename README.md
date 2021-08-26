@@ -149,7 +149,7 @@ to.
 - `simple-scan` — Simple scanning utility
 - `system-config-printer` — Graphical user interface for CUPS administration
 
-## Jobs
+## Processes
 
 - `kill` — Send a signal to a process
 - `nohup` — Run a command immune to hangups, with output to a non-tty
@@ -167,12 +167,13 @@ to.
 - `lf` — Terminal file manager
 - `mktemp` — Create a temporary file or directory
 - `powertop` — Measure, explain and minimise electrical power consumption
+- `asciiquarium` — Asciiquarium is an aquarium/sea animation in ASCII art
 
 ### Suckless
 
 My [suckless] setup
 
-## Related
+## Other resources
 
 - <http://dotshare.it/>
 - <https://github.com/alebcay/awesome-shell>
