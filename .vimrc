@@ -1,9 +1,11 @@
+syntax on
+
 set clipboard=unnamed
-set ruler
 set number
+set ruler
 set showmatch
 set expandtab
-set ruler
+set noswapfile
 
 set colorcolumn=80,81
 set textwidth=80
@@ -13,5 +15,3 @@ set expandtab ts=4 sw=4 ai
 :nnoremap k j
 
 highlight ColorColumn ctermbg=grey
-
-syntax on
