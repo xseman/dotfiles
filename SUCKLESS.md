@@ -14,6 +14,8 @@ environment.
 - `slock` — Simple X display locker
 - `st` — Simple terminal implementation for X
 - `surf` — Simple web browser based on `WebKit2/GTK+`
+- `slstatus` — Status monitor for window managers that use WM_NAME or stdin to
+  fill the status bar
 
 ## Patches
 
@@ -33,18 +35,19 @@ environment.
 
 **[st]**
 
+- anysize
 - blinking cursor
+- clipboard
 - scrollback
 - xresources
-- anysize
-- clipboard
 
 **[dmenu]**
 
 - border
 - center
 
-[Suckless]: https://suckless.org/
+[suckless]: https://suckless.org/
 [dmenu]: https://tools.suckless.org/dmenu/
 [dwm]: https://dwm.suckless.org/
 [st]: https://st.suckless.org/
+[slstatus]: https://tools.suckless.org/slstatus/

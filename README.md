@@ -53,6 +53,7 @@ to.
 
 - `chromium`
 - `firefox`
+- `lynx`
 - `links` — Lynx-like alternative character mode WWW browser
 
 ### X11
@@ -78,15 +79,16 @@ to.
 - `insomnia` — API Client platform for GraphQL and REST
 - `minicom` — Friendly serial communication program
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
-- `netcat` — Networking utility for reading from and writing to network connections using TCP or UDP
+- `netcat` — Networking utility for reading from and writing to network
+  connections using TCP or UDP
 - `objdump` — Display information from object files
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
+- `shellcheck` — Shell script analysis tool
 - `smu` — Simple markdown like syntax converter to HTML
 - `vim` — Simple text editor
 - `xxd` — Creates a hex dump of a given file or standard input
-- `shellcheck` — Shell script analysis tool
 
 ### System information
 
@@ -109,31 +111,33 @@ to.
 - `pdftk` — A handy tool for manipulating PDF
 - `troff` — Processor of the groff text formatting system
 - `poppler-utils` — Manipulation tools for pdf
-    - `pdfdetach` — lists or extracts embedded files (attachments)
-    - `pdffonts` — font analyzer
-    - `pdfimages` — image extractor
-    - `pdfinfo` — document information
-    - `pdfseparate` — page extraction tool
-    - `pdfsig` — verifies digital signatures
-    - `pdftocairo` — PDF to PNG/JPEG/PDF/PS/EPS/SVG converter using Cairo
-    - `pdftohtml` — PDF to HTML converter
-    - `pdftoppm` — PDF to PPM/PNG/JPEG image converter
-    - `pdftops` — PDF to PostScript (PS) converter
-    - `pdftotext` — text extraction
-    - `pdfunite` — document merging tool
+  - `pdfdetach` — lists or extracts embedded files (attachments)
+  - `pdffonts` — font analyzer
+  - `pdfimages` — image extractor
+  - `pdfinfo` — document information
+  - `pdfseparate` — page extraction tool
+  - `pdfsig` — verifies digital signatures
+  - `pdftocairo` — PDF to PNG/JPEG/PDF/PS/EPS/SVG converter using Cairo
+  - `pdftohtml` — PDF to HTML converter
+  - `pdftoppm` — PDF to PPM/PNG/JPEG image converter
+  - `pdftops` — PDF to PostScript (PS) converter
+  - `pdftotext` — text extraction
+  - `pdfunite` — document merging tool
 
 ### Audio
 
 - `alsamixer` — Graphical mixer program for the Linux Sound Architecture
 - `amixer` — Command-line control of the mixer for the ALSA soundcard driver
-- `audacity` — Audacity is open-source digital audio editor and recording application
+- `audacity` — Audacity is open-source digital audio editor and recording
+  application
 - `pactl` — Control a running PulseAudio sound server
 
 ### Media
 
 - `calibre` — Suite of e-book
 - `gimp` — Raster graphics editor
-- `imagemagick` — Suite for the creation, modification and display of bitmap images
+- `imagemagick` — Suite for the creation, modification and display of bitmap
+  images
 - `inkscape` — Vector graphics editor
 - `mpv` — Media player software based on MPlayer, mplayer2 and FFmpeg
 - `sxiv` — Simple X Image Viewer
@@ -160,14 +164,15 @@ to.
 
 ### Other
 
-- `apg` — Generates several random passwords
+- `asciiquarium` — Asciiquarium is an aquarium/sea animation in ASCII art
 - `blueman` — GTK+ Bluetooth Manager
 - `fd` — Fast and user friendly alternative to find
 - `font-manager` — Simple font manager
 - `lf` — Terminal file manager
 - `mktemp` — Create a temporary file or directory
+- `pass` — Stores, retrieves, generates, and synchronizes passwords securely
 - `powertop` — Measure, explain and minimise electrical power consumption
-- `asciiquarium` — Asciiquarium is an aquarium/sea animation in ASCII art
+- `smu` — Simple interpreter for a simplified markdown dialect.
 
 ### Suckless
 
