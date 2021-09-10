@@ -2,10 +2,6 @@
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingDelete": "auto",
     "editor.autoClosingQuotes": "languageDefined",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-        // "source.fixAll.markdownlint": true
-    },
     "editor.codeLens": true,
     "editor.columnSelection": false,
     "editor.cursorBlinking": "solid",
@@ -13,6 +9,7 @@
     "editor.detectIndentation": true,
     "editor.folding": true,
     "editor.foldingHighlight": false,
+    "editor.foldingImportsByDefault": false,
     "editor.fontFamily": "'JetBrains Mono', 'Input Mono', 'FontAwesome', 'Material Design Icons Desktop'",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
@@ -26,14 +23,13 @@
     "editor.minimap.renderCharacters": false,
     "editor.renderIndentGuides": true,
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [80],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
+    "editor.wordWrap": "off",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -46,7 +42,10 @@
             }
         ]
     },
-    "editor.wordWrap": "off",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+        // "source.fixAll.markdownlint": true
+    },
 
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Simple light",
@@ -93,7 +92,6 @@
     "terminal.external.linuxExec": "/usr/bin/alacritty",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.experimentalLinkProvider": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
@@ -148,7 +146,7 @@
         "default": true,
         "spaces": true,
         "line-length": true,
-        "MD007": { "indent": 4 },
+        "MD007": { "indent": 2 },
         "MD033": false,
         "MD036": false,
     },
@@ -171,7 +169,6 @@
 
     "diffEditor.renderSideBySide": true,
     "diffEditor.maxComputationTime": 0,
-    "diffEditor.ignoreTrimWhitespace": false,
 
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
@@ -223,13 +220,6 @@
         "editor.formatOnSave": true,
         "editor.tabSize": 4
     },
-    "[java]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4
-        // "editor.codeActionsOnSave": {
-        //     "source.organizeImports": true
-        // },
-    },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
@@ -239,10 +229,9 @@
         "editor.formatOnSave": false
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
-        // "editor.defaultFormatter": "vscode.typescript-language-features",
-        // "editor.formatOnSave": true,
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": false,
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -252,42 +241,51 @@
     },
     "[less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.rulers": [80],
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.rulers": [80],
     },
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.rulers": [80],
     },
     "[handlebars]": {
         "editor.formatOnSave": false,
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.rulers": [80],
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.rulers": [80],
     },
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml",
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.rulers": [80],
     },
     "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.formatOnSave": true,
-        "editor.wordWrap": "off"
+        "editor.wordWrap": "off",
+        "editor.rulers": [80],
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.rulers": [80],
     },
     "[yml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.rulers": [80],
     },
     "[tex]": {
         "editor.tabSize": 4
@@ -295,11 +293,17 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.rulers": [80],
     },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.rulers": [80],
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "raynigon.nginx-formatter",
+        "editor.rulers": [80],
     },
 }
