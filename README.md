@@ -77,6 +77,7 @@ to.
 - `git-lfs` — Git Large File Storage (LFS)
 - `gitg` — GNOME GUI client to view git repositories
 - `insomnia` — API Client platform for GraphQL and REST
+- `lnav` — Log file viewer based on ncurses-based
 - `minicom` — Friendly serial communication program
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
 - `netcat` — Networking utility for reading from and writing to network
@@ -104,11 +105,13 @@ to.
 - `nm-applet` — GTK‐based GUI applet to monitor network status and devices
 - `pasystray` — PulseAudio system tray
 
-### Documents
+### Documents processing
 
+- `libreoffice` — LibreOffice office suite
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
 - `pdftk` — A handy tool for manipulating PDF
+- `smu` — Simple interpreter for a simplified markdown dialect
 - `troff` — Processor of the groff text formatting system
 - `poppler-utils` — Manipulation tools for pdf
   - `pdfdetach` — lists or extracts embedded files (attachments)
@@ -172,7 +175,6 @@ to.
 - `mktemp` — Create a temporary file or directory
 - `pass` — Stores, retrieves, generates, and synchronizes passwords securely
 - `powertop` — Measure, explain and minimise electrical power consumption
-- `smu` — Simple interpreter for a simplified markdown dialect.
 
 ### Suckless
 

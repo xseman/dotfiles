@@ -1,4 +1,4 @@
-# [Suckless] software
+# Suckless software
 
 > Many (open source) hackers are proud if they achieve large amounts of code,
 > because they believe the more lines of code they've written, the more progress
