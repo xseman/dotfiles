@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [.git**config]
-indent_style = tab
+indent_style = space
 
-[*.yml]
+[*.md]
 indent_size = 2
