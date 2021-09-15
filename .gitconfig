@@ -1,14 +1,27 @@
-[include]
-    path = .gituser-default
+# defaults
+[user]
+    name = "Filip Seman"
+    email = "seman.filip@gmail.com"
 
-# override defaults based on working path
-# useful for multiple projects with different accounts
+# Override defaults based on working path
+# Useful for multiple projects
 #
 # [includeIf "gitdir:~/project_name/"]
-# 	path = .gitconfig_project_name
+# path = .gitconfig_project_name
+#
+# .gitconfig_project_name
+# [user]
+#    name = "foo bar"
+#    email = "foo@bar.com"
+
+[url "git@gitlab.com:"]
+    insteadOf = https://gitlab.com/
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
 
 [core]
-    editor = nvim
+    editor = vim
     autocrlf = input
 
 [alias]
