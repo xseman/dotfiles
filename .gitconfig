@@ -1,7 +1,7 @@
 # defaults
 [user]
     name = "Filip Seman"
-    email = "seman.filip@gmail.com"
+    email = "filip.seman@protonmail.com"
 
 # Override defaults based on working path
 # Useful for multiple projects
@@ -16,7 +16,6 @@
 
 [url "git@gitlab.com:"]
     insteadOf = https://gitlab.com/
-
 [url "git@github.com:"]
     insteadOf = https://github.com/
 
