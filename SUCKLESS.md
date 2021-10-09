@@ -13,6 +13,7 @@ environment.
 - `sent` — Simple plaintext presentation tool
 - `slock` — Simple X display locker
 - `st` — Simple terminal implementation for X
+- `scroll` — This program provides a scroll back buffer for a terminal like st.
 - `surf` — Simple web browser based on `WebKit2/GTK+`
 - `slstatus` — Status monitor for window managers that use WM_NAME or stdin to
   fill the status bar
@@ -36,9 +37,9 @@ environment.
 **[st]**
 
 - anysize
+- universcroll
 - blinking cursor
 - clipboard
-- scrollback
 - xresources
 
 **[dmenu]**

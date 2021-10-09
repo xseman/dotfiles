@@ -90,6 +90,8 @@ to.
 - `smu` — Simple markdown like syntax converter to HTML
 - `vim` — Simple text editor
 - `xxd` — Creates a hex dump of a given file or standard input
+- `dbeaver` — SQL client software application and a database administration tool
+- `datagrip` — Multi-engine database environment client.
 
 ### System information
 
