@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# youtube video
+# yt <search> <size_of_list>
+
+for cmd in {mpv,youtube-dl}; do
+    if [ ! "$(command -v ${cmd})" ]; then
+        echo >&2 "This script requires '${cmd}' to be installed."
+        exit 1
+    fi
+done
+
+mpv \
+    --ytdl-format='bestvideo[height<=?1080]+bestaudio/best' \
+    --term-playing-msg='Title: ${media-title}' \
+    ytdl://ytsearch${2}:"${1}"
