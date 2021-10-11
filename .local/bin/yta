@@ -1,24 +1,16 @@
 #!/bin/bash
-
-# CLI music player search via mpv + youtube-dl
-# ============================================
-
-# Usage
-# -----
-# yta <sizoe_of_search_results> <search_term>
 #
-# play first 10 metallica songs (play next result, use playlist-next keybind)
-#   yta 10 metalica
+# youtube audio
+# yta <search> <size_of_list>
 
-
-# Validate commands
 for cmd in {mpv,youtube-dl}; do
-  if ! command -v ${cmd} > /dev/null; then
-    >&2 echo "This script requires '${cmd}' to be installed."
-    exit 1
-  fi
+    if [ ! "$(command -v ${cmd})" ]; then
+        echo >&2 "This script requires '${cmd}' to be installed."
+        exit 1
+    fi
 done
 
-# To find and stream audio from terminal
-
-mpv --ytdl-format=bestaudio ytdl://ytsearch$1:"$2"
+mpv \
+    --ytdl-format='bestaudio/best' \
+    --term-playing-msg='Title: ${media-title}' \
+    ytdl://ytsearch${2}:"${1}"
