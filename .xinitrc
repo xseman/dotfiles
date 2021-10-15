@@ -4,10 +4,10 @@
 # See startx(1) and xinit(1) for details.
 
 [[ -f ~/.Xresources ]] && {
-    xrdb -merge -I${HOME} ~/.Xresources
+    xrdb -merge -I $HOME/.Xresources
 }
 
-# Thinkpad T480 trackpad config
+# Thinkpad T480 Trackpoint config
 xinput set-prop "Synaptics TM3276-022" "libinput Natural Scrolling Enabled" 1
 xinput set-prop "Synaptics TM3276-022" "libinput Tapping Enabled" 1
 
@@ -16,7 +16,6 @@ xsetroot -solid "#666666"
 
 # Faster key holding / pressing
 xset r rate 150 40
-
 xset s off
 xset dpms 0 0 0
 xset b off
