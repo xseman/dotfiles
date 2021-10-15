@@ -1,0 +1,18 @@
+# Aliases
+alias '??'=google
+alias '?'=duck
+alias df='df -h'
+alias egrep='egrep -i --colour=auto'
+alias fgrep='fgrep -i --colour=auto'
+alias free='free -h'
+alias grep='grep -i --colour=auto'
+alias l='ls -Fhla --group-directories-first --color=auto'
+alias ll='ls -Flh --group-directories-first --color=auto'
+alias temp='cd $(mktemp -d)'
+alias xclip="xclip -selection clipboard"
+
+# if in a terminal
+if [ -t 0 ]; then
+    # other users shouldn't be able to message by default
+    mesg n
+fi

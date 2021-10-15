@@ -1,0 +1,35 @@
+# Path settings
+pathprepend /bin PATH
+pathprepend /usr/local/bin PATH
+pathprepend /usr/local/go/bin PATH
+pathprepend /usr/sbin PATH
+pathprepend /usr/sbin PATH
+pathprepend ~/.deno/bin PATH
+pathprepend ~/.local/bin PATH
+pathprepend ~/go/bin
+
+# The current directory should never be in $PATH
+pathremove . PATH
+pathremove "" PATH
+
+# Language
+export LANG=en_US.UTF-8
+export LC_ALL=$LANG
+export LC_COLLATE=$LANG
+export LC_CTYPE=$LANG
+export LC_MESSAGES=$LANG
+export LC_MONETARY=$LANG
+export LC_NUMERIC=$LANG
+export LC_TIME=$LANG
+
+# Preferred programs
+export PAGER=less
+export EDITOR=vim
+export VISUAL=code
+export VEDITOR=code
+
+# Terminal
+export TERM=xterm-256color
+
+# IntelliJ startup fix
+export _JAVA_AWT_WM_NONREPARENTING=1

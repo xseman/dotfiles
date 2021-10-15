@@ -1,0 +1,10 @@
+. ~/.shell/interactive
+
+bind 'TAB:menu-complete'
+
+# Enter Fish shell
+# Tips: https://wiki.archlinux.org/title/fish
+
+if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]; then
+	exec fish
+fi
