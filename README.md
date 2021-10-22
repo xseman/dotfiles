@@ -186,13 +186,18 @@ My [suckless] setup
 
 - <http://dotshare.it/>
 - <https://github.com/alebcay/awesome-shell>
+- <https://github.com/caarlos0/dotfiles>
 - <https://github.com/dikiaap/dotfiles>
+- <https://github.com/holman/dotfiles>
 - <https://github.com/inputsh/awesome-linux>
 - <https://github.com/jlevy/the-art-of-command-line>
 - <https://github.com/johnjago/dotfiles>
 - <https://github.com/kaihendry/dotfiles>
 - <https://github.com/LukeSmithxyz/voidrice>
 - <https://github.com/luong-komorebi/Awesome-Linux-Software>
+- <https://github.com/masasam/dotfiles>
+- <https://github.com/mathiasbynens/dotfiles>
+- <https://github.com/mitchweaver/dots>
 - <https://github.com/mitchweaver/suckless>
 - <https://github.com/rwxrob/dotfiles>
 - <https://github.com/saleone/configs>
