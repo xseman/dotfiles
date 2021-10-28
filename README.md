@@ -92,6 +92,8 @@ to.
 - `xxd` — Creates a hex dump of a given file or standard input
 - `dbeaver` — SQL client software application and a database administration tool
 - `datagrip` — Multi-engine database environment client.
+- `virtualbox` — General-purpose full virtualizer for x86 hardware, targeted at
+  server, desktop and embedded use.
 
 ### System information
 
@@ -114,6 +116,7 @@ to.
 - `pandoc` — Universal markup converter
 - `pdftk` — A handy tool for manipulating PDF
 - `smu` — Simple interpreter for a simplified markdown dialect
+- `groff` — Front-end for the groff document formatting system
 - `troff` — Processor of the groff text formatting system
 - `poppler-utils` — Manipulation tools for pdf
   - `pdfdetach` — lists or extracts embedded files (attachments)
@@ -169,6 +172,8 @@ to.
 
 ### Other
 
+- `keepasxc` — Community fork of KeePassX. A great feature is storing SSH keys
+  and injection into a running ssh-agent.
 - `asciiquarium` — Asciiquarium is an aquarium/sea animation in ASCII art
 - `blueman` — GTK+ Bluetooth Manager
 - `fd` — Fast and user friendly alternative to find
