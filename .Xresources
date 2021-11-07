@@ -1,5 +1,13 @@
-Xcursor.size: 12
-Xcursor.theme: Adwaita
+Xcursor.size:   12
+Xcursor.theme:  Adwaita
+
+! dark setup
+! *.foreground:   #FFFFFF
+! *.background:   #000000
+
+! light setup
+*.foreground:   #FFFFFF
+*.background:   #000000
 
 ! black
 *.color0:       #000000
