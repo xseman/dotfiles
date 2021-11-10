@@ -21,7 +21,6 @@
     "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
-    "editor.renderIndentGuides": true,
     "editor.renderWhitespace": "selection",
     "editor.rulers": [80],
     "editor.semanticHighlighting.enabled": true,
@@ -70,6 +69,9 @@
     "window.title": "${rootName}",
     "window.titleBarStyle": "native",
     "window.titleSeparator": " - ",
+    "window.zoomLevel": 0,
+
+    "diffEditor.ignoreTrimWhitespace": false,
 
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
@@ -89,16 +91,18 @@
     },
 
     /** CTRL+SHIFT+C */
-    "terminal.external.linuxExec": "/usr/bin/alacritty",
+    // "terminal.external.linuxExec": "/usr/bin/alacritty",
+    "terminal.external.linuxExec": "/usr/local/bin/st",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.experimentalLinkProvider": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.showExitAlert": false,
     "terminal.integrated.tabs.enabled": false,
 
-    "debug.console.wordWrap": false,
     "debug.console.fontSize": 11,
+    "debug.console.wordWrap": false,
 
     "zenMode.centerLayout": true,
     "zenMode.fullScreen": false,
@@ -123,8 +127,8 @@
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
     "prettier.singleQuote": false,
-    "prettier.useTabs": false,
     "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
 
     "eslint.codeActionsOnSave.mode": "all",
     "eslint.alwaysShowStatus": true,
@@ -138,9 +142,9 @@
         "typescriptreact",
     ],
 
-    "scss.lint.emptyRules": "ignore",
-    "less.lint.emptyRules": "ignore",
     "css.lint.emptyRules": "ignore",
+    "less.lint.emptyRules": "ignore",
+    "scss.lint.emptyRules": "ignore",
 
     "markdownlint.config": {
         "default": true,
@@ -158,17 +162,17 @@
     },
 
     "git.confirmSync": false,
+    "git.openDiffOnClick": true,
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
-    "git.openDiffOnClick": true,
 
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.views.repositories.files.layout": "tree",
 
-    "diffEditor.renderSideBySide": true,
     "diffEditor.maxComputationTime": 0,
+    "diffEditor.renderSideBySide": true,
 
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
@@ -189,10 +193,10 @@
 
     "problems.autoReveal": false,
 
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
 
     "mdb.sendTelemetry": false,
+
     "redhat.telemetry.enabled": false,
 
     "[shellscript]": {
@@ -229,13 +233,16 @@
         "editor.formatOnSave": false
     },
     "[typescript]": {
-        // "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.formatOnSave": false,
+
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.rulers": [120],
+
         // "editor.defaultFormatter": "vscode.typescript-language-features",
         // "editor.formatOnSave": true,
     },
@@ -270,7 +277,7 @@
         "editor.rulers": [80],
     },
     "[markdown]": {
-        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.wordWrap": "off",
         "editor.rulers": [80],
