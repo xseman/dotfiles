@@ -72,7 +72,7 @@ to.
 ### Development
 
 - `alacritty` — GPU accelerated terminal emulator
-- `code` — Visual Studio Code, open-source editor made by Microsoft
+- `vscode` — Visual Studio Code, open-source editor made by Microsoft
 - `entr` — Run arbitrary commands when files change
 - `git-lfs` — Git Large File Storage (LFS)
 - `gitg` — GNOME GUI client to view git repositories
@@ -92,8 +92,14 @@ to.
 - `xxd` — Creates a hex dump of a given file or standard input
 - `dbeaver` — SQL client software application and a database administration tool
 - `datagrip` — Multi-engine database environment client.
-- `virtualbox` — General-purpose full virtualizer for x86 hardware, targeted at
-  server, desktop and embedded use.
+- `virtualbox-ose` — General-purpose full virtualizer for x86 hardware, targeted
+  at server, desktop and embedded use.
+- `jq` — Command-line JSON processor
+- `xq` — Command-line XML processor - jq wrapper for XML documents
+- `yq` — Command-line YAML processor - jq wrapper for YAML documents
+- `fq` — jq for binary formats. Decoder for inspecting binary data
+- `patch` — Apply a diff file to an original
+
 
 ### System information
 
@@ -215,4 +221,4 @@ My [suckless] setup
 - <https://www.reddit.com/r/unixporn/>
 
 [suckless]: SUCKLESS.md
-[hierarchy]: <https://www.freedesktop.org/software/systemd/man/file-hierarchy.html>
+[hierarchy]: https://www.freedesktop.org/software/systemd/man/file-hierarchy.html
