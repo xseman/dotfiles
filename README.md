@@ -117,6 +117,7 @@ to.
 
 ### Documents processing
 
+- `pdfarranger` — PDF Merging, Rearranging, Splitting, and Cropping
 - `libreoffice` — LibreOffice office suite
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
