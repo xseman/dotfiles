@@ -24,6 +24,7 @@ environment.
 
 - alwayscenter
 - awesomebar
+- focusmonmouse
 - focusonnetactive
 - fullscreen
 - movestack
@@ -32,6 +33,7 @@ environment.
 - scratchpad
 - statusallmons
 - systray
+- tagothermonitor
 - warp
 
 **[st]**
