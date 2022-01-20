@@ -68,6 +68,7 @@ to.
 - `xbacklight` — Adjust backlight brightness using RandR extension
 - `xclip` — Command line interface to the X11 clipboard
 - `xdotool` — command-line X11 automation tool
+- `xwininfo` — window information utility for X
 
 ### Development
 
