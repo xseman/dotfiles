@@ -22,13 +22,8 @@
         "when": "terminalFocus"
     },
     {
-        "command": "-typescriptHero.imports.organize",
-        "key": "ctrl+alt+o",
-        "when": "editorTextFocus"
-    },
-    {
         "command": "typescriptHero.imports.organize",
-        "key": "shift+cmd+o",
+        "key": "ctrl+alt+o",
         "when": "editorTextFocus"
     },
     {
@@ -45,11 +40,6 @@
         "command": "workbench.action.toggleMaximizedPanel",
         "key": "ctrl+shift+up",
         "when": "!editorTextFocus"
-    },
-    {
-        "command": "-workbench.action.terminal.scrollDown",
-        "key": "ctrl+shift+down",
-        "when": "terminalFocus"
     },
     {
         "command": "workbench.action.closePanel",
@@ -121,12 +111,12 @@
     },
     {
         "command": "workbench.action.terminal.focusNextPane",
-        "key": "ctrl+a right",
+        "key": "ctrl+b right",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
         "command": "workbench.action.terminal.focusPreviousPane",
-        "key": "ctrl+a left",
+        "key": "ctrl+b left",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
@@ -137,6 +127,16 @@
     {
         "command": "workbench.action.terminal.resizePaneRight",
         "key": "ctrl+shift+right",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.terminal.focusNext",
+        "key": "shift+right",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.terminal.focusPrevious",
+        "key": "shift+left",
         "when": "terminalFocus && terminalProcessSupported"
     }
 ]
