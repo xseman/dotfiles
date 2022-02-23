@@ -10,4 +10,3 @@ export BASH_ENV=~/.bash/env
 . ~/.shell/env_functions
 
 umask 0077
-

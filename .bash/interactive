@@ -2,9 +2,23 @@
 
 bind 'TAB:menu-complete'
 
-# Enter Fish shell
-# Tips: https://wiki.archlinux.org/title/fish
+# Aliases
+alias ??="google"
+alias ?="duck"
+alias df="df -h"
+alias egrep="egrep -i --colour=auto"
+alias fgrep="fgrep -i --colour=auto"
+alias free="free -h"
+alias temp="cd $(mktemp -d)"
+alias xclip="xclip -selection clipboard"
+alias grep="grep -sI --color=auto"
+alias ll="ls -Flh --group-directories-first --color"
+alias l="ls -Fhla --group-directories-first --color"
+alias ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color"
 
-if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]; then
+# fish replaces the Bash process, exiting fish will also exit the terminal
+# Tips: https://wiki.archlinux.org/title/fish
+#
+if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} ]]; then
 	exec fish
 fi
