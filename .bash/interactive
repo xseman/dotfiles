@@ -3,13 +3,13 @@
 bind 'TAB:menu-complete'
 
 # Aliases
-alias ??="google"
-alias ?="duck"
+alias '??'="google"
+alias '?'="duck"
 alias df="df -h"
 alias egrep="egrep -i --colour=auto"
 alias fgrep="fgrep -i --colour=auto"
 alias free="free -h"
-alias temp="cd $(mktemp -d)"
+alias temp='cd $(mktemp -d)'
 alias xclip="xclip -selection clipboard"
 alias grep="grep -sI --color=auto"
 alias ll="ls -Flh --group-directories-first --color"
