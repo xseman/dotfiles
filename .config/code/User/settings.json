@@ -10,9 +10,9 @@
     "editor.folding": true,
     "editor.foldingHighlight": false,
     "editor.foldingImportsByDefault": false,
-    "editor.fontFamily": "'JetBrains mono', 'Iosevka Term Extended'",
+    "editor.fontFamily": "JetBrains mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.formatOnSave": false,
     "editor.glyphMargin": false,
     "editor.insertSpaces": true,
@@ -49,16 +49,15 @@
     "workbench.sideBar.location": "left",
     "workbench.startupEditor": "none",
     "workbench.statusBar.visible": true,
-    "workbench.tree.indent": 20,
+    "workbench.tree.indent": 15,
     "workbench.tree.renderIndentGuides": "always",
 
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
-    "window.menuBarVisibility": "hidden",
     "window.title": "${rootName}",
+    "window.menuBarVisibility": "hidden",
     "window.titleBarStyle": "native",
     "window.titleSeparator": " - ",
-    "window.zoomLevel": 0,
 
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
@@ -88,14 +87,6 @@
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.tabs.enabled": false,
 
-    "debug.console.fontSize": 11,
-    "debug.console.wordWrap": false,
-
-    "zenMode.centerLayout": true,
-    "zenMode.fullScreen": false,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.hideTabs": false,
-
     "javascript.format.semicolons": "insert",
     "javascript.preferences.jsxAttributeCompletionStyle": "auto",
     "javascript.preferences.quoteStyle": "double",
@@ -112,6 +103,8 @@
     "typescriptHero.imports.grouping": ["Plains", "Modules", "Workspace"],
     "typescriptHero.imports.multiLineWrapThreshold": 120,
     "typescriptHero.imports.organizeOnSave": false,
+
+    "go.formatTool": "goimports",
 
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
@@ -143,6 +136,7 @@
         "MD036": false,
     },
 
+    "emmet.showSuggestionsAsSnippets": true,
     "emmet.excludeLanguages": ["markdown", "typescript"],
     "emmet.includeLanguages": {
         "typescript": "typescriptreact",
@@ -153,10 +147,6 @@
     "git.openDiffOnClick": true,
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
-
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.statusBar.enabled": false,
     "gitlens.views.repositories.files.layout": "tree",
 
     "diffEditor.maxComputationTime": 0,
@@ -177,11 +167,14 @@
     "i18n-ally.displayLanguage": "sk",
     "i18n-ally.keystyle": "nested",
 
+    "debug.console.fontSize": 11,
+    "debug.console.wordWrap": false,
+
     "svg.preview.mode": "svg",
     "problems.autoReveal": false,
     "telemetry.telemetryLevel": "off",
-    "mdb.sendTelemetry": false,
     "redhat.telemetry.enabled": false,
+    "mdb.sendTelemetry": false,
 
     "[plaintext]": {
         "editor.rulers": [80],
@@ -242,7 +235,7 @@
     "[markdown]": {
         "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.renderWhitespace": "all",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.wordWrap": "off",
         "editor.rulers": [80],
 
