@@ -138,5 +138,10 @@
         "command": "workbench.action.terminal.focusPrevious",
         "key": "shift+left",
         "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+        "key": "ctrl+tab",
+        "when": "!inEditorsPicker"
     }
 ]
