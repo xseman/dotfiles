@@ -3,8 +3,8 @@
 # Run desktop environment, executed by startx.
 # See startx(1) and xinit(1) for details.
 
-[[ -f ~/.Xresources ]] && {
-    xrdb -merge -I $HOME/.Xresources
+[ -f ~/.Xresources ] && {
+    xrdb -merge -I "${HOME}"/.Xresources
 }
 
 # Thinkpad T480 Trackpoint config
@@ -23,7 +23,7 @@ xset b off
 # Notification daemon
 dunst -geom '300x5-25+35' &
 
-# Start xautolock with slock
+# Autolock screen with Suckless lock
 xautolock -time 30 -locker slock &
 
 # Systray
@@ -35,4 +35,5 @@ nm-applet &
 # Suckless window status
 slstatus &
 
+# Suckless window manager
 exec dbus-launch --exit-with-session dwm 2>~/.dwm.log
