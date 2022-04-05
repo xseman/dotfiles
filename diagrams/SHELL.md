@@ -18,5 +18,5 @@ Example of `sh` and `bash` startup, inspired by articles image.
 - <https://heptapod.host/flowblok/shell-startup>
 - <https://wiki.archlinux.org/title/fish#Setting_fish_as_default_shell>
 
-[diagram]: ./shell_startup.png
+[diagram]: ./shell_startup.svg
 [article]: https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html
