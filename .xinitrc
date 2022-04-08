@@ -16,9 +16,6 @@ xsetroot -solid "#666666"
 
 # Faster key holding / pressing
 xset r rate 150 40
-xset s off
-xset dpms 0 0 0
-xset b off
 
 # Notification daemon
 dunst -geom '300x5-25+35' &
@@ -33,7 +30,7 @@ pasystray &
 nm-applet &
 
 # Suckless window status
-slstatus &
+~/.local/bin/slstatus &
 
 # Suckless window manager
 exec dbus-launch --exit-with-session dwm 2>~/.dwm.log
