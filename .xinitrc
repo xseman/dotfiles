@@ -29,8 +29,13 @@ ibus-daemon -d -r &
 pasystray &
 nm-applet &
 
+# Lightweight compositor
+picom --vsync &
+
 # Suckless window status
 ~/.local/bin/slstatus &
 
 # Suckless window manager
-exec dbus-launch --exit-with-session dwm 2>~/.dwm.log
+exec dbus-launch \
+    --exit-with-session \
+    ~/.local/bin/dwm 2>~/.dwm.log
