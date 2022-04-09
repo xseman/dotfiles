@@ -49,8 +49,13 @@ environment.
 - border
 - center
 
-[suckless]: https://suckless.org/
+**[slock]**
+
+- message
+
 [dmenu]: https://tools.suckless.org/dmenu/
 [dwm]: https://dwm.suckless.org/
-[st]: https://st.suckless.org/
+[slock]: https://tools.suckless.org/slock/
 [slstatus]: https://tools.suckless.org/slstatus/
+[st]: https://st.suckless.org/
+[suckless]: https://suckless.org/
