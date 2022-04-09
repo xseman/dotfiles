@@ -18,7 +18,7 @@ pathremove() {
             newpath=$newpath:"${dir}"
         fi
     done
-    export $var="${newpath#:}"
+    export "${var}"="${newpath#:}"
 }
 
 # Usage: pathprepend /path/to/bin [PATH]
@@ -31,7 +31,7 @@ pathprepend() {
     #[ -d "${1}" ] || return
     local var="${2:-PATH}"
     local value=$(indirect_expand "${var}")
-    export ${var}="${1}${value:+:${value}}"
+    export "${var}"="${1}${value:+:${value}}"
 }
 
 # Usage: pathappend /path/to/bin [PATH]
@@ -39,10 +39,10 @@ pathprepend() {
 #     pathappend ~/bin PATH
 pathappend() {
     pathremove "${1}" "${2}"
-    #[ -d "${1}" ] || return
+    # [ -d "${1}" ] || return
     local var=${2:-PATH}
     local value=$(indirect_expand "${var}")
-    export $var="${value:+${value}:}${1}"
+    export "${var}"="${value:+${value}:}${1}"
 }
 
 # Usage: ssource filename

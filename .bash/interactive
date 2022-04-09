@@ -9,12 +9,13 @@ alias df="df -h"
 alias egrep="egrep -i --colour=auto"
 alias fgrep="fgrep -i --colour=auto"
 alias free="free -h"
-alias temp='cd $(mktemp -d)'
-alias xclip="xclip -selection clipboard"
 alias grep="grep -sI --color=auto"
-alias ll="ls -Flh --group-directories-first --color"
 alias l="ls -Fhla --group-directories-first --color"
+alias ll="ls -Flh --group-directories-first --color"
 alias ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color"
+alias temp='cd $(mktemp -d)'
+alias tm="tmux attach || tmux"
+alias xclip="xclip -selection clipboard"
 
 # fish replaces the Bash process, exiting fish will also exit the terminal
 # Tips: https://wiki.archlinux.org/title/fish
