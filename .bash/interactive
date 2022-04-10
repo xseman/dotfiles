@@ -2,7 +2,15 @@
 
 bind 'TAB:menu-complete'
 
-# Aliases
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -" # The alias is `-`, not `--`
+
+# Other
 alias '??'="google"
 alias '?'="duck"
 alias df="df -h"
@@ -20,6 +28,9 @@ alias xclip="xclip -selection clipboard"
 # fish replaces the Bash process, exiting fish will also exit the terminal
 # Tips: https://wiki.archlinux.org/title/fish
 #
-if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} ]]; then
+if [[
+	$(ps --no-header --pid=$PPID --format=comm) != "fish" &&
+	-z ${BASH_EXECUTION_STRING}
+]]; then
 	exec fish
 fi

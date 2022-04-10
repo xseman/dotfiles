@@ -1,15 +1,6 @@
 # WARNING: this will $BASH_ENV to get a correct startup sequence
 . ~/.shell/env
 
-# Other
-export GITUSER="${USER}"
-
-# Terminal
-export TERM="xterm-256color"
-
-# IntelliJ startup fix
-export _JAVA_AWT_WM_NONREPARENTING=1
-
 # Language
 export LANG="en_US.UTF-8"
 export LC_ALL="${LANG}"
@@ -21,17 +12,34 @@ export LC_NUMERIC="${LANG}"
 export LC_TIME="${LANG}"
 
 # Preferred programs
-export PAGER="less"
 export EDITOR="vim"
-export VISUAL="code"
+export PAGER="less"
 export VEDITOR="code"
+export VISUAL="code"
 
 # Colors
-eval $(dircolors ~/.dircolors)
-export LESS_TERMCAP_mb="[35m" # magenta
-export LESS_TERMCAP_md="[33m" # yellow
-export LESS_TERMCAP_me="" # "0m"
-export LESS_TERMCAP_se="" # "0m"
-export LESS_TERMCAP_so="[34m" # blue
-export LESS_TERMCAP_ue="" # "0m"
-export LESS_TERMCAP_us="[4m"  # underline
+# export LESS_TERMCAP_mb="[35m"    # magenta
+# export LESS_TERMCAP_md="[33m"    # yellow
+# export LESS_TERMCAP_me=""         # "0m"
+# export LESS_TERMCAP_se=""         # "0m"
+# export LESS_TERMCAP_so="[34m"    # blue
+# export LESS_TERMCAP_ue=""         # "0m"
+# export LESS_TERMCAP_us="[4m"     # underline
+
+if command -v dircolors &>/dev/null; then
+    if test -r ~/.dircolors; then
+        eval "$(dircolors ~/.dircolors)"
+    else
+        eval "$(dircolors -b)"
+    fi
+fi
+
+
+# Other
+export GITUSER="${USER}"
+
+# Terminal
+export TERM="xterm-256color"
+
+# IntelliJ startup fix
+export _JAVA_AWT_WM_NONREPARENTING=1
