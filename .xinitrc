@@ -21,7 +21,9 @@ xset r rate 150 40
 dunst -geom '300x5-25+35' &
 
 # Autolock screen with Suckless lock
-xautolock -time 30 -locker slock &
+xautolock \
+    -time 30 \
+    -locker slock &
 
 # Systray
 start-pulseaudio-x11 &
