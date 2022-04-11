@@ -1,26 +1,24 @@
-#!/bin/bash
-
-set -e
-
 code --install-extension abusaidm.html-snippets
 code --install-extension adpyke.vscode-sql-formatter
 code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension angryobject.react-pure-to-class-vscode
-code --install-extension aprilandjan.ascii-tree-generator
+code --install-extension be5invis.vscode-icontheme-nomo-dark
 code --install-extension bmalehorn.vscode-fish
 code --install-extension christian-kohler.path-intellisense
+code --install-extension clinyong.vscode-css-modules
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension debens.sort-js-object
 code --install-extension denoland.vscode-deno
 code --install-extension eamodio.gitlens
+code --install-extension ecmel.vscode-html-css
 code --install-extension EditorConfig.EditorConfig
 code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
 code --install-extension foxundermoon.shell-format
 code --install-extension golang.go
 code --install-extension hangxingliu.vscode-nginx-conf-hint
+code --install-extension hars.CppSnippets
 code --install-extension hediet.vscode-drawio
 code --install-extension humao.rest-client
 code --install-extension IBM.output-colorizer
@@ -28,11 +26,13 @@ code --install-extension James-Yu.latex-workshop
 code --install-extension jebbs.plantuml
 code --install-extension jkeys089.plantuml
 code --install-extension jock.svg
-code --install-extension jojoco.markdownfromcsv
 code --install-extension jspolancor.presentationmode
 code --install-extension kamikillerto.vscode-colorize
+code --install-extension llvm-vs-code-extensions.vscode-clangd
 code --install-extension lokalise.i18n-ally
 code --install-extension mads-hartmann.bash-ide-vscode
+code --install-extension MariusAlchimavicius.json-to-ts
+code --install-extension matthewpi.caddyfile-support
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
@@ -40,15 +40,15 @@ code --install-extension mongodb.mongodb-vscode
 code --install-extension mrmlnc.vscode-less
 code --install-extension mrmlnc.vscode-scss
 code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-toolsai.jupyter
-code --install-extension ms-toolsai.jupyter-keymap
 code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.hexeditor
 code --install-extension ms-vscode.live-server
+code --install-extension PascalReitermann93.vscode-yaml-sort
 code --install-extension perragnaredin.light-plus-tweaked
-code --install-extension pranaygp.vscode-css-peek
+code --install-extension qwtel.sqlite-viewer
 code --install-extension raynigon.nginx-formatter
 code --install-extension rbbit.typescript-hero
-code --install-extension redhat.vscode-commons
+code --install-extension redhat.java
 code --install-extension redhat.vscode-extension-bpmn-editor
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
@@ -57,8 +57,11 @@ code --install-extension richie5um2.vscode-sort-json
 code --install-extension shanoor.vscode-nginx
 code --install-extension sleistner.vscode-fileutils
 code --install-extension tht13.html-preview-vscode
+code --install-extension timonwong.shellcheck
+code --install-extension tinygo.vscode-tinygo
 code --install-extension Tyriar.sort-lines
-code --install-extension vscode-icons-team.vscode-icons
 code --install-extension wayou.vscode-todo-highlight
+code --install-extension wmaurer.change-case
 code --install-extension xseman.simple-light
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension zamerick.vscode-caddyfile-syntax
