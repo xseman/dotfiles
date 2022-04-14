@@ -107,6 +107,7 @@ to.
 - `free` — Display amount of free and used memory in the system
 - `lspci` — List all PCI devices
 - `lsusb` — List USB devices
+- `pidof` — Find the process ID of a running program
 - `ps` — Report a snapshot of the current processes.
 
 ### System tray
@@ -163,6 +164,7 @@ to.
 
 - `network-manager-pptp` — PPTP support for NetworkManager
 - `nmtui` — Text User Interface for controlling NetworkManager
+- `nmcli` — Command-line tool for controlling NetworkManager
 
 ### Printers
 
