@@ -2,6 +2,7 @@
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingDelete": "auto",
     "editor.autoClosingQuotes": "languageDefined",
+    "editor.bracketPairColorization.enabled": false,
     "editor.codeLens": true,
     "editor.columnSelection": false,
     "editor.cursorBlinking": "solid",
@@ -36,16 +37,15 @@
 
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Simple light",
-    "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
+    "workbench.iconTheme": "vscode-icons",
     "workbench.list.keyboardNavigation": "filter",
     "workbench.settings.editor": "json",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.settings.useSplitJSON": true,
-    "workbench.sideBar.location": "left",
     "workbench.startupEditor": "none",
     "workbench.statusBar.visible": true,
     "workbench.tree.indent": 15,
@@ -53,13 +53,15 @@
 
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
-    "window.title": "${rootName}",
     "window.menuBarVisibility": "hidden",
+    "window.title": "${rootName}",
     "window.titleBarStyle": "native",
     "window.titleSeparator": " - ",
 
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
+
+    "search.smartCase": true,
 
     "explorer.autoReveal": false,
     "explorer.incrementalNaming": "smart",
@@ -67,6 +69,7 @@
 
     "files.autoSave": "off",
     "files.insertFinalNewline": true,
+    "files.refactoring.autoSave": true,
     "files.trimTrailingWhitespace": true,
     "files.watcherExclude": {
         /** defaults */
@@ -170,6 +173,7 @@
     "debug.console.fontSize": 11,
     "debug.console.wordWrap": false,
 
+    "latex-workshop.latex.autoBuild.run": "never",
     "svg.preview.mode": "svg",
     "problems.autoReveal": false,
     "telemetry.telemetryLevel": "off",
@@ -192,7 +196,6 @@
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[c]": {
-        "editor.rulers": [80],
         "editor.tabSize": 4
     },
     "[go]": {
@@ -247,7 +250,7 @@
         "editor.tabSize": 2,
         "editor.rulers": [80],
     },
-    "[tex]": {
+    "[tex][latex]": {
         "editor.tabSize": 4
     },
     "[json][jsonc]": {
@@ -263,5 +266,5 @@
     "[nginx]": {
         "editor.defaultFormatter": "raynigon.nginx-formatter",
         "editor.rulers": [80],
-    },
+    }
 }
