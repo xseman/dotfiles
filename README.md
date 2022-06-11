@@ -96,7 +96,6 @@ to.
 - `virtualbox-ose` — General-purpose full virtualizer for x86 hardware, targeted
   at server, desktop and embedded use.
 - `jq` — Command-line JSON processor
-- `xq` — Command-line XML processor - jq wrapper for XML documents
 - `yq` — Command-line YAML processor - jq wrapper for YAML documents
 - `fq` — jq for binary formats. Decoder for inspecting binary data
 - `patch` — Apply a diff file to an original
@@ -171,7 +170,7 @@ to.
 - `simple-scan` — Simple scanning utility
 - `system-config-printer` — Graphical user interface for CUPS administration
 
-## Processes
+### Processes
 
 - `kill` — Send a signal to a process
 - `nohup` — Run a command immune to hangups, with output to a non-tty
@@ -192,6 +191,8 @@ to.
 - `mktemp` — Create a temporary file or directory
 - `pass` — Stores, retrieves, generates, and synchronizes passwords securely
 - `powertop` — Measure, explain and minimise electrical power consumption
+- `type` — Display information about command type
+- `fc-list` — List available fonts
 
 ### Suckless
 
