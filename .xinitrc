@@ -17,6 +17,9 @@ xsetroot -solid "#666666"
 # Faster key holding / pressing
 xset r rate 150 40
 
+# Disable dpms, because slock will handle it
+xset dpms 0 0 0
+
 # Notification daemon
 dunst -geom '300x5-25+35' &
 
@@ -26,13 +29,14 @@ xautolock \
     -locker slock &
 
 # Systray
+blueman-applet &
 start-pulseaudio-x11 &
 ibus-daemon -d -r &
 pasystray &
 nm-applet &
 
 # Lightweight compositor
-picom --vsync &
+# picom --vsync -b
 
 # Suckless window status
 ~/.local/bin/slstatus &
