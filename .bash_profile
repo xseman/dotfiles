@@ -17,5 +17,5 @@ BASH_ENV=
 
 # 5. Run ~/.bash/interactive if this is an interactive shell.
 if [ "${PS1}" ]; then
-    . ~/.bash/interactive
+	. ~/.bash/interactive
 fi

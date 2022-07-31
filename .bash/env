@@ -18,22 +18,21 @@ export VEDITOR="code"
 export VISUAL="code"
 
 # Colors
-# export LESS_TERMCAP_mb="[35m"    # magenta
-# export LESS_TERMCAP_md="[33m"    # yellow
-# export LESS_TERMCAP_me=""         # "0m"
-# export LESS_TERMCAP_se=""         # "0m"
-# export LESS_TERMCAP_so="[34m"    # blue
-# export LESS_TERMCAP_ue=""         # "0m"
-# export LESS_TERMCAP_us="[4m"     # underline
+# export LESS_TERMCAP_mb="[35m"	# magenta
+# export LESS_TERMCAP_md="[33m"	# yellow
+# export LESS_TERMCAP_me=""			# "0m"
+# export LESS_TERMCAP_se=""			# "0m"
+# export LESS_TERMCAP_so="[34m"	# blue
+# export LESS_TERMCAP_ue=""			# "0m"
+# export LESS_TERMCAP_us="[4m"		# underline
 
 if command -v dircolors &>/dev/null; then
-    if test -r ~/.dircolors; then
-        eval "$(dircolors ~/.dircolors)"
-    else
-        eval "$(dircolors -b)"
-    fi
+	if test -r ~/.dircolors; then
+		eval "$(dircolors ~/.dircolors)"
+	else
+		eval "$(dircolors -b)"
+	fi
 fi
-
 
 # Other
 export GITUSER="${USER}"

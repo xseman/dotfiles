@@ -4,7 +4,7 @@
 # See startx(1) and xinit(1) for details.
 
 [ -f ~/.Xresources ] && {
-    xrdb -merge -I "${HOME}"/.Xresources
+	xrdb -merge -I "${HOME}"/.Xresources
 }
 
 # Thinkpad T480 Trackpoint config
@@ -25,8 +25,8 @@ dunst -geom '300x5-25+35' &
 
 # Autolock screen with Suckless lock
 xautolock \
-    -time 30 \
-    -locker slock &
+	-time 30 \
+	-locker slock &
 
 # Systray
 blueman-applet &
@@ -43,5 +43,5 @@ nm-applet &
 
 # Suckless window manager
 exec dbus-launch \
-    --exit-with-session \
-    ~/.local/bin/dwm 2>~/.dwm.log
+	--exit-with-session \
+	~/.local/bin/dwm 2>~/.dwm.log
