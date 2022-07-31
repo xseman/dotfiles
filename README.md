@@ -164,11 +164,15 @@ to.
 - `network-manager-pptp` — PPTP support for NetworkManager
 - `nmtui` — Text User Interface for controlling NetworkManager
 - `nmcli` — Command-line tool for controlling NetworkManager
+- `nc/netcat` — Networking utility for reading from and writing to network
+  connections using TCP or UDP
 
 ### Printers
 
 - `simple-scan` — Simple scanning utility
 - `system-config-printer` — Graphical user interface for CUPS administration
+- `lpq` — Show printer queue status
+- `lpr` — Submits  files  for  printing.
 
 ### Processes
 
@@ -193,6 +197,8 @@ to.
 - `powertop` — Measure, explain and minimise electrical power consumption
 - `type` — Display information about command type
 - `fc-list` — List available fonts
+- `linux-perf` — Performance analysis tools for Linux
+- `gdu` — Fast disk usage analyzer with console interface
 
 ### Suckless
 
