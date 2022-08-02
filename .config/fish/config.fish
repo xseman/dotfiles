@@ -20,3 +20,7 @@ alias temp="cd (mktemp -d)"
 alias tm="tmux attach || tmux"
 alias xclip="xclip -selection clipboard"
 alias ip="ip -c"
+
+# Env
+# default version for new shell
+set --universal nvm_default_version latest
