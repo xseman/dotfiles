@@ -5,8 +5,8 @@ email = "filip.seman@protonmail.com"
 
 # Override defaults based on working path, useful for multiple projects
 #
-# [includeIf "gitdir:~/project_name/"]
-# path = .gituser-project_name
+# [includeIf "gitdir:~/project/"]
+# path = .gituser-project
 
 [url "git@gitlab.com:"]
 insteadOf = https://gitlab.com/
