@@ -19,3 +19,4 @@ alias ls="ls --group-directories-first --quoting-style=literal --show-control-ch
 alias temp="cd (mktemp -d)"
 alias tm="tmux attach || tmux"
 alias xclip="xclip -selection clipboard"
+alias ip="ip -c"
