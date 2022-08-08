@@ -1,8 +1,8 @@
 #!/bin/sh
 
-cp -rv ./* ~/.fonts/
-chmod 644 ~/.fonts/*
+cd "$(dirname "${0}")" || exit 1
 
-fc-cache -f -v
+mkdir -m 777 -p ~/.fonts && cp -rv ./* ~/.fonts/
 
-echo "done.."
+fc-cache -fv
+
