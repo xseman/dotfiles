@@ -22,7 +22,7 @@
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [80],
+    "editor.rulers": [80, 120, 140],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
@@ -34,8 +34,6 @@
         "source.fixAll.eslint": true
         // "source.fixAll.markdownlint": true
     },
-
-    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Simple light",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
@@ -47,7 +45,6 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "none",
-    "workbench.statusBar.visible": true,
     "workbench.tree.indent": 15,
     "workbench.tree.renderIndentGuides": "always",
 
@@ -68,9 +65,12 @@
     "explorer.sortOrder": "type",
 
     "files.autoSave": "off",
-    "files.insertFinalNewline": true,
+    "files.insertFinalNewline": false,
     "files.refactoring.autoSave": true,
     "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        ".git*": "ini"
+    },
     "files.watcherExclude": {
         /** defaults */
         "**/.git/objects/**": true,
@@ -87,7 +87,7 @@
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.tabs.enabled": false,
 
-    "javascript.format.semicolons": "insert",
+    "javascript.format.semicolons": "remove",
     "javascript.preferences.jsxAttributeCompletionStyle": "auto",
     "javascript.preferences.quoteStyle": "double",
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
@@ -101,15 +101,20 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     "typescriptHero.imports.grouping": ["Plains", "Modules", "Workspace"],
+    "typescriptHero.imports.insertSemicolons": false,
     "typescriptHero.imports.multiLineWrapThreshold": 120,
     "typescriptHero.imports.organizeOnSave": false,
+    "typescriptHero.imports.stringQuoteStyle": "\"",
 
     "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
 
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
     "prettier.tabWidth": 4,
     "prettier.useTabs": false,
+    "prettier.semi": false,
+    "prettier.arrowParens": "always",
 
     "eslint.codeActionsOnSave.mode": "all",
     "eslint.alwaysShowStatus": true,
@@ -174,19 +179,14 @@
     "debug.console.wordWrap": false,
 
     "latex-workshop.latex.autoBuild.run": "never",
-
     "svg.preview.mode": "svg",
     "problems.autoReveal": false,
     "telemetry.telemetryLevel": "off",
     "redhat.telemetry.enabled": false,
     "mdb.sendTelemetry": false,
 
-    "[plaintext]": {
-        "editor.rulers": [80]
-    },
     "[shellscript][bash][perl]": {
         "editor.formatOnSave": false,
-        "editor.rulers": [80],
         "editor.tabSize": 4
     },
     "[fish]": {
@@ -200,58 +200,41 @@
         "editor.tabSize": 4
     },
     "[go]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": true,
             "source.organizeImports": true
         },
-        "editor.formatOnSave": true,
-        "editor.tabSize": 4
     },
-    "[typescript][javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
-        "editor.formatOnSave": false,
-        "editor.rulers": [80]
-    },
-    "[typescriptreact][javascriptreact]": {
+    "[typescriptreact][javascriptreact][typescript][javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
-        "editor.rulers": [120]
-
-        // "editor.defaultFormatter": "vscode.typescript-language-features",
-        // "editor.formatOnSave": true,
     },
     "[css][scss][less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.rulers": [80]
     },
     "[html][handlebars]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
         "editor.tabSize": 4,
-        "editor.rulers": [80]
     },
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml",
         "editor.tabSize": 4,
-        "editor.rulers": [80]
     },
-    "[markdown]": {
+    "[markdown][plaintext]": {
         "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.renderWhitespace": "all",
         "editor.formatOnSave": false,
         "editor.wordWrap": "off",
-        "editor.rulers": [80],
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": false
-        },
         "files.trimTrailingWhitespace": false
     },
     "[yml][yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
         "editor.tabSize": 2,
-        "editor.rulers": [80]
     },
     "[tex][latex]": {
         "editor.tabSize": 4,
@@ -261,14 +244,14 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
         "editor.tabSize": 4,
-        "editor.rulers": [80]
     },
     "[caddyfile]": {
         "editor.insertSpaces": false,
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
     },
     "[nginx]": {
         "editor.defaultFormatter": "raynigon.nginx-formatter",
-        "editor.rulers": [80]
-    }
+        "editor.tabSize": 4,
+    },
 }
