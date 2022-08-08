@@ -1,8 +1,10 @@
+#!/bin/sh
 code --install-extension abusaidm.html-snippets
 code --install-extension adpyke.vscode-sql-formatter
 code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension angryobject.react-pure-to-class-vscode
+code --install-extension attilabuti.mustache-syntax-vscode
 code --install-extension be5invis.vscode-icontheme-nomo-dark
 code --install-extension bmalehorn.vscode-fish
 code --install-extension christian-kohler.path-intellisense
@@ -21,9 +23,12 @@ code --install-extension hangxingliu.vscode-nginx-conf-hint
 code --install-extension hars.CppSnippets
 code --install-extension hediet.vscode-drawio
 code --install-extension humao.rest-client
+code --install-extension huytd.github-light-monochrome
 code --install-extension IBM.output-colorizer
 code --install-extension James-Yu.latex-workshop
+code --install-extension jamesmaj.easy-icons
 code --install-extension jebbs.plantuml
+code --install-extension jinliming2.vscode-go-template
 code --install-extension jkeys089.plantuml
 code --install-extension jock.svg
 code --install-extension jspolancor.presentationmode
@@ -31,6 +36,7 @@ code --install-extension kamikillerto.vscode-colorize
 code --install-extension llvm-vs-code-extensions.vscode-clangd
 code --install-extension lokalise.i18n-ally
 code --install-extension mads-hartmann.bash-ide-vscode
+code --install-extension marcostazi.VS-code-vagrantfile
 code --install-extension MariusAlchimavicius.json-to-ts
 code --install-extension matthewpi.caddyfile-support
 code --install-extension mdickin.markdown-shortcuts
@@ -43,6 +49,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.hexeditor
 code --install-extension ms-vscode.live-server
+code --install-extension pankajprakashh.guru-vscode-theme
 code --install-extension PascalReitermann93.vscode-yaml-sort
 code --install-extension perragnaredin.light-plus-tweaked
 code --install-extension qwtel.sqlite-viewer
@@ -54,14 +61,17 @@ code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension Remisa.shellman
 code --install-extension richie5um2.vscode-sort-json
+code --install-extension runem.lit-plugin
 code --install-extension shanoor.vscode-nginx
 code --install-extension sleistner.vscode-fileutils
 code --install-extension tht13.html-preview-vscode
 code --install-extension timonwong.shellcheck
-code --install-extension tinygo.vscode-tinygo
 code --install-extension Tyriar.sort-lines
+code --install-extension vscode-icons-team.vscode-icons
 code --install-extension wayou.vscode-todo-highlight
+code --install-extension wingrunr21.vscode-ruby
 code --install-extension wmaurer.change-case
 code --install-extension xseman.simple-light
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zamerick.vscode-caddyfile-syntax
+code --install-extension Zignd.html-css-class-completion

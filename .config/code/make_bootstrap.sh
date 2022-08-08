@@ -9,14 +9,16 @@ done
 
 cd "$(dirname "${0}")" || exit 1
 
-file=bootstrap.sh
+FILE=bootstrap.sh
 
-if [ -f ${file} ]; then
-    rm ./${file}
+if [ -f ${FILE} ]; then
+    rm ./${FILE}
 fi
 
-while IFS= read -r ext; do
-    echo "code --install-extension ${ext}" >> ${file}
+echo "#!/bin/sh" >> ${FILE}
+
+while IFS= read -r extension; do
+    echo "code --install-extension ${extension}" >> ${FILE}
 done < <(code --list-extensions)
 
-chmod +x ./$file
+chmod +x ./$FILE
