@@ -81,8 +81,6 @@ to.
 - `lnav` — Log file viewer based on ncurses-based
 - `minicom` — Friendly serial communication program
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
-- `netcat` — Networking utility for reading from and writing to network
-  connections using TCP or UDP
 - `objdump` — Display information from object files
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
@@ -99,6 +97,7 @@ to.
 - `yq` — Command-line YAML processor - jq wrapper for YAML documents
 - `fq` — jq for binary formats. Decoder for inspecting binary data
 - `patch` — Apply a diff file to an original
+- `usql` — Universal command-line interface for SQL databases
 
 
 ### System information
@@ -172,7 +171,7 @@ to.
 - `simple-scan` — Simple scanning utility
 - `system-config-printer` — Graphical user interface for CUPS administration
 - `lpq` — Show printer queue status
-- `lpr` — Submits  files  for  printing.
+- `lpr` — Submits files for printing.
 
 ### Processes
 
@@ -185,7 +184,7 @@ to.
 
 ### Other
 
-- `keepasxc` — Community fork of KeePassX. A great feature is storing SSH keys
+- `keepassxc` — Community fork of KeePassX. A great feature is storing SSH keys
   and injection into a running ssh-agent.
 - `asciiquarium` — Asciiquarium is an aquarium/sea animation in ASCII art
 - `blueman` — GTK+ Bluetooth Manager
@@ -199,6 +198,9 @@ to.
 - `fc-list` — List available fonts
 - `linux-perf` — Performance analysis tools for Linux
 - `gdu` — Fast disk usage analyzer with console interface
+- `whois` — Client for the whois directory service
+- `util-linux` — Useful tools
+- `v4l2-utils` — Userspace tools and conversion library for Video 4 Linux
 
 ### Suckless
 
