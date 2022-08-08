@@ -21,7 +21,4 @@ alias tm="tmux attach || tmux"
 alias xclip="xclip -selection clipboard"
 alias ip="ip -c"
 alias ctop="ctop -i"
-
-# Env
-# default version for new shell
-set --universal nvm_default_version latest
+alias ctop="fd --hidden"

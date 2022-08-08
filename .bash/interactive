@@ -26,6 +26,7 @@ alias tm="tmux attach || tmux"
 alias xclip="xclip -selection clipboard"
 alias ip="ip -c"
 alias ctop="ctop -i"
+alias ctop="fd --hidden"
 
 # fish replaces the Bash process, exiting fish will also exit the terminal
 # Tips: https://wiki.archlinux.org/title/fish
