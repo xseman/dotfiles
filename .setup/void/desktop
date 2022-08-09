@@ -27,7 +27,6 @@ DESKTOP=(
 echo "Basic desktop environment..."
 sudo xbps-install -Su "${DESKTOP[@]}"
 
-
 CORE=(
 	"asciiquarium"
 	"avahi"
@@ -99,7 +98,6 @@ CORE=(
 echo "Installing core packages..."
 sudo xbps-install -Su "${CORE[@]}"
 
-
 GRAPHICAL=(
 	"NetworkManager"
 	"alacritty"
@@ -141,13 +139,11 @@ GRAPHICAL=(
 echo "Installing graphical packages..."
 sudo xbps-install -Su "${GRAPHICAL[@]}"
 
-
 echo "Postinstall scripts..."
 
 for script in install-*; do
 	source "${script}"
 done
-
 
 # Resources
 # http://www.troubleshooters.com/linux/void/voidrepos.htm

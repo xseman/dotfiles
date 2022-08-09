@@ -2,12 +2,12 @@
 # Generates an alacritty color config from currently loaded X resources.
 
 xresource() {
-    xrdb -query | grep -E '^\*.'"$1"':'
+	xrdb -query | grep -E '^\*.'"$1"':'
 }
 
 color_from_line() {
-    read -r line
-    echo "${line}" | tr -d '[:space:]' | cut -d ':' -f 2
+	read -r line
+	echo "${line}" | tr -d '[:space:]' | cut -d ':' -f 2
 }
 
 readonly color_idx=(black red green yellow blue magenta cyan white)
@@ -20,17 +20,17 @@ printf '        foreground: "%s"\n' "$(xresource 'foreground' | color_from_line)
 
 declare -i i=0
 while read -r line; do
-    if [[ $i == 0 ]]; then
-        printf '    normal:\n'
-    fi
+	if [[ $i == 0 ]]; then
+		printf '    normal:\n'
+	fi
 
-    if [[ $i == 8 ]]; then
-        printf '    bright:\n'
-    fi
+	if [[ $i == 8 ]]; then
+		printf '    bright:\n'
+	fi
 
-    printf '        %s: "%s"\n' \
-        "${color_idx[((i % 8))]}" \
-        "$(echo "$line" | color_from_line)"
+	printf '        %s: "%s"\n' \
+		"${color_idx[((i % 8))]}" \
+		"$(echo "$line" | color_from_line)"
 
-    i+=1
+	i+=1
 done < <(xresource 'color[[:digit:]]+' | sort -V)

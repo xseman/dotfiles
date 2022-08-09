@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Set npm global install path
+npm config set prefix ~/.local/
