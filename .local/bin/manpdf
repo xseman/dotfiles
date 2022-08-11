@@ -1,0 +1,25 @@
+#!/bin/bash
+
+for cmd in {,groff}; do
+    if ! command -v "${cmd}" >/dev/null; then
+        echo >&2 "This script requires '${cmd}' to be installed."
+        exit 1
+    fi
+done
+
+if [ $# -eq 0 ]; then
+    echo >&2 "No arguments provided"
+    exit 1
+fi
+
+# If any parameter is string with spaces
+: "${*//[[:space:]]/-}"
+# Join parameters
+: "${_//[[:space:]]/-}"
+
+man -Tpdf "${@}" >"${_}.pdf"
+
+# examples
+#
+# manpdf docker build
+# manpdf bash
