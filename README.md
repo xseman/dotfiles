@@ -99,6 +99,14 @@ to.
 - `patch` — Apply a diff file to an original
 - `usql` — Universal command-line interface for SQL databases
 
+### Virtualization
+
+- `docker` — Docker image and container command line interface
+- `libvirt` — Virtualization API for controlling virtualization engines
+- `virsh` — Interface for managing virsh guest domains
+- `virt-manager` — User interface for managing virtual machines
+- `virtualbox-ose` — General-purpose full virtualizer for x86 hardware, targeted
+
 
 ### System information
 
