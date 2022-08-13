@@ -1,8 +1,6 @@
 #!/bin/bash
 # shellcheck disable=SC1090
-#
-# The basic iso install might already include some of the packages
-#
+
 # TODO:
 # yq 	-> mikefarah/yq
 # ctop 	-> bcicen/ctop
@@ -50,6 +48,7 @@ CORE=(
 	"ImageMagick"
 	"jq"
 	"lf"
+	"libvirt"
 	"light"
 	"links"
 	"lnav"
@@ -99,7 +98,6 @@ echo "Installing core packages..."
 sudo xbps-install -Su "${CORE[@]}"
 
 GRAPHICAL=(
-	"NetworkManager"
 	"alacritty"
 	"arandr"
 	"audacity"
@@ -118,6 +116,7 @@ GRAPHICAL=(
 	"lxappearance"
 	"mpv"
 	"network-manager-applet"
+	"NetworkManager"
 	"obs"
 	"pavucontrol"
 	"picom"
