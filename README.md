@@ -73,31 +73,30 @@ to.
 ### Development
 
 - `alacritty` — GPU accelerated terminal emulator
-- `vscode` — Visual Studio Code, open-source editor made by Microsoft
+- `datagrip` — Multi-engine database environment client. at server, desktop and
+  embedded use.
+- `dbeaver` — SQL client software application and a database administration tool
 - `entr` — Run arbitrary commands when files change
+- `fq` — jq for binary formats. Decoder for inspecting binary data
 - `git-lfs` — Git Large File Storage (LFS)
 - `gitg` — GNOME GUI client to view git repositories
 - `insomnia` — API Client platform for GraphQL and REST
+- `jq` — Command-line JSON processor
 - `lnav` — Log file viewer based on ncurses-based
 - `minicom` — Friendly serial communication program
 - `mysql-workbench` — MySQL Workbench is a visual database design tool
 - `objdump` — Display information from object files
+- `patch` — Apply a diff file to an original
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
 - `scrcpy` — Display and control your Android device
 - `shellcheck` — Shell script analysis tool
 - `smu` — Simple markdown like syntax converter to HTML
-- `vim` — Simple text editor
-- `xxd` — Creates a hex dump of a given file or standard input
-- `dbeaver` — SQL client software application and a database administration tool
-- `datagrip` — Multi-engine database environment client.
-- `virtualbox-ose` — General-purpose full virtualizer for x86 hardware, targeted
-  at server, desktop and embedded use.
-- `jq` — Command-line JSON processor
-- `yq` — Command-line YAML processor - jq wrapper for YAML documents
-- `fq` — jq for binary formats. Decoder for inspecting binary data
-- `patch` — Apply a diff file to an original
 - `usql` — Universal command-line interface for SQL databases
+- `vim` — Simple text editor
+- `vscode` — Visual Studio Code, open-source editor made by Microsoft
+- `xxd` — Creates a hex dump of a given file or standard input
+- `yq` — Command-line YAML processor - jq wrapper for YAML documents
 
 ### Virtualization
 
@@ -168,47 +167,48 @@ to.
 
 ### Networking
 
-- `network-manager-pptp` — PPTP support for NetworkManager
-- `nmtui` — Text User Interface for controlling NetworkManager
-- `nmcli` — Command-line tool for controlling NetworkManager
 - `nc/netcat` — Networking utility for reading from and writing to network
   connections using TCP or UDP
+- `network-manager-pptp` — PPTP support for NetworkManager
+- `nmcli` — Command-line tool for controlling NetworkManager
+- `nmtui` — Text User Interface for controlling NetworkManager
 
 ### Printers
 
-- `simple-scan` — Simple scanning utility
-- `system-config-printer` — Graphical user interface for CUPS administration
 - `lpq` — Show printer queue status
 - `lpr` — Submits files for printing.
+- `simple-scan` — Simple scanning utility
+- `system-config-printer` — Graphical user interface for CUPS administration
 
 ### Processes
 
+- `bg` — Send jobs to background
+- `disown` — Remove a process from the list of jobs
+- `fg` — Bring job to foreground
+- `jobs` — Print currently running jobs
 - `kill` — Send a signal to a process
 - `nohup` — Run a command immune to hangups, with output to a non-tty
-- `jobs` — Print currently running jobs
-- `bg` — Send jobs to background
-- `fg` — Bring job to foreground
-- `disown` — Remove a process from the list of jobs
 
 ### Other
 
-- `keepassxc` — Community fork of KeePassX. A great feature is storing SSH keys
-  and injection into a running ssh-agent.
+- `ar` — Create, modify, and extract from archives
 - `asciiquarium` — Asciiquarium is an aquarium/sea animation in ASCII art
 - `blueman` — GTK+ Bluetooth Manager
+- `fc-list` — List available fonts
 - `fd` — Fast and user friendly alternative to find
 - `font-manager` — Simple font manager
+- `gdu` — Fast disk usage analyzer with console interface
+- `keepassxc` — Community fork of KeePassX. A great feature is storing SSH keys
+  and injection into a running ssh-agent.
 - `lf` — Terminal file manager
+- `linux-perf` — Performance analysis tools for Linux
 - `mktemp` — Create a temporary file or directory
 - `pass` — Stores, retrieves, generates, and synchronizes passwords securely
 - `powertop` — Measure, explain and minimise electrical power consumption
 - `type` — Display information about command type
-- `fc-list` — List available fonts
-- `linux-perf` — Performance analysis tools for Linux
-- `gdu` — Fast disk usage analyzer with console interface
-- `whois` — Client for the whois directory service
 - `util-linux` — Useful tools
 - `v4l2-utils` — Userspace tools and conversion library for Video 4 Linux
+- `whois` — Client for the whois directory service
 
 ### Suckless
 
