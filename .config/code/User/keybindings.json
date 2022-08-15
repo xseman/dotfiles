@@ -82,26 +82,13 @@
         "when": "!terminalFocus"
     },
     {
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "key": "ctrl+`"
-    },
-    {
         "command": "workbench.action.terminal.new",
         "key": "ctrl+shift+`",
         "when": "terminalFocus"
     },
     {
-        "command": "-workbench.action.togglePanel",
-        "key": "ctrl+j"
-    },
-    {
         "command": "editor.action.jumpToBracket",
         "key": "ctrl+\\",
-        "when": "editorTextFocus"
-    },
-    {
-        "command": "-editor.action.jumpToBracket",
-        "key": "ctrl+shift+\\",
         "when": "editorTextFocus"
     },
     {
@@ -111,12 +98,12 @@
     },
     {
         "command": "workbench.action.terminal.focusNextPane",
-        "key": "ctrl+b right",
+        "key": "ctrl+space right",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
         "command": "workbench.action.terminal.focusPreviousPane",
-        "key": "ctrl+b left",
+        "key": "ctrl+space left",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
@@ -143,5 +130,31 @@
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
         "key": "ctrl+tab",
         "when": "!inEditorsPicker"
-    }
+    },
+    /**
+     * Removed
+     */
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+down",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "key": "ctrl+`"
+    },
+    {
+        "command": "-workbench.action.togglePanel",
+        "key": "ctrl+j"
+    },
+    {
+        "command": "-editor.action.jumpToBracket",
+        "key": "ctrl+shift+\\",
+        "when": "editorTextFocus"
+    },
 ]
