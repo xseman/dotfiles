@@ -22,7 +22,7 @@
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [80, 120, 140],
+    // "editor.rulers": [80, 120, 140],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
@@ -92,7 +92,7 @@
     "javascript.preferences.quoteStyle": "double",
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
 
-    "typescript.format.semicolons": "insert",
+    "typescript.format.semicolons": "remove",
     "typescript.preferences.jsxAttributeCompletionStyle": "auto",
     "typescript.preferences.quoteStyle": "auto",
     "typescript.preferences.useAliasesForRenames": false,
@@ -134,11 +134,20 @@
 
     "markdownlint.config": {
         "default": true,
-        "spaces": true,
+        "spaces": false,
         "line-length": true,
-        "MD007": { "indent": 2 },
+        "MD007": {
+            "indent": 4
+        },
+        "MD030": {
+            "ol_multi": 1,
+            "ol_single": 1,
+            "ul_multi": 1,
+            "ul_single": 1
+        },
         "MD033": false,
-        "MD036": false
+        "MD036": false,
+        "MD010": false
     },
 
     "emmet.showSuggestionsAsSnippets": true,
@@ -205,36 +214,39 @@
         "editor.codeActionsOnSave": {
             "source.fixAll": true,
             "source.organizeImports": true
-        },
+        }
     },
     "[typescriptreact][javascriptreact][typescript][javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     "[css][scss][less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
     },
     "[html][handlebars]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml",
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "[markdown][plaintext]": {
+        "editor.rulers": [80],
         "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.renderWhitespace": "all",
         "editor.formatOnSave": false,
-        "editor.wordWrap": "off",
         "files.trimTrailingWhitespace": false
     },
     "[yml][yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
-        "editor.tabSize": 2,
+        "editor.tabSize": 2
+    },
+	"[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[tex][latex]": {
         "editor.tabSize": 4,
@@ -243,15 +255,15 @@
     "[json][jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "[caddyfile]": {
         "editor.insertSpaces": false,
         "editor.formatOnSave": true,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "[nginx]": {
         "editor.defaultFormatter": "raynigon.nginx-formatter",
-        "editor.tabSize": 4,
-    },
+        "editor.tabSize": 4
+    }
 }
