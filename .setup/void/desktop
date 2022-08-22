@@ -1,10 +1,6 @@
 #!/bin/bash
 # shellcheck disable=SC1090
 
-# TODO:
-# yq 	-> mikefarah/yq
-# ctop 	-> bcicen/ctop
-
 set -e
 
 echo "Void specific packages..."
@@ -91,8 +87,6 @@ CORE=(
 	"xz"
 	"youtube-dl"
 	"zip"
-	# "ctop"
-	# "yq"
 )
 
 echo "Installing core packages..."
