@@ -28,9 +28,11 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 
+
 [core]
-	editor = vim
-	autocrlf = input
+    # editor = code --wait --new-window
+    editor = vim
+    autocrlf = input
 
 [alias]
 	uncommit = reset --soft HEAD^
