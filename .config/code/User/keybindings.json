@@ -42,11 +42,6 @@
         "when": "!editorTextFocus"
     },
     {
-        "command": "workbench.action.closePanel",
-        "key": "ctrl+`",
-        "when": "activePanel || terminalFocus"
-    },
-    {
         "command": "-editor.action.insertCursorBelow",
         "key": "shift+alt+down",
         "when": "editorTextFocus"
@@ -82,8 +77,28 @@
         "when": "!terminalFocus"
     },
     {
+        "command": "workbench.action.closePanel",
+        "key": "ctrl+`",
+        "when": "activePanel || terminalFocus"
+    },
+    {
         "command": "workbench.action.terminal.new",
         "key": "ctrl+shift+`",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "ctrl+;",
+        "when": "!terminalFocus"
+    },
+    {
+        "command": "workbench.action.closePanel",
+        "key": "ctrl+;",
+        "when": "activePanel || terminalFocus"
+    },
+    {
+        "command": "workbench.action.terminal.new",
+        "key": "ctrl+shift+;",
         "when": "terminalFocus"
     },
     {
@@ -145,10 +160,6 @@
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "key": "ctrl+`"
-    },
-    {
         "command": "-workbench.action.togglePanel",
         "key": "ctrl+j"
     },
@@ -156,5 +167,71 @@
         "command": "-editor.action.jumpToBracket",
         "key": "ctrl+shift+\\",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+; ctrl+a",
+        "command": "-testing.debugAll"
+    },
+    {
+        "key": "ctrl+; ctrl+e",
+        "command": "-testing.debugFailTests"
+    },
+    {
+        "key": "ctrl+; ctrl+l",
+        "command": "-testing.debugLastRun"
+    },
+    {
+        "key": "ctrl+; ctrl+c",
+        "command": "-testing.debugAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+; ctrl+f",
+        "command": "-testing.debugCurrentFile",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+; ctrl+m",
+        "command": "-testing.openOutputPeek"
+    },
+    {
+        "key": "ctrl+; ctrl+r",
+        "command": "-testing.refreshTests",
+        "when": "testing.canRefresh"
+    },
+    {
+        "key": "ctrl+; e",
+        "command": "-testing.reRunFailTests"
+    },
+    {
+        "key": "ctrl+; l",
+        "command": "-testing.reRunLastRun"
+    },
+    {
+        "key": "ctrl+; a",
+        "command": "-testing.runAll"
+    },
+    {
+        "key": "ctrl+; c",
+        "command": "-testing.runAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+; f",
+        "command": "-testing.runCurrentFile",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+; ctrl+o",
+        "command": "-testing.showMostRecentOutput",
+        "when": "testing.hasAnyResults"
+    },
+    {
+        "key": "ctrl+; ctrl+i",
+        "command": "-testing.toggleInlineTestOutput"
+    },
+    {
+        "key": "ctrl+; ctrl+x",
+        "command": "-testing.cancelRun"
     },
 ]
