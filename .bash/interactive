@@ -28,6 +28,7 @@ alias ip="ip -c"
 alias ctop="ctop -i"
 alias ctop="fd --hidden"
 alias code="code-oss || code"
+alias cal="ncal -M -b || cal"
 
 # fish replaces the Bash process, exiting fish will also exit the terminal
 # Tips: https://wiki.archlinux.org/title/fish
