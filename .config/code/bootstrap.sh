@@ -1,5 +1,4 @@
 #!/bin/sh
-code --install-extension abusaidm.html-snippets
 code --install-extension adpyke.vscode-sql-formatter
 code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension alexcvzz.vscode-sqlite
@@ -15,7 +14,6 @@ code --install-extension denoland.vscode-deno
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension EditorConfig.EditorConfig
-code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
 code --install-extension foxundermoon.shell-format
 code --install-extension golang.go
@@ -26,11 +24,11 @@ code --install-extension humao.rest-client
 code --install-extension huytd.github-light-monochrome
 code --install-extension IBM.output-colorizer
 code --install-extension James-Yu.latex-workshop
-code --install-extension jamesmaj.easy-icons
 code --install-extension jebbs.plantuml
 code --install-extension jinliming2.vscode-go-template
 code --install-extension jkeys089.plantuml
 code --install-extension jock.svg
+code --install-extension jripouteau.adonis-vscode-extension
 code --install-extension jspolancor.presentationmode
 code --install-extension kamikillerto.vscode-colorize
 code --install-extension llvm-vs-code-extensions.vscode-clangd
@@ -64,14 +62,15 @@ code --install-extension richie5um2.vscode-sort-json
 code --install-extension runem.lit-plugin
 code --install-extension shanoor.vscode-nginx
 code --install-extension sleistner.vscode-fileutils
-code --install-extension tht13.html-preview-vscode
+code --install-extension stkb.rewrap
 code --install-extension timonwong.shellcheck
 code --install-extension Tyriar.sort-lines
 code --install-extension vscode-icons-team.vscode-icons
+code --install-extension Vue.volar
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension wingrunr21.vscode-ruby
 code --install-extension wmaurer.change-case
 code --install-extension xseman.simple-light
+code --install-extension yy0931.gitconfig-lsp
 code --install-extension yzhang.markdown-all-in-one
-code --install-extension zamerick.vscode-caddyfile-syntax
 code --install-extension Zignd.html-css-class-completion

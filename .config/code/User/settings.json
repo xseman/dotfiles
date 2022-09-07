@@ -22,7 +22,6 @@
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
-    // "editor.rulers": [80, 120, 140],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
@@ -40,7 +39,7 @@
     "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.list.keyboardNavigation": "filter",
+    "workbench.list.defaultFindMode": "filter",
     "workbench.settings.editor": "json",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.settings.useSplitJSON": true,
@@ -128,16 +127,22 @@
         "typescriptreact"
     ],
 
-    "css.lint.emptyRules": "ignore",
-    "less.lint.emptyRules": "ignore",
-    "scss.lint.emptyRules": "ignore",
+    "rewrap.autoWrap.enabled": true,
+    "rewrap.wrappingColumn": 80,
 
     "markdownlint.config": {
         "default": true,
         "spaces": false,
-        "line-length": true,
+        "MD004": {
+            "style": "consistent"
+        },
         "MD007": {
-            "indent": 4
+            "indent": 2
+        },
+        "MD010": false,
+        "MD013": {
+            "line_length": 80,
+            "tables": false
         },
         "MD030": {
             "ol_multi": 1,
@@ -146,9 +151,12 @@
             "ul_single": 1
         },
         "MD033": false,
-        "MD036": false,
-        "MD010": false
+        "MD036": false
     },
+
+    "css.lint.emptyRules": "ignore",
+    "less.lint.emptyRules": "ignore",
+    "scss.lint.emptyRules": "ignore",
 
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.excludeLanguages": ["markdown", "typescript"],
@@ -187,29 +195,21 @@
     "debug.console.fontSize": 11,
     "debug.console.wordWrap": false,
 
-    "latex-workshop.latex.autoBuild.run": "never",
-    "svg.preview.mode": "svg",
-    "problems.autoReveal": false,
-    "telemetry.telemetryLevel": "off",
-    "redhat.telemetry.enabled": false,
-    "mdb.sendTelemetry": false,
-
     "[shellscript][bash][perl]": {
+        "editor.tabSize": 4,
+        "editor.rulers": [80],
         "editor.formatOnSave": false,
-        "editor.tabSize": 4
     },
     "[fish]": {
         "editor.defaultFormatter": "bmalehorn.vscode-fish",
         "editor.tabSize": 4
-    },
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[c]": {
         "editor.tabSize": 4
     },
     "[go]": {
         "editor.tabSize": 4,
+        "editor.rulers": [80],
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": true,
@@ -229,28 +229,28 @@
         "editor.formatOnSave": false,
         "editor.tabSize": 4
     },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml",
-        "editor.tabSize": 4
-    },
     "[markdown][plaintext]": {
         "editor.rulers": [80],
         "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.renderWhitespace": "all",
         "editor.formatOnSave": false,
-        "files.trimTrailingWhitespace": false
+        "files.trimTrailingWhitespace": false,
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml",
+        "editor.tabSize": 4
     },
     "[yml][yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
         "editor.tabSize": 2
     },
-	"[dockercompose]": {
+    "[dockercompose][dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "[tex][latex]": {
         "editor.tabSize": 4,
-        "editor.defaultFormatter": "James-Yu.latex-workshop"
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
     },
     "[json][jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -265,5 +265,12 @@
     "[nginx]": {
         "editor.defaultFormatter": "raynigon.nginx-formatter",
         "editor.tabSize": 4
-    }
+    },
+
+    "latex-workshop.latex.autoBuild.run": "never",
+    "svg.preview.mode": "svg",
+    "problems.autoReveal": false,
+    "redhat.telemetry.enabled": false,
+    "mdb.sendTelemetry": false,
+	"telemetry.telemetryLevel": "off",
 }
