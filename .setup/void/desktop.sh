@@ -23,7 +23,7 @@ sudo xbps-install -Su "${DESKTOP[@]}"
 
 CORE=(
 	"asciiquarium"
-	"avahi"
+	"avahi" # mdns
 	"base-devel"
 	"bash-completion"
 	"bind-utils"
@@ -52,6 +52,7 @@ CORE=(
 	"minicom"
 	"mons"
 	"ncdu"
+	"ncpamixer"
 	"neofetch"
 	"netcat"
 	"nmap"
@@ -76,6 +77,7 @@ CORE=(
 	"tmux"
 	"tree"
 	"udisks2"
+	"unrar"
 	"unzip"
 	"usql"
 	"util-linux"
@@ -139,7 +141,3 @@ echo "Postinstall scripts..."
 for script in install-*; do
 	source "${script}"
 done
-
-# Resources
-# http://www.troubleshooters.com/linux/void/voidrepos.htm
-# https://docs.voidlinux.org/xbps/index.html
