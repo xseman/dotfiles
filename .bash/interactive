@@ -3,36 +3,41 @@
 bind 'TAB:menu-complete'
 
 # Navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~"
-alias -- -="cd -" # The alias is `-`, not `--`
+alias \
+	..="cd .." \
+	...="cd ../.." \
+	....="cd ../../.." \
+	.....="cd ../../../.." \
+	~="cd ~" \
+	-- -="cd -" # The alias is `-`, not `--`
 
-# Other
-alias '??'="google"
-alias '?'="duck"
-alias df="df -h"
-alias egrep="egrep -i --colour=auto"
-alias fgrep="fgrep -i --colour=auto"
-alias free="free -h"
-alias grep="grep -sI --color=auto"
-alias l="ls -Fhla --group-directories-first --color"
-alias ll="ls -Flh --group-directories-first --color"
-alias ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color"
-alias temp='cd $(mktemp -d)'
-alias tm="tmux attach || tmux"
-alias xclip="xclip -selection clipboard"
-alias ip="ip -c"
-alias ctop="ctop -i"
-alias ctop="fd --hidden"
-alias code="code-oss || code"
-alias cal="ncal -M -b || cal"
+# Common commands defaults
+alias \
+	'??'="google" \
+	'?'="duck" \
+	cal="ncal -M -b || cal" \
+	ctop="ctop -i" \
+	ctop="fd --hidden" \
+	df="df -h" \
+	egrep="egrep -i --colour=auto" \
+	fgrep="fgrep -i --colour=auto" \
+	free="free -h" \
+	grep="grep -sI --color=auto" \
+	ip="ip -c" \
+	l="ls -Fhla --group-directories-first --color" \
+	ll="ls -Flh --group-directories-first --color" \
+	ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color" \
+	temp='cd $(mktemp -d)' \
+	tm="tmux attach || tmux" \
+	xclip="xclip -selection clipboard"
+
+# Use code-oss for code if present
+if [[ -x "$(command -v code-oss)" ]]; then
+	alias code="code-oss"
+fi
 
 # fish replaces the Bash process, exiting fish will also exit the terminal
 # Tips: https://wiki.archlinux.org/title/fish
-#
 if [[
 	$(ps --no-header --pid=$PPID --format=comm) != "fish" &&
 	-z ${BASH_EXECUTION_STRING}
