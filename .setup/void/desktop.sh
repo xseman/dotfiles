@@ -21,14 +21,12 @@ DESKTOP=(
 echo "Basic desktop environment..."
 sudo xbps-install -Su "${DESKTOP[@]}"
 
+
 CORE=(
 	"asciiquarium"
-	"avahi" # mdns
 	"base-devel"
 	"bash-completion"
 	"bind-utils"
-	"docker-compose"
-	"docker"
 	"entr"
 	"fd"
 	"fish-shell"
@@ -41,7 +39,6 @@ CORE=(
 	"go"
 	"grep"
 	"htop"
-	"ibus"
 	"ImageMagick"
 	"jq"
 	"lf"
@@ -57,8 +54,6 @@ CORE=(
 	"netcat"
 	"nmap"
 	"nodejs"
-	"openssh"
-	"openvpn"
 	"pandoc"
 	"pasystray"
 	"pgcli"
@@ -94,6 +89,20 @@ CORE=(
 echo "Installing core packages..."
 sudo xbps-install -Su "${CORE[@]}"
 
+
+SERVICES=(
+	"avahi" # mdns
+	"docker-compose"
+	"docker"
+	"ibus"
+	"openssh"
+	"openvpn"
+)
+
+echo "Installing services packages..."
+sudo xbps-install -Su "${SERVICES[@]}"
+
+
 GRAPHICAL=(
 	"alacritty"
 	"arandr"
@@ -119,6 +128,7 @@ GRAPHICAL=(
 	"picom"
 	"pulseaudio"
 	"qemu"
+	"rxvt-unicode" # urxvt
 	"shotwell"
 	"Signal-Desktop"
 	"simple-scan"
