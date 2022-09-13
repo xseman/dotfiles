@@ -78,6 +78,7 @@ to.
 - `dbeaver` — SQL client software application and a database administration tool
 - `entr` — Run arbitrary commands when files change
 - `fq` — jq for binary formats. Decoder for inspecting binary data
+- [`fx`](https://github.com/antonmedv/fx) — Terminal JSON viewer
 - `git-lfs` — Git Large File Storage (LFS)
 - `gitg` — GNOME GUI client to view git repositories
 - `insomnia` — API Client platform for GraphQL and REST
@@ -89,6 +90,8 @@ to.
 - `patch` — Apply a diff file to an original
 - `plantuml` — Intuitive language for defining diagrams
 - `postman` — API Client platform for GraphQL and REST
+- [`ripgrep`](https://github.com/BurntSushi/ripgrep) — Recursively search current
+  directory for lines matching a pattern
 - `scrcpy` — Display and control your Android device
 - `shellcheck` — Shell script analysis tool
 - `smu` — Simple markdown like syntax converter to HTML
@@ -117,14 +120,16 @@ to.
 
 ### System tray
 
-- `blueman-applet` — Blueman applet
-- `ibus` — Intelligent Input Bus for Linux/Unix
-- `nm-applet` — GTK‐based GUI applet to monitor network status and devices
-- `pasystray` — PulseAudio system tray
+- [`blueman-applet`](https://github.com/blueman-project/blueman) — Blueman applet
+- [`ibus`](https://github.com/ibus/ibus) — Intelligent Input Bus for Linux/Unix
+- [`nm-applet`](gitlab.gnome.org/GNOME/network-manager-applet) — GUI applet to
+  monitor network status and devices
+- [`pasystray`](https://github.com/christophgysin/pasystray) — PulseAudio system tray
 
 ### Documents processing
 
-- `pdfarranger` — PDF Merging, Rearranging, Splitting, and Cropping
+- [`pdfarranger`](https://github.com/pdfarranger/pdfarranger) — PDF Merging,
+  Rearranging, Splitting, and Cropping
 - `libreoffice` — LibreOffice office suite
 - `onlyoffice` — Office suite
 - `pandoc` — Universal markup converter
@@ -132,7 +137,8 @@ to.
 - `smu` — Simple interpreter for a simplified markdown dialect
 - `groff` — Front-end for the groff document formatting system
 - `troff` — Processor of the groff text formatting system
-- `poppler-utils` — Manipulation tools for pdf
+- [`poppler-utils`](https://gitlab.freedesktop.org/poppler/poppler) — Manipulation tools
+  for pdf
   - `pdfdetach` — lists or extracts embedded files (attachments)
   - `pdffonts` — font analyzer
   - `pdfimages` — image extractor
@@ -197,6 +203,8 @@ to.
 - `fc-list` — List available fonts
 - `fd` — Fast and user friendly alternative to find
 - `font-manager` — Simple font manager
+- [`fswebcam`](https://github.com/fsphil/fswebcam) — Small and simple webcam to captured
+  image
 - `gdu` — Fast disk usage analyzer with console interface
 - `keepassxc` — Community fork of KeePassX. A great feature is storing SSH keys
   and injection into a running ssh-agent.
@@ -214,11 +222,11 @@ to.
 
 My [suckless] setup
 
-## Other resources
+## Resources
 
 - <http://dotshare.it/>
 - <https://github.com/alebcay/awesome-shell>
-- <https://github.com/caarlos0/dotfiles>
+- <https://github.com/caarlos0/dotfiles.fish>
 - <https://github.com/dikiaap/dotfiles>
 - <https://github.com/holman/dotfiles>
 - <https://github.com/inputsh/awesome-linux>
