@@ -33,6 +33,7 @@
         "source.fixAll.eslint": true
         // "source.fixAll.markdownlint": true
     },
+
     "workbench.colorTheme": "Simple light",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
@@ -166,6 +167,7 @@
     },
 
     "git.confirmSync": false,
+    "git.mergeEditor": false,
     "git.openDiffOnClick": true,
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
@@ -243,7 +245,7 @@
     "[yml][yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[dockercompose][dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
@@ -272,5 +274,5 @@
     "problems.autoReveal": false,
     "redhat.telemetry.enabled": false,
     "mdb.sendTelemetry": false,
-	"telemetry.telemetryLevel": "off",
+    "telemetry.telemetryLevel": "off",
 }
