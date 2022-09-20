@@ -1,6 +1,9 @@
 Xcursor.size:   12
 Xcursor.theme:  Adwaita
 
+URxvt.font: xft:Terminus:pixelsize=18
+URxvt.scrollBar: false
+
 ! dark setup
 ! *.foreground:   #FFFFFF
 ! *.background:   #000000
