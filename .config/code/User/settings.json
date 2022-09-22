@@ -29,6 +29,9 @@
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
     "editor.wordWrap": "off",
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+    },
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
         // "source.fixAll.markdownlint": true
@@ -172,9 +175,11 @@
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
 
-    "gitlens.views.repositories.files.layout": "tree",
-    "gitlens.currentLine.enabled": false,
+    "gitlens.blame.compact": true,
+    "gitlens.blame.format": "${message|15?} ${agoOrDate|15-}",
     "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.views.repositories.files.layout": "tree",
 
     "diffEditor.maxComputationTime": 0,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -197,7 +202,7 @@
     "debug.console.fontSize": 11,
     "debug.console.wordWrap": false,
 
-    "[shellscript][bash][perl]": {
+    "[shellscript][bash][perl][fish]": {
         "editor.tabSize": 4,
         "editor.rulers": [80],
         "editor.formatOnSave": false,
