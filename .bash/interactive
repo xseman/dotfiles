@@ -1,35 +1,36 @@
 . ~/.shell/interactive
 
+# safer mv and cp with -i combination
+# set -o noclobber
+
 bind 'TAB:menu-complete'
 
 # Navigation
-alias \
-	..="cd .." \
-	...="cd ../.." \
-	....="cd ../../.." \
-	.....="cd ../../../.." \
-	~="cd ~" \
-	-- -="cd -" # The alias is `-`, not `--`
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -" # The alias is `-`, not `--`
 
 # Common commands defaults
-alias \
-	'??'="google" \
-	'?'="duck" \
-	cal="ncal -M -b || cal" \
-	ctop="ctop -i" \
-	ctop="fd --hidden" \
-	df="df -h" \
-	egrep="egrep -i --colour=auto" \
-	fgrep="fgrep -i --colour=auto" \
-	free="free -h" \
-	grep="grep -sI --color=auto" \
-	ip="ip -c" \
-	l="ls -Fhla --group-directories-first --color" \
-	ll="ls -Flh --group-directories-first --color" \
-	ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color" \
-	temp='cd $(mktemp -d)' \
-	tm="tmux attach || tmux" \
-	xclip="xclip -selection clipboard"
+alias '??'="google"
+alias '?'="duck"
+alias cal="ncal -M -b || cal"
+alias ctop="ctop -i"
+alias ctop="fd --hidden"
+alias df="df -h"
+alias egrep="egrep -i --colour=auto"
+alias fgrep="fgrep -i --colour=auto"
+alias free="free -h"
+alias grep="grep -sI --color=auto"
+alias ip="ip -c"
+alias l="ls -Fhla --group-directories-first --color"
+alias ll="ls -Flh --group-directories-first --color"
+alias ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color"
+alias temp='cd $(mktemp -d)'
+alias tm="tmux attach || tmux"
+alias xclip="xclip -selection clipboard"
 
 # Use code-oss for code if present
 if [[ -x "$(command -v code-oss)" ]]; then

@@ -8,22 +8,21 @@ bind \cH backward-kill-word
 eval (dircolors -c ~/.dircolors)
 
 # Aliases
-alias \
-	df="df -h" \
-	egrep="egrep -i --colour=auto" \
-	fgrep="fgrep -i --colour=auto" \
-	free="free -h" \
-	grep="grep -sI --color=auto" \
-	l="ls -Fhla --group-directories-first --color" \
-	ll="ls -Flh --group-directories-first --color" \
-	ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color" \
-	temp="cd (mktemp -d)" \
-	tm="tmux attach || tmux" \
-	xclip="xclip -selection clipboard" \
-	ip="ip -c" \
-	ctop="ctop -i" \
-	ctop="fd --hidden" \
-	cal="ncal -M -b || cal"
+alias df="df -h"
+alias egrep="egrep -i --colour=auto"
+alias fgrep="fgrep -i --colour=auto"
+alias free="free -h"
+alias grep="grep -sI --color=auto"
+alias l="ls -Fhla --group-directories-first --color"
+alias ll="ls -Flh --group-directories-first --color"
+alias ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color"
+alias temp="cd (mktemp -d)"
+alias tm="tmux attach || tmux"
+alias xclip="xclip -selection clipboard"
+alias ip="ip -c"
+alias ctop="ctop -i"
+alias ctop="fd --hidden"
+alias cal="ncal -M -b || cal"
 
 if type -q "code-oss"
 	alias code="code-oss || code"
