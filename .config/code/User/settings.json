@@ -8,9 +8,11 @@
 	"editor.cursorBlinking": "solid",
 	"editor.cursorStyle": "block",
 	"editor.detectIndentation": true,
+	"editor.dragAndDrop": false,
 	"editor.folding": true,
 	"editor.foldingHighlight": false,
 	"editor.foldingImportsByDefault": false,
+	"editor.fontFamily": "JetBrains mono, Cascadia Code",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 13,
 	"editor.formatOnSave": false,
@@ -18,7 +20,6 @@
 	"editor.insertSpaces": true,
 	"editor.largeFileOptimizations": false,
 	"editor.lineNumbers": "on",
-	"editor.fontFamily": "JetBrains mono, Cascadia Code",
 	"editor.minimap.enabled": false,
 	"editor.minimap.renderCharacters": false,
 	"editor.renderWhitespace": "selection",
@@ -30,13 +31,13 @@
 	"editor.tabSize": 4,
 	"editor.wordWrap": "off",
 	"editor.semanticTokenColorCustomizations": {
-		"enabled": true
+		"enabled": true,
 	},
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
+		"source.fixAll.eslint": true,
+		// "source.organizeImports": true
 		// "source.fixAll.markdownlint": true
 	},
-
 	"workbench.colorTheme": "Simple light",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
@@ -50,29 +51,25 @@
 	"workbench.startupEditor": "none",
 	"workbench.tree.indent": 15,
 	"workbench.tree.renderIndentGuides": "always",
-
 	"window.customMenuBarAltFocus": false,
 	"window.enableMenuBarMnemonics": false,
 	"window.menuBarVisibility": "hidden",
 	"window.title": "${rootName}",
 	"window.titleBarStyle": "native",
 	"window.titleSeparator": " - ",
-
 	"breadcrumbs.enabled": true,
 	"breadcrumbs.filePath": "on",
-
 	"search.smartCase": true,
-
 	"explorer.autoReveal": false,
 	"explorer.incrementalNaming": "smart",
 	"explorer.sortOrder": "type",
-
 	"files.autoSave": "off",
 	"files.insertFinalNewline": false,
 	"files.refactoring.autoSave": true,
 	"files.trimTrailingWhitespace": true,
 	"files.associations": {
-		".git*": "ini"
+		".git*": "ini",
+		"*.json": "json"
 	},
 	"files.watcherExclude": {
 		/** defaults */
@@ -80,7 +77,6 @@
 		"**/.git/subtree-cache/**": true,
 		"**/node_modules/*/**": true
 	},
-
 	/** CTRL+SHIFT+C */
 	"terminal.external.linuxExec": "/usr/bin/alacritty",
 	"terminal.integrated.copyOnSelection": true,
@@ -89,12 +85,10 @@
 	"terminal.integrated.fontSize": 12,
 	"terminal.integrated.showExitAlert": false,
 	"terminal.integrated.tabs.enabled": false,
-
 	"javascript.format.semicolons": "remove",
 	"javascript.preferences.jsxAttributeCompletionStyle": "auto",
 	"javascript.preferences.quoteStyle": "double",
 	"javascript.suggest.includeAutomaticOptionalChainCompletions": true,
-
 	"typescript.format.semicolons": "remove",
 	"typescript.preferences.jsxAttributeCompletionStyle": "auto",
 	"typescript.preferences.quoteStyle": "auto",
@@ -102,23 +96,16 @@
 	"typescript.suggest.includeAutomaticOptionalChainCompletions": true,
 	"typescript.tsserver.experimental.enableProjectDiagnostics": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
-
-	"typescriptHero.imports.grouping": ["Plains", "Modules", "Workspace"],
-	"typescriptHero.imports.insertSemicolons": false,
-	"typescriptHero.imports.multiLineWrapThreshold": 120,
-	"typescriptHero.imports.organizeOnSave": false,
-	"typescriptHero.imports.stringQuoteStyle": "\"",
-
 	"go.formatTool": "goimports",
 	"go.useLanguageServer": true,
+	"zenMode.hideLineNumbers": false
 
-	"prettier.printWidth": 80,
+    "prettier.printWidth": 80,
 	"prettier.proseWrap": "always",
 	"prettier.tabWidth": 4,
 	"prettier.useTabs": false,
 	"prettier.semi": false,
 	"prettier.arrowParens": "always",
-
 	"eslint.codeActionsOnSave.mode": "all",
 	"eslint.alwaysShowStatus": true,
 	"eslint.run": "onSave",
@@ -130,10 +117,8 @@
 		"typescript",
 		"typescriptreact"
 	],
-
 	"rewrap.autoWrap.enabled": true,
 	"rewrap.wrappingColumn": 80,
-
 	"markdownlint.config": {
 		"default": true,
 		"spaces": false,
@@ -157,37 +142,33 @@
 		"MD033": false,
 		"MD036": false
 	},
-
 	"css.lint.emptyRules": "ignore",
 	"less.lint.emptyRules": "ignore",
 	"scss.lint.emptyRules": "ignore",
-
 	"emmet.showSuggestionsAsSnippets": true,
-	"emmet.excludeLanguages": ["markdown", "typescript"],
+	"emmet.excludeLanguages": [
+		"markdown",
+		"typescript"
+	],
 	"emmet.includeLanguages": {
 		"typescript": "typescriptreact",
 		"javascript": "javascriptreact"
 	},
-
 	"git.confirmSync": false,
 	"git.mergeEditor": false,
 	"git.openDiffOnClick": true,
 	"git.suggestSmartCommit": false,
 	"git.untrackedChanges": "separate",
-
 	"gitlens.blame.compact": true,
 	"gitlens.blame.format": "${message|15?} ${agoOrDate|15-}",
 	"gitlens.codeLens.enabled": false,
 	"gitlens.currentLine.enabled": false,
 	"gitlens.views.repositories.files.layout": "tree",
-
-	"diffEditor.maxComputationTime": 0,
 	"diffEditor.ignoreTrimWhitespace": false,
-
+	"diffEditor.maxComputationTime": 0,
 	"extensions.autoCheckUpdates": true,
 	"extensions.autoUpdate": true,
 	"extensions.ignoreRecommendations": true,
-
 	"xml.format.emptyElements": "collapse",
 	"xml.format.joinCommentLines": true,
 	"xml.format.joinContentLines": true,
@@ -195,17 +176,16 @@
 	"xml.format.spaceBeforeEmptyCloseTag": true,
 	"xml.format.splitAttributes": true,
 	"xml.format.xsiSchemaLocationSplit": "onElement",
-
 	"i18n-ally.displayLanguage": "sk",
 	"i18n-ally.keystyle": "nested",
-
 	"debug.console.fontSize": 11,
 	"debug.console.wordWrap": false,
-
-	"[shellscript][bash][perl][fish]": {
+	"[shellscript][bash][perl]": {
 		"editor.tabSize": 4,
-		"editor.rulers": [80],
-		"editor.formatOnSave": false
+		"editor.rulers": [
+			80
+		],
+		"editor.formatOnSave": false,
 	},
 	"[fish]": {
 		"editor.defaultFormatter": "bmalehorn.vscode-fish",
@@ -216,7 +196,9 @@
 	},
 	"[go]": {
 		"editor.tabSize": 4,
-		"editor.rulers": [80],
+		"editor.rulers": [
+			80
+		],
 		"editor.formatOnSave": true,
 		"editor.codeActionsOnSave": {
 			"source.fixAll": true,
@@ -237,11 +219,13 @@
 		"editor.tabSize": 4
 	},
 	"[markdown][plaintext]": {
-		"editor.rulers": [80],
+		"editor.rulers": [
+			80
+		],
 		"editor.defaultFormatter": "denoland.vscode-deno",
 		"editor.renderWhitespace": "all",
 		"editor.formatOnSave": false,
-		"files.trimTrailingWhitespace": false
+		"files.trimTrailingWhitespace": false,
 	},
 	"[xml]": {
 		"editor.defaultFormatter": "redhat.vscode-xml",
@@ -257,7 +241,7 @@
 	},
 	"[tex][latex]": {
 		"editor.tabSize": 4,
-		"editor.defaultFormatter": "James-Yu.latex-workshop"
+		"editor.defaultFormatter": "James-Yu.latex-workshop",
 	},
 	"[json][jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -273,11 +257,10 @@
 		"editor.defaultFormatter": "raynigon.nginx-formatter",
 		"editor.tabSize": 4
 	},
-
 	"latex-workshop.latex.autoBuild.run": "never",
-	"svg.preview.mode": "svg",
+	"svg.preview.mode": "img",
 	"problems.autoReveal": false,
 	"redhat.telemetry.enabled": false,
 	"mdb.sendTelemetry": false,
-	"telemetry.telemetryLevel": "off"
+	"telemetry.telemetryLevel": "off",
 }
