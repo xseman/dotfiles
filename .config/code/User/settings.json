@@ -23,6 +23,7 @@
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
+    "editor.rulers": [80],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
@@ -31,10 +32,10 @@
     "editor.tabSize": 4,
     "editor.wordWrap": "off",
     "editor.semanticTokenColorCustomizations": {
-        "enabled": true,
+        "enabled": true
     },
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": true
         // "source.organizeImports": true
         // "source.fixAll.markdownlint": true
     },
@@ -52,6 +53,7 @@
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 15,
     "workbench.tree.renderIndentGuides": "always",
+    // "workbench.sideBar.location": "right",
 
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
@@ -63,14 +65,12 @@
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
 
-    "zenMode.hideLineNumbers": false,
-
     "search.smartCase": true,
 
     "explorer.autoReveal": false,
     "explorer.incrementalNaming": "smart",
     "explorer.sortOrder": "type",
-    "explorer.enableDragAndDrop": false,
+    // "explorer.enableDragAndDrop": false,
 
     "files.autoSave": "off",
     "files.insertFinalNewline": false,
@@ -103,7 +103,7 @@
 
     "typescript.format.semicolons": "remove",
     "typescript.preferences.jsxAttributeCompletionStyle": "auto",
-    "typescript.preferences.quoteStyle": "auto",
+    "typescript.preferences.quoteStyle": "double",
     "typescript.preferences.useAliasesForRenames": false,
     "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
     "typescript.tsserver.experimental.enableProjectDiagnostics": true,
@@ -111,6 +111,8 @@
 
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+
+    "zenMode.hideLineNumbers": false,
 
     "prettier.printWidth": 80,
     "prettier.proseWrap": "always",
@@ -204,8 +206,7 @@
 
     "[shellscript][bash][perl]": {
         "editor.tabSize": 4,
-        "editor.rulers": [80],
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     "[fish]": {
         "editor.defaultFormatter": "bmalehorn.vscode-fish",
@@ -216,7 +217,6 @@
     },
     "[go]": {
         "editor.tabSize": 4,
-        "editor.rulers": [80],
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": true,
@@ -224,8 +224,8 @@
         }
     },
     "[typescriptreact][javascriptreact][typescript][javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[css][scss][less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -237,11 +237,10 @@
         "editor.tabSize": 4
     },
     "[markdown][plaintext]": {
-        "editor.rulers": [80],
         "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.renderWhitespace": "all",
         "editor.formatOnSave": false,
-        "files.trimTrailingWhitespace": false,
+        "files.trimTrailingWhitespace": false
     },
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml",
@@ -257,7 +256,7 @@
     },
     "[tex][latex]": {
         "editor.tabSize": 4,
-        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
     "[json][jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -279,5 +278,5 @@
     "problems.autoReveal": false,
     "redhat.telemetry.enabled": false,
     "mdb.sendTelemetry": false,
-    "telemetry.telemetryLevel": "off",
+    "telemetry.telemetryLevel": "off"
 }
