@@ -82,11 +82,6 @@
         "when": "activePanel || terminalFocus"
     },
     {
-        "command": "workbench.action.terminal.new",
-        "key": "ctrl+shift+`",
-        "when": "terminalFocus"
-    },
-    {
         "command": "workbench.action.terminal.toggleTerminal",
         "key": "ctrl+;",
         "when": "!terminalFocus"
@@ -97,18 +92,13 @@
         "when": "activePanel || terminalFocus"
     },
     {
-        "command": "workbench.action.terminal.new",
-        "key": "ctrl+shift+;",
-        "when": "terminalFocus"
-    },
-    {
         "command": "editor.action.jumpToBracket",
         "key": "ctrl+\\",
         "when": "editorTextFocus"
     },
     {
         "command": "workbench.action.terminal.split",
-        "key": "ctrl+\\",
+        "key": "ctrl+space \\",
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
@@ -146,17 +136,21 @@
         "key": "ctrl+tab",
         "when": "!inEditorsPicker"
     },
+	{
+        "command": "workbench.action.terminal.new",
+        "key": "shift+up"
+    },
     /**
      * Removed
      */
     {
-        "key": "alt+right",
         "command": "-workbench.action.terminal.focusNextPane",
+        "key": "alt+right",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "alt+down",
         "command": "-workbench.action.terminal.focusNextPane",
+        "key": "alt+down",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
@@ -169,69 +163,79 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+; ctrl+a",
-        "command": "-testing.debugAll"
+        "command": "-testing.debugAll",
+        "key": "ctrl+; ctrl+a"
     },
     {
-        "key": "ctrl+; ctrl+e",
-        "command": "-testing.debugFailTests"
+        "command": "-testing.debugFailTests",
+        "key": "ctrl+; ctrl+e"
     },
     {
-        "key": "ctrl+; ctrl+l",
-        "command": "-testing.debugLastRun"
+        "command": "-testing.debugLastRun",
+        "key": "ctrl+; ctrl+l"
     },
     {
-        "key": "ctrl+; ctrl+c",
         "command": "-testing.debugAtCursor",
+        "key": "ctrl+; ctrl+c",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+; ctrl+f",
         "command": "-testing.debugCurrentFile",
+        "key": "ctrl+; ctrl+f",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+; ctrl+m",
-        "command": "-testing.openOutputPeek"
+        "command": "-testing.openOutputPeek",
+        "key": "ctrl+; ctrl+m"
     },
     {
-        "key": "ctrl+; ctrl+r",
         "command": "-testing.refreshTests",
+        "key": "ctrl+; ctrl+r",
         "when": "testing.canRefresh"
     },
     {
-        "key": "ctrl+; e",
-        "command": "-testing.reRunFailTests"
+        "command": "-testing.reRunFailTests",
+        "key": "ctrl+; e"
     },
     {
-        "key": "ctrl+; l",
-        "command": "-testing.reRunLastRun"
+        "command": "-testing.reRunLastRun",
+        "key": "ctrl+; l"
     },
     {
-        "key": "ctrl+; a",
-        "command": "-testing.runAll"
+        "command": "-testing.runAll",
+        "key": "ctrl+; a"
     },
     {
-        "key": "ctrl+; c",
         "command": "-testing.runAtCursor",
+        "key": "ctrl+; c",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+; f",
         "command": "-testing.runCurrentFile",
+        "key": "ctrl+; f",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+; ctrl+o",
         "command": "-testing.showMostRecentOutput",
+        "key": "ctrl+; ctrl+o",
         "when": "testing.hasAnyResults"
     },
     {
-        "key": "ctrl+; ctrl+i",
-        "command": "-testing.toggleInlineTestOutput"
+        "command": "-testing.toggleInlineTestOutput",
+        "key": "ctrl+; ctrl+i"
     },
     {
-        "key": "ctrl+; ctrl+x",
-        "command": "-testing.cancelRun"
+        "command": "-testing.cancelRun",
+        "key": "ctrl+; ctrl+x"
     },
+    {
+        "command": "-workbench.view.debug",
+        "key": "ctrl+shift+d",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "command": "-workbench.action.terminal.new",
+        "key": "ctrl+shift+`",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    }
 ]
