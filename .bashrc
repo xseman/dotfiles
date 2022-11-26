@@ -1,3 +1,6 @@
+#!/bin/bash
+# shellcheck disable=SC1090
+
 # this file gets run in two cases:
 # 1. non-login interactive shell
 # 2. remote shell (over ssh or similar)

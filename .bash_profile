@@ -1,3 +1,6 @@
+#!/bin/bash
+# shellcheck disable=SC1090
+
 # We need to do two things here:
 
 # 1. Ensure ~/.bash/env gets run first

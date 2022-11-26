@@ -1,7 +1,15 @@
+# shellcheck disable=SC1090
 . ~/.shell/interactive
 
 # safer mv and cp with -i combination
 # set -o noclobber
+
+if [ -d /etc/bash/bashrc.d/ ]; then
+	for f in /etc/bash/bashrc.d/*.sh; do
+		[ -r "${f}" ] && . "${f}"
+	done
+	unset f
+fi
 
 bind 'TAB:menu-complete'
 
