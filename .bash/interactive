@@ -4,14 +4,10 @@
 # safer mv and cp with -i combination
 # set -o noclobber
 
-if [ -d /etc/bash/bashrc.d/ ]; then
-	for f in /etc/bash/bashrc.d/*.sh; do
-		[ -r "${f}" ] && . "${f}"
-	done
-	unset f
-fi
-
 bind 'TAB:menu-complete'
+
+# Prompt
+PS1='[\u@\h \W]\$ '
 
 # Navigation
 alias ..="cd .."
