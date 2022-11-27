@@ -25,5 +25,5 @@ alias tm="tmux attach || tmux"
 alias xclip="xclip -selection clipboard"
 
 if type -q "code-oss"
-	alias code="code-oss || code"
+	alias code="code-oss"
 end
