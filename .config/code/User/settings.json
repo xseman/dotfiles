@@ -1,4 +1,7 @@
 {
+    // "editor.rulers": [80],
+    // "editor.trimAutoWhitespace": false,
+	"workbench.colorTheme": "Simple light",
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingDelete": "auto",
     "editor.autoClosingQuotes": "languageDefined",
@@ -6,7 +9,7 @@
     "editor.codeLens": true,
     "editor.columnSelection": false,
     "editor.cursorBlinking": "solid",
-    "editor.cursorStyle": "block",
+    "editor.cursorStyle": "line",
     "editor.detectIndentation": true,
     "editor.dragAndDrop": false,
     "editor.folding": true,
@@ -23,7 +26,6 @@
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [80],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
@@ -35,12 +37,10 @@
         "enabled": true
     },
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
         // "source.organizeImports": true
         // "source.fixAll.markdownlint": true
+        "source.fixAll.eslint": true,
     },
-
-    "workbench.colorTheme": "Simple light",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.untitled.hint": "hidden",
@@ -75,7 +75,7 @@
     "files.autoSave": "off",
     "files.insertFinalNewline": false,
     "files.refactoring.autoSave": true,
-    "files.trimTrailingWhitespace": true,
+    // "files.trimTrailingWhitespace": true,
     "files.associations": {
         ".git*": "ini",
         "*.json": "json"
@@ -96,21 +96,22 @@
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.tabs.enabled": false,
 
-    "javascript.format.semicolons": "remove",
+    "javascript.format.semicolons": "ignore",
     "javascript.preferences.jsxAttributeCompletionStyle": "auto",
     "javascript.preferences.quoteStyle": "double",
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
 
-    "typescript.format.semicolons": "remove",
+    "typescript.format.semicolons": "ignore",
     "typescript.preferences.jsxAttributeCompletionStyle": "auto",
     "typescript.preferences.quoteStyle": "double",
     "typescript.preferences.useAliasesForRenames": false,
     "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
-    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+
+    "deno.importMap": "./import_map.json",
 
     "zenMode.hideLineNumbers": false,
 
@@ -198,7 +199,7 @@
     "xml.format.splitAttributes": true,
     "xml.format.xsiSchemaLocationSplit": "onElement",
 
-    "i18n-ally.displayLanguage": "sk",
+    "i18n-ally.displayLanguage": "en",
     "i18n-ally.keystyle": "nested",
 
     "debug.console.fontSize": 11,
@@ -226,6 +227,10 @@
     "[typescriptreact][javascriptreact][typescript][javascript]": {
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
     },
     "[css][scss][less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -278,5 +283,6 @@
     "problems.autoReveal": false,
     "redhat.telemetry.enabled": false,
     "mdb.sendTelemetry": false,
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "excalidraw.theme": "light",
 }
