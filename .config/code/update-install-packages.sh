@@ -15,8 +15,6 @@ if [ -f ${FILE} ]; then
     rm ./${FILE}
 fi
 
-echo "#!/bin/sh" >> ${FILE}
-
 while IFS= read -r extension; do
     echo "code --install-extension ${extension}" >> ${FILE}
 done < <(code --list-extensions)

@@ -1,4 +1,3 @@
-#!/bin/sh
 code --install-extension adpyke.vscode-sql-formatter
 code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension angryobject.react-pure-to-class-vscode
