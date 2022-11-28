@@ -3,151 +3,218 @@
 
 set -e
 
-echo "Void specific packages..."
-xbps-query -Rs void-repo
-sudo xbps-install void-repo-nonfree
-sudo xbps-install -Su xtools
+init() {
+	echo "Void specific packages..."
 
-DESKTOP=(
-	"dmenu"
-	"dwm"
-	"slstatus"
-	"st"
-	"xfce4"
-	"xinit"
-	"xorg"
-)
+	xbps-query -Rs void-repo
+	sudo xbps-install void-repo-nonfree
+	sudo xbps-install -Su xtools
+}
 
-echo "Basic desktop environment..."
-sudo xbps-install -Su "${DESKTOP[@]}"
+# Install packages
+# @param args... list of valid packages
+install_packages() {
+	sudo xbps-install -Syu "${@}"
+}
+
+install_devel() {
+	local DEVEL=(
+		"libX11-devel"
+		"libXft-devel"
+		"libXinerama-devel"
+		"libXrandr-devel"
+	)
+
+	echo "Installing development libraries..."
+	install_packages "${DEVEL[@]}"
+}
+
+install_desktop() {
+	local DESKTOP=(
+		"dmenu"
+		"dwm"
+		"gitg"
+		"slstatus"
+		"st"
+		"xfce4"
+		"xinit"
+		"xorg"
+	)
+
+	echo "Basic desktop environment..."
+	install_packages "${DESKTOP[@]}"
+}
+
+install_core() {
+	local CORE=(
+		"asciiquarium"
+		"base-devel"
+		"bash-completion"
+		"bind-utils"
+		"entr"
+		"fd"
+		"fish-shell"
+		"fzf"
+		"gdu"
+		"git-lfs"
+		"git"
+		"gitflow"
+		"github-cli"
+		"go"
+		"grep"
+		"htop"
+		"ImageMagick"
+		"jq"
+		"lf"
+		"libvirt"
+		"light"
+		"links"
+		"lnav"
+		"minicom"
+		"mons"
+		"ncdu"
+		"ncpamixer"
+		"neofetch"
+		"netcat"
+		"nmap"
+		"nodejs"
+		"pandoc"
+		"pasystray"
+		"pgcli"
+		"plantuml"
+		"poppler-utils"
+		"postgresql"
+		"psmisc"
+		"ripgrep"
+		"rsync"
+		"scrcpy"
+		"shellcheck"
+		"smu"
+		"sqlite"
+		"sxiv"
+		"tig"
+		"tmux"
+		"tree"
+		"udisks2"
+		"unrar"
+		"unzip"
+		"usbutils"
+		"usql"
+		"util-linux"
+		"vim"
+		"wget"
+		"whois"
+		"xclip"
+		"xdotool"
+		"xz"
+		"youtube-dl"
+		"zip"
+	)
+
+	echo "Installing core packages..."
+	install_packages "${CORE[@]}"
+}
+
+install_services() {
+	local SERVICES=(
+		"avahi" # mdns
+		"docker-compose"
+		"docker"
+		"ibus"
+		"iwd"
+		"openssh"
+		"openvpn"
+	)
+
+	echo "Installing services packages..."
+	install_packages "${SERVICES[@]}"
+}
+
+install_graphical() {
+	local GRAPHICAL=(
+		"alacritty"
+		"android-file-transfer-linux"
+		"arandr"
+		"audacity"
+		"blender"
+		"blueman"
+		"brasero"
+		"chromium"
+		"dbeaver"
+		"firefox"
+		"fontmanager"
+		"gimp"
+		"gparted"
+		"grabc"
+		"inkscape"
+		"keepassxc"
+		"libreoffice"
+		"lxappearance"
+		"mpv"
+		"network-manager-applet"
+		"NetworkManager"
+		"obs"
+		"picom"
+		"qemu"
+		"rxvt-unicode" # urxvt
+		"shotwell"
+		"Signal-Desktop"
+		"simple-scan"
+		"system-config-printer"
+		"Thunar"
+		"thunderbird"
+		"timeshift"
+		"transmission-gtk"
+		"udiskie"
+		"virt-manager"
+		"vlc"
+		"vscode"
+		"xsel"
+	)
+
+	echo "Installing graphical packages..."
+	install_packages "${GRAPHICAL[@]}"
+}
+
+install_audio() {
+	local AUDIO=(
+		"alsa-pipewire"
+		"libjack-pipewire"
+		"libspa-bluetooth"
+		"pavucontrol"
+		"pipewire"
+		"qpwgraph"
+	)
+
+	echo "Installing audio tools..."
+	install_packages "${AUDIO[@]}"
+}
+
+init
+install_devel
+install_desktop
+install_core
+install_services
+install_graphical
+install_audio
 
 
-CORE=(
-	"asciiquarium"
-	"base-devel"
-	"bash-completion"
-	"bind-utils"
-	"entr"
-	"fd"
-	"fish-shell"
-	"fzf"
-	"gdu"
-	"git-lfs"
-	"git"
-	"gitflow"
-	"gitg"
-	"go"
-	"grep"
-	"htop"
-	"ImageMagick"
-	"jq"
-	"lf"
-	"libvirt"
-	"light"
-	"links"
-	"lnav"
-	"minicom"
-	"mons"
-	"ncdu"
-	"ncpamixer"
-	"neofetch"
-	"netcat"
-	"nmap"
-	"nodejs"
-	"pandoc"
-	"pasystray"
-	"pgcli"
-	"plantuml"
-	"poppler-utils"
-	"postgresql"
-	"psmisc"
-	"ripgrep"
-	"rsync"
-	"scrcpy"
-	"shellcheck"
-	"smu"
-	"sqlite"
-	"sxiv"
-	"tig"
-	"tmux"
-	"tree"
-	"udisks2"
-	"unrar"
-	"unzip"
-	"usql"
-	"util-linux"
-	"vim"
-	"wget"
-	"whois"
-	"xclip"
-	"xdotool"
-	"xz"
-	"youtube-dl"
-	"zip"
-)
+setup_services() {
+	echo "Setup common services"
+	sudo ln -sf /etc/sv/{sshd,dhcpd,dbus,iwd} /var/service
+}
 
-echo "Installing core packages..."
-sudo xbps-install -Su "${CORE[@]}"
+setup_services
 
 
-SERVICES=(
-	"avahi" # mdns
-	"docker-compose"
-	"docker"
-	"ibus"
-	"openssh"
-	"openvpn"
-)
+post_install() {
+	# Prepare users local hierarchy
+	mkdir -p ~/.local/{bin,share}
 
-echo "Installing services packages..."
-sudo xbps-install -Su "${SERVICES[@]}"
+	echo "Running postinstall scripts..."
+	for script in install-*; do
+		source "${script}"
+	done
+}
 
-
-GRAPHICAL=(
-	"alacritty"
-	"arandr"
-	"audacity"
-	"blender"
-	"blueman"
-	"chromium"
-	"dbeaver"
-	"firefox"
-	"fontmanager"
-	"gimp"
-	"gparted"
-	"grabc"
-	"inkscape"
-	"keepassxc"
-	"libreoffice"
-	"lxappearance"
-	"mpv"
-	"network-manager-applet"
-	"NetworkManager"
-	"obs"
-	"pavucontrol"
-	"picom"
-	"pulseaudio"
-	"qemu"
-	"rxvt-unicode" # urxvt
-	"shotwell"
-	"Signal-Desktop"
-	"simple-scan"
-	"system-config-printer"
-	"Thunar"
-	"thunderbird"
-	"transmission-gtk"
-	"udiskie"
-	"virt-manager"
-	"vlc"
-	"vscode"
-	"xsel"
-)
-
-echo "Installing graphical packages..."
-sudo xbps-install -Su "${GRAPHICAL[@]}"
-
-echo "Postinstall scripts..."
-
-for script in install-*; do
-	source "${script}"
-done
+post_install
