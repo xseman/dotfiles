@@ -1,15 +1,15 @@
 # Path settings
 
+# Actual user
+pathprepend ~/.local/bin PATH
+pathprepend ~/.deno/bin PATH
+pathprepend ~/go/bin
+
 # Common system
-pathprepend /bin PATH
 pathprepend /usr/local/bin PATH
 pathprepend /usr/local/go/bin PATH
 pathprepend /usr/sbin PATH
-
-# Actual user
-pathprepend ~/go/bin
-pathprepend ~/.deno/bin PATH
-pathprepend ~/.local/bin PATH
+pathprepend /bin PATH
 
 # The current directory should never be in $PATH
 pathremove . PATH
