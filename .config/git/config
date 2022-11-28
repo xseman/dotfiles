@@ -7,6 +7,9 @@
 [push]
 	default = simple
 
+[init]
+	defaultBranch = master
+
 [core]
     # editor = code --wait --new-window
     editor = vim
@@ -24,7 +27,8 @@
 	format = ssh
 
 [gpg "ssh"]
-	allowedSignersFile = # path to allowed
+	# e.g.: https://github.com/xseman.keys
+	# allowedSignersFile = # ~/.ssh/allowed_signers
 
 # Override defaults based on working path, useful for multiple projects
 # [includeIf "gitdir:~/project/"]
