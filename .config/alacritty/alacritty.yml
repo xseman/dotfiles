@@ -7,7 +7,6 @@ env:
 
 font:
     size: 12.0
-    use_thin_strokes: true
 
     normal:
         # family: Terminus
@@ -31,7 +30,7 @@ font:
         y: 0
 
 window:
-    gtk_theme_variant: light
+    decorations_theme_variant: light
     decorations: none
     padding:
         x: 3
