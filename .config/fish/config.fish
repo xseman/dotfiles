@@ -1,15 +1,14 @@
 # Remove default greeting
 set fish_greeting
 
-# Paths
-set -x fish_user_paths \
-	~/.deno/bin \
-	~/.local/bin \
-	~/go/bin \
-	/usr/local/go/bin \
-	/usr/local/bin \
-	/usr/sbin \
-    /bin \
+# Paths v3.2.0
+fish_add_path ~/.deno/bin \
+fish_add_path ~/.local/bin \
+fish_add_path ~/go/bin \
+fish_add_path /usr/local/go/bin \
+fish_add_path /usr/local/bin \
+fish_add_path /usr/sbin \
+fish_add_path /bin \
 
 # Keybinds
 bind \cH backward-kill-word
