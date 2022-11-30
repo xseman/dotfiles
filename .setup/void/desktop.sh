@@ -78,6 +78,7 @@ install_core() {
 		"netcat"
 		"nmap"
 		"nodejs"
+		"openntpd"
 		"pandoc"
 		"pasystray"
 		"pgcli"
@@ -205,6 +206,12 @@ setup_services() {
 }
 
 setup_services
+
+setup_date_time() {
+	echo "Setup date and time"
+	sudo ln -sf /usr/share/zoneinfo/Europe/Bratislava /etc/localtime
+	sudo ln -s /etc/sv/openntpd /var/service/
+}
 
 
 post_install() {
