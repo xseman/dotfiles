@@ -51,6 +51,7 @@ install_core() {
 		"base-devel"
 		"bash-completion"
 		"bind-utils"
+		"dunst"
 		"entr"
 		"fd"
 		"fish-shell"
