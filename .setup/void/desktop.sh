@@ -76,6 +76,7 @@ install_core() {
 		"ncdu"
 		"ncpamixer"
 		"neofetch"
+		"net-tools"
 		"netcat"
 		"nmap"
 		"nodejs"
