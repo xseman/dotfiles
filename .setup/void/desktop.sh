@@ -161,7 +161,6 @@ install_graphical() {
 		"qemu"
 		"rxvt-unicode" # urxvt
 		"shotwell"
-		"Signal-Desktop"
 		"simple-scan"
 		"system-config-printer"
 		"Thunar"
