@@ -72,14 +72,9 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "command": "workbench.action.terminal.toggleTerminal",
-        "key": "ctrl+`",
-        "when": "!terminalFocus"
-    },
-    {
         "command": "workbench.action.closePanel",
         "key": "ctrl+`",
-        "when": "activePanel || terminalFocus"
+        "when": "terminalFocus"
     },
     {
         "command": "workbench.action.terminal.toggleTerminal",
