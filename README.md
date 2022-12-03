@@ -217,6 +217,7 @@ to.
 - `util-linux` — Useful tools
 - `v4l2-utils` — Userspace tools and conversion library for Video 4 Linux
 - `whois` — Client for the whois directory service
+- `lsof` — List open files
 
 ### Suckless
 

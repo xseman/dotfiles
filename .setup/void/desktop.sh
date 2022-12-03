@@ -71,6 +71,7 @@ install_core() {
 		"light"
 		"links"
 		"lnav"
+		"lsof"
 		"minicom"
 		"mons"
 		"ncdu"
@@ -157,7 +158,6 @@ install_graphical() {
 		"network-manager-applet"
 		"NetworkManager"
 		"obs"
-		"picom"
 		"qemu"
 		"rxvt-unicode" # urxvt
 		"shotwell"
