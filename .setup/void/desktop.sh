@@ -51,6 +51,8 @@ install_core() {
 		"base-devel"
 		"bash-completion"
 		"bind-utils"
+		"cups-filters"
+		"cups"
 		"dunst"
 		"entr"
 		"fd"
@@ -72,6 +74,7 @@ install_core() {
 		"links"
 		"lnav"
 		"lsof"
+		"mdns-scan"
 		"minicom"
 		"mons"
 		"ncdu"
@@ -127,7 +130,6 @@ install_services() {
 		"ibus"
 		"iwd"
 		"openssh"
-		"openvpn"
 	)
 
 	echo "Installing services packages..."
@@ -155,8 +157,6 @@ install_graphical() {
 		"libreoffice"
 		"lxappearance"
 		"mpv"
-		"network-manager-applet"
-		"NetworkManager"
 		"obs"
 		"qemu"
 		"rxvt-unicode" # urxvt
@@ -176,6 +176,18 @@ install_graphical() {
 
 	echo "Installing graphical packages..."
 	install_packages "${GRAPHICAL[@]}"
+}
+
+install_network() {
+	local NETWORK=(
+		"network-manager-applet"
+		"NetworkManager-openvpn"
+		"NetworkManager"
+		"openvpn"
+	)
+
+	echo "Installing networking tools..."
+	install_packages "${NETWORK[@]}"
 }
 
 install_audio() {
@@ -198,21 +210,23 @@ install_desktop
 install_core
 install_services
 install_graphical
+install_network
 install_audio
 
 
 setup_services() {
 	echo "Setup common services"
-	sudo ln -sf /etc/sv/{sshd,dhcpd,dbus,iwd} /var/service
+	sudo ln -sf /etc/sv/{sshd,dhcpd,dbus,iwd,cupsd} /var/service
 }
-
-setup_services
 
 setup_date_time() {
 	echo "Setup date and time"
 	sudo ln -sf /usr/share/zoneinfo/Europe/Bratislava /etc/localtime
-	sudo ln -s /etc/sv/openntpd /var/service/
+	sudo ln -sf /etc/sv/openntpd /var/service/
 }
+
+setup_services
+setup_date_time
 
 
 post_install() {
