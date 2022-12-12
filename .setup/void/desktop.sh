@@ -95,6 +95,7 @@ install_core() {
 		"ripgrep"
 		"rsync"
 		"scrcpy"
+		"scrot"
 		"shellcheck"
 		"smu"
 		"sqlite"
@@ -115,6 +116,8 @@ install_core() {
 		"xdotool"
 		"xz"
 		"youtube-dl"
+		"zathura-pdf-mupdf"
+		"zathura"
 		"zip"
 	)
 
@@ -216,7 +219,7 @@ install_audio
 
 setup_services() {
 	echo "Setup common services"
-	sudo ln -sf /etc/sv/{sshd,dhcpd,dbus,iwd,cupsd} /var/service
+	sudo ln -sf /etc/sv/{sshd,dhcpd,dbus,iwd,cupsd,bluetoothd} /var/service
 }
 
 setup_date_time() {
