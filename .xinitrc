@@ -21,7 +21,7 @@ xset r rate 150 40
 xset dpms 0 0 0
 
 # Notification daemon
-dunst -geom '300x5-25+35' &
+dunst --geom &
 
 # Autolock screen with Suckless lock
 xautolock \
@@ -34,6 +34,7 @@ start-pulseaudio-x11 &
 ibus-daemon -d -r &
 pasystray &
 nm-applet &
+udiskie -t &
 
 # Lightweight compositor
 # picom --vsync -b
