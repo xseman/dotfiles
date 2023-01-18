@@ -51,8 +51,6 @@ install_core() {
 		"base-devel"
 		"bash-completion"
 		"bind-utils"
-		"cups-filters"
-		"cups"
 		"dunst"
 		"entr"
 		"fd"
@@ -84,7 +82,6 @@ install_core() {
 		"netcat"
 		"nmap"
 		"nodejs"
-		"openntpd"
 		"pandoc"
 		"pasystray"
 		"pgcli"
@@ -128,11 +125,14 @@ install_core() {
 install_services() {
 	local SERVICES=(
 		"avahi" # mdns
+		"cups-filters"
+		"cups"
 		"docker-compose"
 		"docker"
 		"ibus"
 		"iwd"
 		"openssh"
+		"socklog-void"
 	)
 
 	echo "Installing services packages..."
@@ -187,6 +187,7 @@ install_network() {
 		"NetworkManager-openvpn"
 		"NetworkManager"
 		"openvpn"
+        "dhcp"
 	)
 
 	echo "Installing networking tools..."
@@ -196,11 +197,11 @@ install_network() {
 install_audio() {
 	local AUDIO=(
 		"alsa-pipewire"
+		"helvum"
 		"libjack-pipewire"
 		"libspa-bluetooth"
 		"pavucontrol"
 		"pipewire"
-		"qpwgraph"
 	)
 
 	echo "Installing audio tools..."
@@ -219,13 +220,21 @@ install_audio
 
 setup_services() {
 	echo "Setup common services"
-	sudo ln -sf /etc/sv/{sshd,dhcpd,dbus,iwd,cupsd,bluetoothd} /var/service
+	sudo ln -sf /etc/sv/{nanoklogd,socklog-unix,sshd,dbus,iwd,cupsd,bluetoothd} /var/service
 }
 
 setup_date_time() {
+	local TIME=(
+        "chrony"
+	)
+
 	echo "Setup date and time"
+	install_packages "${TIME[@]}"
+
 	sudo ln -sf /usr/share/zoneinfo/Europe/Bratislava /etc/localtime
-	sudo ln -sf /etc/sv/openntpd /var/service/
+    sudo ln -sf /etc/sv/chronyd/ /var/service/
+
+	sudo hwclock --systohc --localtime
 }
 
 setup_services
