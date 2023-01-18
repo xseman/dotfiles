@@ -70,6 +70,7 @@ install_core() {
 		"libvirt"
 		"light"
 		"links"
+		"lm_sensors"
 		"lnav"
 		"lsof"
 		"mdns-scan"
