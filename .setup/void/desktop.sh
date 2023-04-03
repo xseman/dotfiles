@@ -19,10 +19,15 @@ install_packages() {
 
 install_devel() {
 	local DEVEL=(
+		"go"
 		"libX11-devel"
 		"libXft-devel"
 		"libXinerama-devel"
 		"libXrandr-devel"
+		"nodejs"
+        "apache-maven"
+        "openjdk"
+        "pnpm"
 	)
 
 	echo "Installing development libraries..."
@@ -61,13 +66,11 @@ install_core() {
 		"git"
 		"gitflow"
 		"github-cli"
-		"go"
 		"grep"
 		"htop"
 		"ImageMagick"
 		"jq"
 		"lf"
-		"libvirt"
 		"light"
 		"links"
 		"lm_sensors"
@@ -82,8 +85,8 @@ install_core() {
 		"net-tools"
 		"netcat"
 		"nmap"
-		"nodejs"
 		"pandoc"
+		"parallel"
 		"pasystray"
 		"pgcli"
 		"plantuml"
@@ -162,7 +165,6 @@ install_graphical() {
 		"lxappearance"
 		"mpv"
 		"obs"
-		"qemu"
 		"rxvt-unicode" # urxvt
 		"shotwell"
 		"simple-scan"
@@ -172,7 +174,6 @@ install_graphical() {
 		"timeshift"
 		"transmission-gtk"
 		"udiskie"
-		"virt-manager"
 		"vlc"
 		"vscode"
 		"xsel"
@@ -180,6 +181,25 @@ install_graphical() {
 
 	echo "Installing graphical packages..."
 	install_packages "${GRAPHICAL[@]}"
+}
+
+install_virtualization() {
+    local VIRT=(
+        "qemu-ga"
+		"qemu"
+		"libvirt"
+		"virt-manager"
+    )
+
+	echo "Installing virtualization packages..."
+	install_packages "${VIRT[@]}"
+
+    sudo usermod -aG kvm "$(whoami)"
+    sudo modprobe kvm-intel
+
+    sudo ln -sf /etc/sv/libvirtd/ /var/service/
+    sudo ln -sf /etc/sv/virtlockd/ /var/service/
+    sudo ln -sf /etc/sv/virtlogd/ /var/service/
 }
 
 install_network() {
@@ -209,19 +229,30 @@ install_audio() {
 	install_packages "${AUDIO[@]}"
 }
 
-init
-install_devel
-install_desktop
-install_core
-install_services
-install_graphical
-install_network
-install_audio
+install_latex() {
+	local LATEX=(
+		"texlive"
+		"texlive-bin"
+	)
 
+	echo "Installing latex tools..."
+	install_packages "${LATEX[@]}"
+}
+
+init
+install_audio
+install_core
+install_desktop
+install_devel
+install_graphical
+install_latex
+install_network
+install_services
+install_virtualization
 
 setup_services() {
 	echo "Setup common services"
-	sudo ln -sf /etc/sv/{nanoklogd,socklog-unix,sshd,dbus,iwd,cupsd,bluetoothd} /var/service
+	sudo ln -sf /etc/sv/{nanoklogd,socklog-unix,sshd,dbus,iwd,cupsd,bluetoothd,avahi-daemon,NetworkManager} /var/service
 }
 
 setup_date_time() {
