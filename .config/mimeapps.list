@@ -20,3 +20,6 @@ x-scheme-handler/postman=Postman.desktop
 application/pdf=org.pwmt.zathura.desktop;
 image/jpeg=sxiv.desktop;org.gnome.Shotwell-Viewer.desktop;
 inode/directory=org.gnome.Nautilus.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
