@@ -1,6 +1,4 @@
 {
-    // "editor.rulers": [80],
-    // "editor.trimAutoWhitespace": false,
 	"workbench.colorTheme": "Simple light",
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingDelete": "auto",
@@ -10,7 +8,7 @@
     "editor.columnSelection": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "line",
-    "editor.detectIndentation": true,
+    "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.folding": true,
     "editor.foldingHighlight": false,
@@ -26,12 +24,14 @@
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
+    "editor.rulers": [80],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
     "editor.suggest.insertMode": "replace",
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": false,
     "editor.wordWrap": "off",
     "editor.semanticTokenColorCustomizations": {
         "enabled": true
@@ -41,11 +41,12 @@
         // "source.fixAll.markdownlint": true
         "source.fixAll.eslint": true,
     },
+
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "file-icons",
     "workbench.list.defaultFindMode": "filter",
     "workbench.settings.editor": "json",
     "workbench.settings.enableNaturalLanguageSearch": false,
@@ -53,7 +54,6 @@
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 15,
     "workbench.tree.renderIndentGuides": "always",
-    // "workbench.sideBar.location": "right",
 
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
@@ -88,13 +88,14 @@
     },
 
     /** CTRL+SHIFT+C */
+	"terminal.integrated.gpuAcceleration": "on",
+	"terminal.integrated.tabs.enabled": false,
     "terminal.external.linuxExec": "/usr/bin/alacritty",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.showExitAlert": false,
-    "terminal.integrated.tabs.enabled": false,
 
     "javascript.format.semicolons": "ignore",
     "javascript.preferences.jsxAttributeCompletionStyle": "auto",
@@ -110,8 +111,6 @@
 
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
-
-    "deno.importMap": "./import_map.json",
 
     "zenMode.hideLineNumbers": false,
 
@@ -229,7 +228,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "Vue.volar",
         "editor.formatOnSave": false
     },
     "[css][scss][less]": {
@@ -284,5 +283,5 @@
     "redhat.telemetry.enabled": false,
     "mdb.sendTelemetry": false,
     "telemetry.telemetryLevel": "off",
-    "excalidraw.theme": "light",
+	"excalidraw.theme": "light"
 }
