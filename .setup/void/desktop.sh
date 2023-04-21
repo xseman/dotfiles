@@ -19,12 +19,17 @@ install_packages() {
 
 install_devel() {
 	local DEVEL=(
+		"git-lfs"
+		"git"
+		"gitflow"
+		"github-cli"
 		"go"
 		"libX11-devel"
 		"libXft-devel"
 		"libXinerama-devel"
 		"libXrandr-devel"
 		"nodejs"
+		"rustup"
         "apache-maven"
         "openjdk"
         "pnpm"
@@ -62,10 +67,6 @@ install_core() {
 		"fish-shell"
 		"fzf"
 		"gdu"
-		"git-lfs"
-		"git"
-		"gitflow"
-		"github-cli"
 		"grep"
 		"htop"
 		"ImageMagick"
