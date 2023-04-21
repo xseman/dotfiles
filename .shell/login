@@ -1,8 +1,9 @@
 # Path settings
 
 # Actual user
-pathprepend ~/.local/bin PATH
+pathprepend ~/.cargo/bin PATH
 pathprepend ~/.deno/bin PATH
+pathprepend ~/.local/bin PATH
 pathprepend ~/go/bin
 
 # Common system
