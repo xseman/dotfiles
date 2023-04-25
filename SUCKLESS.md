@@ -48,6 +48,7 @@ environment.
 
 - border
 - center
+- fuzzymatch
 
 **[slock]**
 
