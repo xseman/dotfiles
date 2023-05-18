@@ -7,9 +7,9 @@
 	xrdb -merge -I "${HOME}"/.Xresources
 }
 
-# Thinkpad T480 Trackpoint config
-xinput set-prop "Synaptics TM3276-022" "libinput Natural Scrolling Enabled" 1
-xinput set-prop "Synaptics TM3276-022" "libinput Tapping Enabled" 1
+# Thinkpad T480 Trackpoint
+# xinput set-prop "Synaptics TM3276-022" "libinput Natural Scrolling Enabled" 1
+# xinput set-prop "Synaptics TM3276-022" "libinput Tapping Enabled" 1
 
 # Background color
 xsetroot -solid "#666666"
@@ -36,13 +36,16 @@ pasystray &
 nm-applet &
 udiskie -t &
 
-# Lightweight compositor
-# picom --vsync -b
+# pipewire configs
+# https://itmecho.com/blog/voidlinux-setup-pipewire
+export XDG_RUNTIME_DIR="/run/user/$(id -u ${USER})"
+mkdir "${XDG_RUNTIME_DIR}"
+chown "${USER}":"${USER}" "${XDG_RUNTIME_DIR}"
+pipewire &
+pipewire-pulse &
 
 # Suckless window status
 ~/.local/bin/slstatus &
 
 # Suckless window manager
-exec dbus-launch \
-	--exit-with-session \
-	~/.local/bin/dwm 2>~/.dwm.log
+exec dwm 2>~/.dwm.log
