@@ -163,10 +163,11 @@ install_latex() {
 }
 
 install_go_binaries() {
+	go install github.com/antonmedv/fx@latest
 	go install github.com/mikefarah/yq@latest
+	go install github.com/xo/usql@latest
     go install github.com/dundee/gdu/v5/cmd/gdu@latest
     go install github.com/gokcehan/lf@latest
-	go install github.com/xo/usql@latest
 }
 
 install_audio
