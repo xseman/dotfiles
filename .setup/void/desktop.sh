@@ -1,5 +1,5 @@
 #!/bin/bash
-# shellcheck disable=SC1090
+# shellcheck disable=SC1090,SC2044
 
 set -e
 
@@ -32,7 +32,6 @@ install_devel() {
 		"rustup"
         "apache-maven"
         "openjdk"
-        "pnpm"
 	)
 
 	echo "Installing development libraries..."
@@ -57,7 +56,6 @@ install_desktop() {
 
 install_core() {
 	local CORE=(
-		"asciiquarium"
 		"base-devel"
 		"bash-completion"
 		"bind-utils"
@@ -275,11 +273,10 @@ setup_date_time
 
 
 post_install() {
-	# Prepare users local hierarchy
 	mkdir -p ~/.local/{bin,share}
 
 	echo "Running postinstall scripts..."
-	for script in install-*; do
+	for script in $(find ./ -name "install-*.sh"); do
 		source "${script}"
 	done
 }
