@@ -102,6 +102,7 @@ install_graphical() {
 		"audacity"
 		"brasero"
 		"chromium"
+		"dconf-editor"
 		"firefox"
 		"gimp"
 		"gitg"
@@ -118,6 +119,15 @@ install_graphical() {
 
 	echo "Installing graphical packages..."
 	install_packages "${GRAPHICAL[@]}"
+}
+
+install_wayland() {
+	local APPS=(
+		"wmctrl"
+	)
+
+	echo "Installing wayland packages..."
+	install_packages "${APPS[@]}"
 }
 
 install_virtualization() {
@@ -179,6 +189,7 @@ install_latex
 install_network
 install_services
 install_virtualization
+install_wayland
 
 
 post_install() {
