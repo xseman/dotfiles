@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# https://typeofnan.dev/how-to-stop-all-docker-containers/
+
+docker rm "$(docker ps -a -q)"
+docker rmi "$(docker images -q)"
