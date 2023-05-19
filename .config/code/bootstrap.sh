@@ -1,3 +1,4 @@
+code --install-extension adam-bender.commit-message-editor
 code --install-extension adpyke.vscode-sql-formatter
 code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension angryobject.react-pure-to-class-vscode
@@ -8,10 +9,12 @@ code --install-extension clinyong.vscode-css-modules
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension denoland.vscode-deno
+code --install-extension dprint.dprint
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension file-icons.file-icons
 code --install-extension foxundermoon.shell-format
 code --install-extension golang.go
 code --install-extension hangxingliu.vscode-nginx-conf-hint
@@ -23,14 +26,10 @@ code --install-extension IBM.output-colorizer
 code --install-extension James-Yu.latex-workshop
 code --install-extension jebbs.plantuml
 code --install-extension jinliming2.vscode-go-template
-code --install-extension jkeys089.plantuml
 code --install-extension jock.svg
-code --install-extension jripouteau.adonis-vscode-extension
-code --install-extension jspolancor.presentationmode
 code --install-extension llvm-vs-code-extensions.vscode-clangd
 code --install-extension lokalise.i18n-ally
 code --install-extension mads-hartmann.bash-ide-vscode
-code --install-extension marcostazi.VS-code-vagrantfile
 code --install-extension MariusAlchimavicius.json-to-ts
 code --install-extension matthewpi.caddyfile-support
 code --install-extension mdickin.markdown-shortcuts
@@ -49,9 +48,7 @@ code --install-extension PascalReitermann93.vscode-yaml-sort
 code --install-extension perragnaredin.light-plus-tweaked
 code --install-extension qwtel.sqlite-viewer
 code --install-extension raynigon.nginx-formatter
-code --install-extension rbbit.typescript-hero
 code --install-extension redhat.java
-code --install-extension redhat.vscode-extension-bpmn-editor
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension Remisa.shellman
@@ -63,7 +60,6 @@ code --install-extension stkb.rewrap
 code --install-extension timonwong.shellcheck
 code --install-extension Tyriar.sort-lines
 code --install-extension vscode-icons-team.vscode-icons
-code --install-extension Vue.volar
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension wmaurer.change-case
 code --install-extension xseman.simple-light
