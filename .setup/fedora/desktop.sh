@@ -124,6 +124,7 @@ install_graphical() {
 install_wayland() {
 	local APPS=(
 		"wmctrl"
+		"gnome-tweaks"
 	)
 
 	echo "Installing wayland packages..."
