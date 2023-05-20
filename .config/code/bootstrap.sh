@@ -43,6 +43,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.hexeditor
 code --install-extension ms-vscode.live-server
+code --install-extension ms-vscode.vscode-js-profile-flame
 code --install-extension pankajprakashh.guru-vscode-theme
 code --install-extension PascalReitermann93.vscode-yaml-sort
 code --install-extension perragnaredin.light-plus-tweaked
