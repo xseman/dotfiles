@@ -30,8 +30,8 @@ font:
         y: 0
 
 window:
-    decorations_theme_variant: light
-    decorations: none
+    decorations_theme_variant: Light
+    decorations: full
     padding:
         x: 3
         y: 3
