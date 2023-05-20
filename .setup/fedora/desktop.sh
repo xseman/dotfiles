@@ -173,6 +173,16 @@ install_latex() {
 	install_packages "${LATEX[@]}"
 }
 
+install_fonts() {
+	local FONTS=(
+		jetbrains-mono-fonts-all
+		terminus-fonts
+	)
+
+	echo "Installing fonts..."
+	install_packages "${FONTS[@]}"
+}
+
 install_go_binaries() {
 	go install github.com/antonmedv/fx@latest
 	go install github.com/mikefarah/yq@latest
@@ -184,6 +194,7 @@ install_go_binaries() {
 install_audio
 install_core
 install_devel
+install_fonts
 install_go_binaries
 install_graphical
 install_latex

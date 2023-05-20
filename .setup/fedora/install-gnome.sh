@@ -22,4 +22,16 @@ gsettings set "org.gnome.desktop.interface" "enable-animations" false
 ## mouse
 gsettings set "org.gnome.desktop.wm.preferences" "mouse-button-modifier" "<Alt>"
 gsettings set "org.gnome.desktop.wm.preferences" "resize-with-right-button" true
+gsettings set "org.gnome.desktop.peripherals.mouse" "accel-profile" "default"
 
+## files
+gsettings set "org.gtk.settings.file-chooser" "show-hidden" true
+gsettings set "org.gtk.gtk4.settings.file-chooser" "show-hidden" true
+gsettings set "org.gtk.gtk4.settings.file-chooser" "sort-directories-first" true
+
+## windows
+gsettings set "org.gnome.mutter" "center-new-windows" true
+gsettings set "org.gnome.desktop.wm.preferences" "focus-mode" "sloppy"
+
+## experimental
+gsettings set "org.gnome.mutter" "experimental-features" "['scale-monitor-framebuffer']"
