@@ -31,10 +31,12 @@ gsettings set org.gtk.gtk4.settings.file-chooser show-hidden true
 gsettings set org.gtk.gtk4.settings.file-chooser sort-directories-first true
 
 ## windows
-gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.desktop.wm.preferences focus-mode mouse
-gsettings set org.gnome.mutter focus-change-on-pointer-rest false
 gsettings set org.gnome.desktop.wm.preferences focus-new-windows "strict"
+gsettings set org.gnome.mutter center-new-windows true
+gsettings set org.gnome.mutter focus-change-on-pointer-rest false
+gsettings set org.gnome.shell.extensions.pop-shell focus-left "['<Super>Left']"
+gsettings set org.gnome.shell.extensions.pop-shell focus-right "['<Super>Right']"
 
 ## experimental
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
