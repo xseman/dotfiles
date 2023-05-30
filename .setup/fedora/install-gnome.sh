@@ -38,5 +38,8 @@ gsettings set org.gnome.mutter focus-change-on-pointer-rest false
 gsettings set org.gnome.shell.extensions.pop-shell focus-left "['<Super>Left']"
 gsettings set org.gnome.shell.extensions.pop-shell focus-right "['<Super>Right']"
 
+## other
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+
 ## experimental
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
