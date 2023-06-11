@@ -13,6 +13,15 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Super>Down']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Alt>f']"
 
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-down []
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-left []
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-right []
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-up []
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left []
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right []
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left []
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right []
+
 ## keyboard accessibility
 gsettings set org.gnome.desktop.peripherals.keyboard delay 150
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30

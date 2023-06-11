@@ -26,6 +26,7 @@ install_devel() {
 
 install_core() {
 	local CORE=(
+		"ImageMagick"
 		"bash-completion"
 		"bind-utils"
 		"entr"
@@ -33,7 +34,6 @@ install_core() {
 		"fish"
 		"fzf"
 		"htop"
-		"ImageMagick"
 		"jq"
 		"links"
 		"lm_sensors"
@@ -47,6 +47,7 @@ install_core() {
 		"netcat"
 		"ngrep"
 		"nmap"
+		"openssl"
 		"pandoc"
 		"parallel"
 		"pcre2-tools"
@@ -73,8 +74,8 @@ install_core() {
 		"wl-clipboard"
 		"xz"
 		"youtube-dl"
-		"zathura-pdf-mupdf"
 		"zathura"
+		"zathura-pdf-mupdf"
 		"zip"
 	)
 
@@ -168,7 +169,8 @@ install_audio() {
 
 install_latex() {
 	local LATEX=(
-		"texlive"
+		"texlive-scheme-basic"
+		"texlive-fontawesome"
 	)
 
 	echo "Installing latex tools..."
