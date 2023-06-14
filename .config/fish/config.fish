@@ -43,7 +43,3 @@ alias ls="ls --group-directories-first --quoting-style=literal --show-control-ch
 alias temp="cd (mktemp -d)"
 alias tm="tmux attach || tmux"
 alias xclip="xclip -selection clipboard"
-
-if type -q "code-oss"
-	alias code="code-oss"
-end
