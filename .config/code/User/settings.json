@@ -1,5 +1,5 @@
 {
-	"workbench.colorTheme": "Simple light",
+	"editor.linkedEditing": true,
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingDelete": "auto",
     "editor.autoClosingQuotes": "languageDefined",
@@ -42,6 +42,7 @@
         "source.fixAll.eslint": true,
     },
 
+	"workbench.colorTheme": "Simple light",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.untitled.hint": "hidden",
@@ -122,7 +123,6 @@
     "prettier.arrowParens": "always",
 
     "eslint.codeActionsOnSave.mode": "all",
-    "eslint.alwaysShowStatus": true,
     "eslint.run": "onSave",
     "eslint.validate": [
         "css",
@@ -190,6 +190,9 @@
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
 
+	"yaml.maxItemsComputed": 10000,
+	"json.maxItemsComputed": 10000,
+
     "xml.format.emptyElements": "collapse",
     "xml.format.joinCommentLines": true,
     "xml.format.joinContentLines": true,
@@ -197,6 +200,11 @@
     "xml.format.spaceBeforeEmptyCloseTag": true,
     "xml.format.splitAttributes": true,
     "xml.format.xsiSchemaLocationSplit": "onElement",
+
+	"hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
 
     "i18n-ally.displayLanguage": "en",
     "i18n-ally.keystyle": "nested",
@@ -227,10 +235,6 @@
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "[vue]": {
-        "editor.defaultFormatter": "Vue.volar",
-        "editor.formatOnSave": false
-    },
     "[css][scss][less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
@@ -246,11 +250,7 @@
         "editor.formatOnSave": false,
         "files.trimTrailingWhitespace": false
     },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml",
-        "editor.tabSize": 4
-    },
-    "[yml][yaml]": {
+    "[yml][yaml][xml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": false,
         "editor.tabSize": 4
@@ -276,12 +276,15 @@
         "editor.defaultFormatter": "raynigon.nginx-formatter",
         "editor.tabSize": 4
     },
+	"[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
 
+	"excalidraw.theme": "light",
     "latex-workshop.latex.autoBuild.run": "never",
-    "svg.preview.mode": "img",
+    "mdb.sendTelemetry": false,
     "problems.autoReveal": false,
     "redhat.telemetry.enabled": false,
-    "mdb.sendTelemetry": false,
+    "svg.preview.mode": "img",
     "telemetry.telemetryLevel": "off",
-	"excalidraw.theme": "light"
 }
