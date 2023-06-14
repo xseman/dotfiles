@@ -1,3 +1,4 @@
+code --install-extension 42Crunch.vscode-openapi
 code --install-extension adam-bender.commit-message-editor
 code --install-extension adpyke.vscode-sql-formatter
 code --install-extension ahmadalli.vscode-nginx-conf
@@ -34,6 +35,7 @@ code --install-extension MariusAlchimavicius.json-to-ts
 code --install-extension matthewpi.caddyfile-support
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mechatroner.rainbow-csv
+code --install-extension mermade.openapi-lint
 code --install-extension MichaelZhou.fleet-theme
 code --install-extension mikestead.dotenv
 code --install-extension mongodb.mongodb-vscode
