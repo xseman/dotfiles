@@ -134,6 +134,15 @@ install_wayland() {
 	install_packages "${APPS[@]}"
 }
 
+install_gnome_extensions() {
+	local EXTENSIONS=(
+		"gnome-shell-extension-pop-shell"
+	)
+
+	echo "Installing gnome extensions..."
+	install_packages "${EXTENSIONS[@]}"
+}
+
 install_virtualization() {
     local VIRT=(
 		"qemu"
@@ -177,6 +186,15 @@ install_latex() {
 	install_packages "${LATEX[@]}"
 }
 
+install_docs() {
+	local DOCS=(
+		"pdfarranger"
+	)
+
+	echo "Installing docs..."
+	install_packages "${DOCS[@]}"
+}
+
 install_fonts() {
 	local FONTS=(
 		jetbrains-mono-fonts-all
@@ -206,7 +224,7 @@ install_network
 install_services
 install_virtualization
 install_wayland
-
+install_gnome_extensions
 
 post_install() {
 	mkdir -p ~/.local/{bin,share}
