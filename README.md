@@ -109,7 +109,6 @@ to.
 - `virt-manager` — User interface for managing virtual machines
 - `virtualbox-ose` — General-purpose full virtualizer for x86 hardware, targeted
 
-
 ### System information
 
 - `free` — Display amount of free and used memory in the system
@@ -218,6 +217,7 @@ to.
 - `v4l2-utils` — Userspace tools and conversion library for Video 4 Linux
 - `whois` — Client for the whois directory service
 - `lsof` — List open files
+- `zcat` — Expand and view a compressed file without uncompressing that file
 
 ### Suckless
 

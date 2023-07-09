@@ -11,13 +11,16 @@ install_packages() {
 
 install_devel() {
 	local DEVEL=(
+		"gh"
 		"git-lfs"
 		"git"
 		"golang"
+		"java-11-openjdk"
+		"java-17-openjdk"
+		"maven"
 		"nodejs"
-        "java-11-openjdk"
-        "java-17-openjdk"
-        "maven"
+		"php-cli"
+		"php"
 	)
 
 	echo "Installing development libraries..."
@@ -83,15 +86,14 @@ install_core() {
 	install_packages "${CORE[@]}"
 }
 
-
 install_services() {
 	local SERVICES=(
 		"avahi" # mdns
-		"podman"
-		"podman-compose"
-		# "docker"
-		# "docker-compose"
+		"docker-compose"
+		"docker"
 		"openssh"
+		"podman-compose"
+		"podman"
 	)
 
 	echo "Installing services packages..."
@@ -144,11 +146,11 @@ install_gnome_extensions() {
 }
 
 install_virtualization() {
-    local VIRT=(
+	local VIRT=(
 		"qemu"
 		"libvirt"
 		"virt-manager"
-    )
+	)
 
 	echo "Installing virtualization packages..."
 	install_packages "${VIRT[@]}"
@@ -178,8 +180,14 @@ install_audio() {
 
 install_latex() {
 	local LATEX=(
-		"texlive-scheme-basic"
 		"texlive-fontawesome"
+		"texlive-fontsetup"
+		"texlive-fontsize"
+		"texlive-ifthenx"
+		"texlive-parskip"
+		"texlive-pst-graphicx"
+		"texlive-scheme-basic"
+		"texlive"
 	)
 
 	echo "Installing latex tools..."
@@ -209,8 +217,8 @@ install_go_binaries() {
 	go install github.com/antonmedv/fx@latest
 	go install github.com/mikefarah/yq@latest
 	go install github.com/xo/usql@latest
-    go install github.com/dundee/gdu/v5/cmd/gdu@latest
-    go install github.com/gokcehan/lf@latest
+	go install github.com/dundee/gdu/v5/cmd/gdu@latest
+	go install github.com/gokcehan/lf@latest
 }
 
 install_audio
