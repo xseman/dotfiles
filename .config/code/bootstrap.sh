@@ -7,6 +7,7 @@ code --install-extension attilabuti.mustache-syntax-vscode
 code --install-extension bmalehorn.vscode-fish
 code --install-extension christian-kohler.path-intellisense
 code --install-extension clinyong.vscode-css-modules
+code --install-extension ctenbrinke.vscode-tsv
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension denoland.vscode-deno
@@ -15,8 +16,10 @@ code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension eseom.nunjucks-template
 code --install-extension file-icons.file-icons
 code --install-extension foxundermoon.shell-format
+code --install-extension github.vscode-github-actions
 code --install-extension golang.go
 code --install-extension hangxingliu.vscode-nginx-conf-hint
 code --install-extension hars.CppSnippets
@@ -35,9 +38,9 @@ code --install-extension MariusAlchimavicius.json-to-ts
 code --install-extension matthewpi.caddyfile-support
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mechatroner.rainbow-csv
-code --install-extension mermade.openapi-lint
 code --install-extension MichaelZhou.fleet-theme
 code --install-extension mikestead.dotenv
+code --install-extension mohd-akram.vscode-html-format
 code --install-extension mongodb.mongodb-vscode
 code --install-extension mrmlnc.vscode-less
 code --install-extension mrmlnc.vscode-scss
@@ -56,6 +59,7 @@ code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension Remisa.shellman
 code --install-extension richie5um2.vscode-sort-json
+code --install-extension ronnidc.nunjucks
 code --install-extension runem.lit-plugin
 code --install-extension shanoor.vscode-nginx
 code --install-extension sleistner.vscode-fileutils
