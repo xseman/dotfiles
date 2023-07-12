@@ -21,6 +21,8 @@ install_devel() {
 		"nodejs"
 		"php-cli"
 		"php"
+		"python3-virtualenv"
+		"python3"
 	)
 
 	echo "Installing development libraries..."
@@ -111,6 +113,7 @@ install_graphical() {
 		"firefox"
 		"gimp"
 		"gitg"
+		"google-chrome-stable"
 		"gparted"
 		"inkscape"
 		"keepassxc"
