@@ -1,4 +1,5 @@
 {
+	"editor.inlineSuggest.enabled": true,
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingDelete": "auto",
     "editor.autoClosingQuotes": "languageDefined",
@@ -7,7 +8,7 @@
     "editor.columnSelection": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "line",
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "editor.dragAndDrop": false,
     "editor.folding": true,
     "editor.foldingHighlight": false,
@@ -20,10 +21,10 @@
     "editor.insertSpaces": true,
     "editor.largeFileOptimizations": false,
     "editor.lineNumbers": "on",
+    "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.renderWhitespace": "selection",
-    // "editor.rulers": [80],
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": false,
     "editor.snippetSuggestions": "inline",
@@ -32,13 +33,14 @@
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": false,
     "editor.wordWrap": "off",
+    // "editor.rulers": [80],
     "editor.semanticTokenColorCustomizations": {
         "enabled": true
     },
     "editor.codeActionsOnSave": {
-        // "source.organizeImports": true
-        // "source.fixAll.markdownlint": true
         "source.fixAll.eslint": true,
+        // "source.organizeImports": true,
+        // "source.fixAll.markdownlint": true
     },
 
 	"workbench.colorTheme": "Simple light",
@@ -54,6 +56,7 @@
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 15,
     "workbench.tree.renderIndentGuides": "always",
+    // "workbench.sideBar.location": "right",
 
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
@@ -78,7 +81,9 @@
     // "files.trimTrailingWhitespace": true,
     "files.associations": {
         ".git*": "ini",
-        "*.json": "json"
+        "*.json": "json",
+        "config": "gitconfig",
+        "crontab": "shellscript"
     },
     "files.watcherExclude": {
         /** defaults */
@@ -89,20 +94,20 @@
 
     /** CTRL+SHIFT+C */
 	"terminal.integrated.gpuAcceleration": "on",
-	"terminal.integrated.tabs.enabled": false,
     "terminal.external.linuxExec": "/usr/bin/alacritty",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.showExitAlert": false,
+    "terminal.integrated.tabs.enabled": false,
 
-    "javascript.format.semicolons": "ignore",
+    "javascript.format.semicolons": "insert",
     "javascript.preferences.jsxAttributeCompletionStyle": "auto",
     "javascript.preferences.quoteStyle": "double",
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
 
-    "typescript.format.semicolons": "ignore",
+    "typescript.format.semicolons": "insert",
     "typescript.preferences.jsxAttributeCompletionStyle": "auto",
     "typescript.preferences.quoteStyle": "double",
     "typescript.preferences.useAliasesForRenames": false,
@@ -122,7 +127,7 @@
     "prettier.arrowParens": "always",
 
     "eslint.codeActionsOnSave.mode": "all",
-    "eslint.alwaysShowStatus": true,
+	"eslint.alwaysShowStatus": true,
     "eslint.run": "onSave",
     "eslint.validate": [
         "css",
@@ -231,8 +236,14 @@
             "source.organizeImports": true
         }
     },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.detectIndentation" : false,
+    },
     "[typescriptreact][javascriptreact][typescript][javascript]": {
-        "editor.formatOnSave": false,
+        // "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[css][scss][less]": {
@@ -280,10 +291,7 @@
         "editor.defaultFormatter": "raynigon.nginx-formatter",
         "editor.tabSize": 4
     },
-	"[sql]": {
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-    },
-	"excalidraw.theme": "light",
+
     "latex-workshop.latex.autoBuild.run": "never",
     "mdb.sendTelemetry": false,
     "problems.autoReveal": false,
