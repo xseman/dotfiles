@@ -2,7 +2,7 @@
 [user]
 	name = Filip Seman
 	email = filip.seman@protonmail.com
-	# signingKey =  # path to your key
+	# signingKey =  ~/.ssh/id_rsa.pub
 
 [push]
 	default = simple
@@ -29,13 +29,9 @@
 	# https://calebhearth.com/sign-git-with-ssh
 	format = ssh
 
-[gpg "ssh"]
-	# e.g.: https://github.com/xseman.keys
-	# allowedSignersFile = # ~/.ssh/allowed_signers
-
-# Override defaults based on working path, useful for multiple projects
-# [includeIf "gitdir:~/project/"]
-# 	path = .gituser-project
+# Override defaults based on working path, useful for multiple company/projects
+# [includeIf "gitdir:~/work/<company>/"]
+# 	path = .gituser-company
 
 [url "git@gitlab.com:"]
 	insteadOf = https://gitlab.com/
