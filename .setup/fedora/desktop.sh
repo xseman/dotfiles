@@ -12,21 +12,48 @@ install_packages() {
 install_devel() {
 	local DEVEL=(
 		"gh"
-		"git-lfs"
 		"git"
+		"git-lfs"
 		"golang"
 		"java-11-openjdk"
 		"java-17-openjdk"
 		"maven"
 		"nodejs"
-		"php-cli"
 		"php"
-		"python3-virtualenv"
-		"python3"
+		"php-cli"
 	)
 
 	echo "Installing development libraries..."
 	install_packages "${DEVEL[@]}"
+}
+
+install_python() {
+	local PREREQUISITES=(
+		"zlib-devel"
+		"bzip2"
+		"bzip2-devel"
+		"readline-devel"
+		"sqlite"
+		"sqlite-devel"
+		"openssl-devel"
+		"xz"
+		"xz-devel"
+		"libffi-devel"
+		"findutils"
+	)
+
+	install_packages "${PREREQUISITES[@]}"
+
+	local PACKAGES=(
+		"pip"
+		"pipenv"
+		"pipfile"
+		"pyenv"
+		"python3"
+		"python3-virtualenv"
+	)
+
+	install_packages "${PACKAGES[@]}"
 }
 
 install_core() {
@@ -222,11 +249,13 @@ install_go_binaries() {
 	go install github.com/xo/usql@latest
 	go install github.com/dundee/gdu/v5/cmd/gdu@latest
 	go install github.com/gokcehan/lf@latest
+	# go install github.com/wagoodman/dive@latest
 }
 
 install_audio
 install_core
 install_devel
+install_python
 install_fonts
 install_go_binaries
 install_graphical
