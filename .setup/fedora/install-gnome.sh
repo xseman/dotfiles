@@ -35,8 +35,9 @@ gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile default
 
 ## windows
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-up "['<Alt>period']"
 gsettings set org.gnome.desktop.wm.preferences focus-mode mouse
-gsettings set org.gnome.desktop.wm.preferences focus-new-windows "strict"
+gsettings set org.gnome.desktop.wm.preferences.focus-new-windows "smart"
 gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.mutter focus-change-on-pointer-rest false
 gsettings set org.gnome.shell.extensions.pop-shell focus-left "['<Super>Left']"
@@ -47,9 +48,9 @@ gsettings set org.gtk.settings.file-chooser show-hidden true
 gsettings set org.gtk.gtk4.settings.file-chooser show-hidden true
 gsettings set org.gtk.gtk4.settings.file-chooser sort-directories-first true
 
-
-## other
+## others
 gsettings set org.gnome.desktop.interface enable-hot-corners false
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
 
 ## experimental
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
