@@ -1,301 +1,312 @@
 {
-	"editor.inlineSuggest.enabled": true,
-    "editor.autoClosingBrackets": "languageDefined",
-    "editor.autoClosingDelete": "auto",
-    "editor.autoClosingQuotes": "languageDefined",
-    "editor.bracketPairColorization.enabled": false,
-    "editor.codeLens": true,
-    "editor.columnSelection": false,
-    "editor.cursorBlinking": "solid",
-    "editor.cursorStyle": "line",
-    "editor.detectIndentation": true,
-    "editor.dragAndDrop": false,
-    "editor.folding": true,
-    "editor.foldingHighlight": false,
-    "editor.foldingImportsByDefault": false,
-    "editor.fontFamily": "JetBrains mono, Cascadia Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 13,
-    "editor.formatOnSave": false,
-    "editor.glyphMargin": false,
-    "editor.insertSpaces": true,
-    "editor.largeFileOptimizations": false,
-    "editor.lineNumbers": "on",
-    "editor.linkedEditing": true,
-    "editor.minimap.enabled": false,
-    "editor.minimap.renderCharacters": false,
-    "editor.renderWhitespace": "selection",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.smoothScrolling": false,
-    "editor.snippetSuggestions": "inline",
-    "editor.suggest.insertMode": "replace",
-    "editor.suggestSelection": "first",
-    "editor.tabSize": 4,
-    "editor.trimAutoWhitespace": false,
-    "editor.wordWrap": "off",
-    // "editor.rulers": [80],
-    "editor.semanticTokenColorCustomizations": {
-        "enabled": true
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        // "source.organizeImports": true,
-        // "source.fixAll.markdownlint": true
-    },
+	"editor.autoClosingBrackets": "languageDefined",
+	"editor.autoClosingDelete": "auto",
+	"editor.autoClosingQuotes": "languageDefined",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.codeLens": true,
+	"editor.columnSelection": false,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorStyle": "line",
+	"editor.detectIndentation": true,
+	"editor.folding": true,
+	"editor.foldingHighlight": false,
+	"editor.foldingImportsByDefault": false,
+	"editor.fontFamily": "JetBrains mono, Cascadia Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 13,
+	"editor.formatOnSave": false,
+	"editor.glyphMargin": false,
+	"editor.insertSpaces": true,
+	"editor.largeFileOptimizations": false,
+	"editor.lineNumbers": "on",
+	"editor.linkedEditing": true,
+	"editor.minimap.enabled": false,
+	"editor.minimap.renderCharacters": false,
+	"editor.renderWhitespace": "selection",
+	"editor.semanticHighlighting.enabled": true,
+	"editor.smoothScrolling": false,
+	"editor.snippetSuggestions": "inline",
+	"editor.suggest.insertMode": "insert",
+	"editor.suggestSelection": "first",
+	// "editor.rulers": [80],
+	// "editor.trimAutoWhitespace": false,
+	"editor.wordWrap": "off",
+	"editor.semanticTokenColorCustomizations": {
+	  "enabled": true
+	},
+	"editor.codeActionsOnSave": {
+	  "source.fixAll.eslint": "explicit"
+	},
 
 	"workbench.colorTheme": "Simple light",
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.showTabs": true,
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.enableExperiments": false,
-    "workbench.iconTheme": "file-icons",
-    "workbench.list.defaultFindMode": "filter",
-    "workbench.settings.editor": "json",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "none",
-    "workbench.tree.indent": 15,
-    "workbench.tree.renderIndentGuides": "always",
-    // "workbench.sideBar.location": "right",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.editor.limit.enabled": true,
+	"workbench.editor.limit.value": 6,
+	"workbench.enableExperiments": false,
+	"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
+	"workbench.list.defaultFindMode": "filter",
+	"workbench.settings.editor": "json",
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"workbench.settings.useSplitJSON": true,
+	"workbench.startupEditor": "none",
+	"workbench.tree.enableStickyScroll": false,
+	"workbench.tree.indent": 15,
+	"workbench.tree.renderIndentGuides": "always",
+	// "workbench.editor.showTabs": "none",
 
-    "window.customMenuBarAltFocus": false,
-    "window.enableMenuBarMnemonics": false,
-    "window.menuBarVisibility": "hidden",
-    "window.title": "${rootName}",
-    "window.titleBarStyle": "custom",
-    "window.titleSeparator": " - ",
+	"window.customMenuBarAltFocus": false,
+	"window.enableMenuBarMnemonics": false,
+	"window.menuBarVisibility": "hidden",
+	"window.newWindowDimensions": "maximized",
+	"window.restoreFullscreen": true,
+	"window.title": "${rootName}",
+	"window.zoomPerWindow": false,
 
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.filePath": "on",
+	"keyboard.dispatch": "keyCode",
 
-    "search.smartCase": true,
+	"breadcrumbs.enabled": true,
+	"breadcrumbs.filePath": "on",
 
-    "explorer.autoReveal": false,
-    "explorer.incrementalNaming": "smart",
-    "explorer.sortOrder": "type",
-    // "explorer.enableDragAndDrop": false,
+	// "search.smartCase": true,
 
-    "files.autoSave": "off",
-    "files.insertFinalNewline": false,
-    "files.refactoring.autoSave": true,
-    // "files.trimTrailingWhitespace": true,
-    "files.associations": {
-        ".git*": "ini",
-        "*.json": "json",
-        "config": "gitconfig",
-        "crontab": "shellscript"
-    },
-    "files.watcherExclude": {
-        /** defaults */
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true
-    },
+	"explorer.autoReveal": false,
+	"explorer.enableDragAndDrop": false,
+	"explorer.incrementalNaming": "smart",
+	"explorer.sortOrder": "type",
+	"explorer.sortOrderLexicographicOptions": "unicode",
 
-    /** CTRL+SHIFT+C */
-	"terminal.integrated.gpuAcceleration": "on",
-    "terminal.external.linuxExec": "/usr/bin/alacritty",
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.showExitAlert": false,
-    "terminal.integrated.tabs.enabled": false,
+	"files.autoSave": "off",
+	"files.insertFinalNewline": false,
+	"files.refactoring.autoSave": true,
+	// "files.trimTrailingWhitespace": true,
+	"files.associations": {
+		".git*": "ini",
+		"*.json": "json",
+		"config": "gitconfig",
+		"crontab": "shellscript",
+		"tsconfig.json": "jsonc",
+		"Caddyfile*": "caddyfile",
+		".gitlab-ci.yml": "yaml"
+	},
+	"files.exclude": {
+		"**/.git": false,
+		"**/.DS_Store": false
+	},
+	"files.watcherExclude": {
+		/** defaults */
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/*/**": true
+	},
 
-    "javascript.format.semicolons": "insert",
-    "javascript.preferences.jsxAttributeCompletionStyle": "auto",
-    "javascript.preferences.quoteStyle": "double",
-    "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
-
-    "typescript.format.semicolons": "insert",
-    "typescript.preferences.jsxAttributeCompletionStyle": "auto",
-    "typescript.preferences.quoteStyle": "double",
-    "typescript.preferences.useAliasesForRenames": false,
-    "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-
-    "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
-
-    "zenMode.hideLineNumbers": false,
-
-    "prettier.printWidth": 80,
-    "prettier.proseWrap": "always",
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": false,
-    "prettier.semi": false,
-    "prettier.arrowParens": "always",
-
-    "eslint.codeActionsOnSave.mode": "all",
-	"eslint.alwaysShowStatus": true,
-    "eslint.run": "onSave",
-    "eslint.validate": [
-        "css",
-        "html",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
+	"json.schemas": [
+        {
+			"fileMatch": [".gitlab-ci.yml"],
+			"url": "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json"
+		},
     ],
 
-    "rewrap.autoWrap.enabled": true,
-    "rewrap.wrappingColumn": 80,
+	/** CTRL+SHIFT+C */
+	"terminal.external.linuxExec": "/usr/bin/alacritty",
+	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.fontFamily": "JetBrains Mono",
+	"terminal.integrated.fontSize": 12,
+	"terminal.integrated.showExitAlert": false,
+	"terminal.integrated.tabs.enabled": false,
 
-    "markdownlint.config": {
-        "default": true,
-        "spaces": false,
-        "MD010": false,
-        "MD025": false,
-        "MD033": false,
-        "MD036": false,
-        "MD004": {
-            "style": "consistent"
-        },
-        "MD007": {
-            "indent": 2
-        },
-        "MD013": {
-            "line_length": 80,
-            "tables": false
-        },
-        "MD030": {
-            "ol_multi": 1,
-            "ol_single": 1,
-            "ul_multi": 1,
-            "ul_single": 1
-        }
-    },
+	"javascript.format.semicolons": "insert",
+	"javascript.preferences.jsxAttributeCompletionStyle": "auto",
+	"javascript.preferences.quoteStyle": "double",
+	"javascript.suggest.includeAutomaticOptionalChainCompletions": true,
 
-    "css.lint.emptyRules": "ignore",
-    "less.lint.emptyRules": "ignore",
-    "scss.lint.emptyRules": "ignore",
+	"typescript.format.semicolons": "insert",
+	"typescript.preferences.jsxAttributeCompletionStyle": "auto",
+	"typescript.preferences.quoteStyle": "double",
+	"typescript.preferences.useAliasesForRenames": false,
+	"typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
 
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.excludeLanguages": ["markdown", "typescript"],
-    "emmet.includeLanguages": {
-        "nunjucks": "html",
-        "typescript": "typescriptreact",
-        "javascript": "javascriptreact"
-    },
+	"go.formatTool": "goimports",
+	"go.useLanguageServer": true,
 
-    "git.confirmSync": false,
-    "git.mergeEditor": false,
-    "git.openDiffOnClick": true,
-    "git.suggestSmartCommit": false,
-    "git.untrackedChanges": "separate",
+	"zenMode.hideLineNumbers": false,
 
-    "gitlens.blame.compact": true,
-    "gitlens.blame.format": "${message|15?} ${agoOrDate|15-}",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.views.repositories.files.layout": "tree",
+	"prettier.printWidth": 80,
+	"prettier.proseWrap": "always",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": false,
+	"prettier.semi": false,
+	"prettier.arrowParens": "always",
 
-    "diffEditor.experimental.collapseUnchangedRegions": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.maxComputationTime": 0,
+	"eslint.codeActionsOnSave.mode": "all",
+	"eslint.alwaysShowStatus": true,
+	"eslint.run": "onSave",
+	"eslint.validate": [
+		"css",
+		"html",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
 
-    "extensions.autoCheckUpdates": true,
-    "extensions.autoUpdate": true,
-    "extensions.ignoreRecommendations": true,
+	"rewrap.autoWrap.enabled": true,
+	"rewrap.wrappingColumn": 80,
 
-    "xml.format.emptyElements": "collapse",
-    "xml.format.joinCommentLines": true,
-    "xml.format.joinContentLines": true,
-    "xml.format.preserveAttributeLineBreaks": true,
-    "xml.format.spaceBeforeEmptyCloseTag": true,
-    "xml.format.splitAttributes": true,
-    "xml.format.xsiSchemaLocationSplit": "onElement",
+	"markdown.extension.toc.updateOnSave": false,
+	"markdownlint.config": {
+		"default": true,
+		"spaces": false,
+		"MD004": {
+			"style": "consistent"
+		},
+		"MD007": {
+			"indent": 1
+		},
+		"MD010": false,
+		"MD013": {
+			"line_length": 80,
+			"tables": false
+		},
+		"MD024": false,
+		"MD025": false,
+		"MD033": false,
+		"MD036": false
+	},
+
+	"css.lint.emptyRules": "ignore",
+	"less.lint.emptyRules": "ignore",
+	"scss.lint.emptyRules": "ignore",
+
+	"emmet.showSuggestionsAsSnippets": true,
+	"emmet.excludeLanguages": ["markdown", "typescript"],
+	"emmet.includeLanguages": {
+		"nunjucks": "html",
+		"typescript": "typescriptreact",
+		"javascript": "javascriptreact"
+	},
+
+	"git.confirmSync": true,
+	"git.mergeEditor": false,
+	"git.openDiffOnClick": true,
+	"git.suggestSmartCommit": false,
+	"git.untrackedChanges": "separate",
+
+	"gitlens.blame.compact": true,
+	"gitlens.blame.format": "${message|5?} ${agoOrDate|10-}",
+	"gitlens.codeLens.enabled": false,
+	"gitlens.currentLine.enabled": false,
+	"gitlens.views.branches.branches.layout": "list",
+	"gitlens.views.repositories.files.layout": "tree",
+
+	"diffEditor.experimental.collapseUnchangedRegions": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.maxComputationTime": 0,
+
+	"extensions.autoCheckUpdates": true,
+	"extensions.autoUpdate": true,
+	"extensions.ignoreRecommendations": true,
+
+	"xml.format.emptyElements": "collapse",
+	"xml.format.joinCommentLines": true,
+	"xml.format.joinContentLines": true,
+	"xml.format.preserveAttributeLineBreaks": true,
+	"xml.format.spaceBeforeEmptyCloseTag": true,
+	"xml.format.splitAttributes": true,
+	"xml.format.xsiSchemaLocationSplit": "onElement",
 
 	"hexeditor.columnWidth": 16,
-    "hexeditor.showDecodedText": true,
-    "hexeditor.defaultEndianness": "little",
-    "hexeditor.inspectorType": "aside",
+	"hexeditor.showDecodedText": true,
+	"hexeditor.defaultEndianness": "little",
+	"hexeditor.inspectorType": "aside",
 
-    "i18n-ally.displayLanguage": "en",
-    "i18n-ally.keystyle": "nested",
+	"i18n-ally.displayLanguage": "en",
+	"i18n-ally.keystyle": "nested",
 
-    "debug.console.fontSize": 11,
-    "debug.console.wordWrap": false,
+	"debug.console.fontSize": 11,
+	"debug.console.wordWrap": false,
 
-    "[shellscript][bash][perl]": {
-        "editor.tabSize": 4,
-        "editor.formatOnSave": false
-    },
-    "[fish]": {
-        "editor.defaultFormatter": "bmalehorn.vscode-fish",
-        "editor.tabSize": 4
-    },
-    "[c]": {
-        "editor.tabSize": 4
-    },
-    "[go]": {
-        "editor.tabSize": 4,
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.organizeImports": true
-        }
-    },
-    "[python]": {
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true,
-        "editor.formatOnSave": true,
-        "editor.detectIndentation" : false,
-    },
-    "[typescriptreact][javascriptreact][typescript][javascript]": {
-        // "editor.formatOnSave": true,
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[css][scss][less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
-    "[html][handlebars]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false,
-        "editor.tabSize": 4
-    },
-    "[markdown][plaintext]": {
-        "editor.defaultFormatter": "denoland.vscode-deno",
-        "editor.renderWhitespace": "all",
-        "editor.formatOnSave": false,
-        "files.trimTrailingWhitespace": false
-    },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml",
-        "editor.tabSize": 4
-    },
-    "[yml][yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml",
-        "editor.formatOnSave": false,
-        "editor.tabSize": 4
-    },
-    "[dockercompose][dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "[tex][latex]": {
-        "editor.tabSize": 4,
-        "editor.defaultFormatter": "James-Yu.latex-workshop"
-    },
-    "[json][jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false,
-        "editor.tabSize": 4
-    },
-    "[caddyfile]": {
-        "editor.insertSpaces": false,
-        "editor.formatOnSave": true,
-        "editor.tabSize": 4
-    },
-    "[nginx]": {
-        "editor.defaultFormatter": "raynigon.nginx-formatter",
-        "editor.tabSize": 4
-    },
+	"[shellscript][bash][perl]": {
+		"editor.tabSize": 4,
+		"editor.formatOnSave": false
+	},
+	"[fish]": {
+		"editor.defaultFormatter": "bmalehorn.vscode-fish",
+		"editor.tabSize": 4
+	},
+	"[c]": {
+		"editor.tabSize": 4
+	},
+	"[go]": {
+		"editor.tabSize": 4,
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true,
+			"source.organizeImports": true
+		}
+	},
+	"[python]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"editor.formatOnSave": true,
+		"editor.detectIndentation": false
+	},
+	"[typescriptreact][javascriptreact][typescript][javascript]": {
+		// "editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[css][scss][less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[html][handlebars]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": false,
+		"editor.tabSize": 4
+	},
+	"[markdown][plaintext]": {
+		"editor.defaultFormatter": "denoland.vscode-deno",
+		"editor.renderWhitespace": "all",
+		"editor.formatOnSave": false,
+		"files.trimTrailingWhitespace": false
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "redhat.vscode-xml",
+		"editor.tabSize": 4
+	},
+	"[yml][yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+		"editor.formatOnSave": false,
+		"editor.tabSize": 4
+	},
+	"[dockercompose][dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"[tex][latex]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
+	},
+	"[json][jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": false,
+		"editor.tabSize": 4
+	},
+	"[caddyfile]": {
+		"editor.insertSpaces": false,
+		"editor.formatOnSave": true,
+		"editor.tabSize": 4
+	},
+	"[nginx]": {
+		"editor.defaultFormatter": "raynigon.nginx-formatter",
+		"editor.tabSize": 4
+	},
 
-    "latex-workshop.latex.autoBuild.run": "never",
-    "mdb.sendTelemetry": false,
-    "problems.autoReveal": false,
-    "redhat.telemetry.enabled": false,
-    "svg.preview.mode": "svg",
-    "telemetry.telemetryLevel": "off",
+	"latex-workshop.latex.autoBuild.run": "never",
+	"mdb.sendTelemetry": false,
+	"problems.autoReveal": false,
+	"redhat.telemetry.enabled": false,
+	"svg.preview.mode": "svg",
+	"telemetry.telemetryLevel": "off"
 }

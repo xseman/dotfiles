@@ -9,7 +9,7 @@ done
 
 cd "$(dirname "${0}")" || exit 1
 
-FILE=bootstrap.sh
+FILE=extensions.sh
 
 if [ -f ${FILE} ]; then
     rm ./${FILE}
