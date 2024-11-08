@@ -65,6 +65,7 @@ install_core() {
 		"fd-find"
 		"fish"
 		"fzf"
+		"gnuplot"
 		"htop"
 		"jq"
 		"links"
@@ -168,7 +169,11 @@ install_wayland() {
 
 install_gnome_extensions() {
 	local EXTENSIONS=(
-		"gnome-shell-extension-pop-shell"
+		"gnome-shell-extension-arcmenu"
+		"gnome-shell-extension-caffeine"
+		"gnome-shell-extension-clipboard-history"
+		"gnome-shell-extension-ddterm"
+		"gnome-shell-extension-wifiqrcode"
 	)
 
 	echo "Installing gnome extensions..."
@@ -210,6 +215,7 @@ install_audio() {
 
 install_latex() {
 	local LATEX=(
+		"texlive-scheme-full"
 		"texlive-fontawesome"
 		"texlive-fontsetup"
 		"texlive-fontsize"
