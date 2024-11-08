@@ -1,14 +1,14 @@
-# import = [
+[general]
+import = [
 	"~/.config/alacritty/theme.toml",
-	"~/.config/alacritty/keybindings.toml"
+	"~/.config/alacritty/keybindings.toml",
 	"~/.config/alacritty/schemes/simple.toml",
 #	"~/.config/alacritty/schemes/base16_dark.toml",
 #	"~/.config/alacritty/schemes/gruvbox.toml",
 #	"~/.config/alacritty/schemes/gruvbox_dark.toml",
 #	"~/.config/alacritty/schemes/onehalf_dark.toml",
 #	"~/.config/alacritty/schemes/xteml.toml"
-# ]
-
+]
 live_config_reload = true
 
 [bell]
