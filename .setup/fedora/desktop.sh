@@ -45,10 +45,10 @@ install_python() {
 	install_packages "${PREREQUISITES[@]}"
 
 	local PACKAGES=(
-		"pip"
-		"pipenv"
-		"pipfile"
-		"pyenv"
+		# "pip"
+		# "pipenv"
+		# "pipfile"
+		# "pyenv"
 		"python3"
 		"python3-virtualenv"
 	)
@@ -75,7 +75,6 @@ install_core() {
 		"mdns-scan"
 		"minicom"
 		"ncdu"
-		"neofetch"
 		"net-tools"
 		"netcat"
 		"ngrep"
@@ -169,11 +168,11 @@ install_wayland() {
 
 install_gnome_extensions() {
 	local EXTENSIONS=(
-		"gnome-shell-extension-arcmenu"
-		"gnome-shell-extension-caffeine"
-		"gnome-shell-extension-clipboard-history"
-		"gnome-shell-extension-ddterm"
-		"gnome-shell-extension-wifiqrcode"
+		# "gnome-shell-extension-arcmenu"
+		# "gnome-shell-extension-caffeine"
+		# "gnome-shell-extension-clipboard-history"
+		# "gnome-shell-extension-ddterm"
+		# "gnome-shell-extension-wifiqrcode"
 	)
 
 	echo "Installing gnome extensions..."
@@ -215,7 +214,7 @@ install_audio() {
 
 install_latex() {
 	local LATEX=(
-		"texlive-scheme-full"
+		# "texlive-scheme-full"
 		"texlive-fontawesome"
 		"texlive-fontsetup"
 		"texlive-fontsize"
@@ -251,11 +250,11 @@ install_fonts() {
 
 install_go_binaries() {
 	go install github.com/antonmedv/fx@latest
-	go install github.com/mikefarah/yq@latest
+	go install github.com/mikefarah/yq/v4@latest
 	go install github.com/xo/usql@latest
 	go install github.com/dundee/gdu/v5/cmd/gdu@latest
 	go install github.com/gokcehan/lf@latest
-	# go install github.com/wagoodman/dive@latest
+	go install github.com/wagoodman/dive@latest
 }
 
 install_audio
@@ -270,13 +269,15 @@ install_network
 install_services
 install_virtualization
 install_wayland
-install_gnome_extensions
+# install_gnome_extensions
+
 
 post_install() {
 	mkdir -p ~/.local/{bin,share}
 
 	echo "Running postinstall scripts..."
 	for script in $(find ./ -name "install-*.sh"); do
+		echo "running ${script}"
 		source "${script}"
 	done
 }
