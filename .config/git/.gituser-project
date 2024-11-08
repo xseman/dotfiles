@@ -1,6 +1,6 @@
 [user]
 	name = "Filip Seman"
-	email = "filip.seman@protonmail.com"
+	email = "filip.seman@pm.me"
 
 [core]
 	sshCommand = "ssh -i ~/.ssh/my_public_account_id_rsa"
