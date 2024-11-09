@@ -23,12 +23,12 @@
 	"editor.minimap.enabled": false,
 	"editor.minimap.renderCharacters": false,
 	"editor.renderWhitespace": "selection",
+	// "editor.rulers": [80],
 	"editor.semanticHighlighting.enabled": true,
 	"editor.smoothScrolling": false,
 	"editor.snippetSuggestions": "inline",
 	"editor.suggest.insertMode": "insert",
 	"editor.suggestSelection": "first",
-	// "editor.rulers": [80],
 	// "editor.trimAutoWhitespace": false,
 	"editor.wordWrap": "off",
 	"editor.semanticTokenColorCustomizations": {
@@ -43,6 +43,7 @@
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.limit.enabled": true,
 	"workbench.editor.limit.value": 6,
+	// "workbench.editor.showTabs": "none",
 	"workbench.enableExperiments": false,
 	"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
 	"workbench.list.defaultFindMode": "filter",
@@ -53,7 +54,6 @@
 	"workbench.tree.enableStickyScroll": false,
 	"workbench.tree.indent": 15,
 	"workbench.tree.renderIndentGuides": "always",
-	// "workbench.editor.showTabs": "none",
 
 	"window.customMenuBarAltFocus": false,
 	"window.enableMenuBarMnemonics": false,
@@ -61,6 +61,7 @@
 	"window.newWindowDimensions": "maximized",
 	"window.restoreFullscreen": true,
 	"window.title": "${rootName}",
+	"window.titleBarStyle": "custom",
 	"window.zoomPerWindow": false,
 
 	"keyboard.dispatch": "keyCode",
@@ -218,9 +219,9 @@
 	"xml.format.xsiSchemaLocationSplit": "onElement",
 
 	"hexeditor.columnWidth": 16,
-	"hexeditor.showDecodedText": true,
 	"hexeditor.defaultEndianness": "little",
 	"hexeditor.inspectorType": "aside",
+	"hexeditor.showDecodedText": true,
 
 	"i18n-ally.displayLanguage": "en",
 	"i18n-ally.keystyle": "nested",
