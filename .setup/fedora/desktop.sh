@@ -14,13 +14,18 @@ install_devel() {
 		"gh"
 		"git"
 		"git-lfs"
+		"git-subtree"
 		"golang"
 		"java-11-openjdk"
 		"java-17-openjdk"
+		"java-21-openjdk"
 		"maven"
 		"nodejs"
 		"php"
 		"php-cli"
+		"temurin-11-jdk"
+		"temurin-17-jdk"
+		"temurin-21-jdk"
 	)
 
 	echo "Installing development libraries..."
