@@ -48,6 +48,7 @@ export LESS_TERMCAP_us="$(printf '\033[32m')"
 
 # Other
 export GITUSER="${USER}"
+export JAVA_HOME="/bin/java"
 
 # Terminal
 export TERM="xterm-256color"

@@ -34,7 +34,6 @@ alias ll="ls -Flh --group-directories-first --color"
 alias ls="ls --group-directories-first --quoting-style=literal --show-control-chars --indicator-style=slash --color"
 alias temp='cd $(mktemp -d)'
 alias tm="tmux attach || tmux"
-alias xclip="xclip -selection clipboard"
 
 # Use code-oss for code if present
 if [[ -x "$(command -v code-oss)" ]]; then
