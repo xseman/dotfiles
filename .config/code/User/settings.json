@@ -38,6 +38,10 @@
 	  "source.fixAll.eslint": "explicit"
 	},
 
+	"chat.editor.fontSize": 13,
+	"chat.agent.enabled": true,
+	"chat.editor.fontFamily": "default",
+
 	"workbench.colorTheme": "Simple light",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.editor.highlightModifiedTabs": true,
@@ -116,6 +120,7 @@
 	"terminal.integrated.fontSize": 12,
 	"terminal.integrated.showExitAlert": false,
 	"terminal.integrated.tabs.enabled": false,
+	"terminal.integrated.scrollback": 1000000,
 
 	"javascript.format.semicolons": "insert",
 	"javascript.preferences.jsxAttributeCompletionStyle": "auto",
@@ -259,11 +264,11 @@
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"[css][scss][less]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.defaultFormatter": "denoland.vscode-deno",
 		"editor.formatOnSave": true
 	},
 	"[html][handlebars]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.defaultFormatter": "denoland.vscode-deno",
 		"editor.formatOnSave": false,
 		"editor.tabSize": 4
 	},
@@ -290,7 +295,7 @@
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
 	},
 	"[json][jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.defaultFormatter": "denoland.vscode-deno",
 		"editor.formatOnSave": false,
 		"editor.tabSize": 4
 	},
