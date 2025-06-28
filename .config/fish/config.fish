@@ -1,6 +1,9 @@
 # Remove default greeting
 set fish_greeting
 
+# Java
+set -x JAVA_HOME ""
+
 # envs
 set -x LESS_TERMCAP_mb (printf "\e[34m")
 set -x LESS_TERMCAP_md (printf "\e[1;30m")
@@ -11,14 +14,17 @@ set -x LESS_TERMCAP_ue (printf "\e[0m")
 set -x LESS_TERMCAP_us (printf "\e[32m")
 
 # Paths v3.2.0
+fish_add_path ~/.bun/bin
 fish_add_path ~/.cargo/bin
 fish_add_path ~/.deno/bin
-fish_add_path ~/.bun/bin
+fish_add_path ~/.dprint/bin
 fish_add_path ~/.local/bin
+fish_add_path ~/.local/bin/terraform
 fish_add_path ~/.pyenv/bin
 fish_add_path ~/go/bin
 
 fish_add_path /bin
+fish_add_path /usr/libexec/podman
 fish_add_path /usr/local/bin
 fish_add_path /usr/local/go/bin
 fish_add_path /usr/sbin
