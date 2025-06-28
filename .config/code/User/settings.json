@@ -38,9 +38,16 @@
 	  "source.fixAll.eslint": "explicit"
 	},
 
-	"chat.editor.fontSize": 13,
-	"chat.agent.enabled": true,
 	"chat.editor.fontFamily": "default",
+	"chat.editor.fontSize": 13,
+    "chat.agent.enabled": true,
+    "chat.agent.maxRequests":25,
+    "chat.tools.autoApprove": true,
+
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "github.copilot.chat.agent.autoFix": true,
+    "github.copilot.chat.agent.runTasks": true,
+    "github.copilot.chat.languageContext.fix.typescript.enabled": true,
 
 	"workbench.colorTheme": "Simple light",
 	"workbench.editor.empty.hint": "hidden",
@@ -206,6 +213,7 @@
 	"gitlens.currentLine.enabled": false,
 	"gitlens.views.branches.branches.layout": "list",
 	"gitlens.views.repositories.files.layout": "tree",
+	"gitlens.ai.generateCommitMessage.customInstructions": "use semantic commit messages",
 
 	"diffEditor.experimental.collapseUnchangedRegions": true,
 	"diffEditor.ignoreTrimWhitespace": false,
