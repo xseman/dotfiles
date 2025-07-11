@@ -1,3 +1,8 @@
+# https://direnv.net/
+if command -v direnv > /dev/null
+    direnv hook fish | source
+end
+
 # Remove default greeting
 set fish_greeting
 
