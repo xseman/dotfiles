@@ -16,8 +16,6 @@ install_devel() {
 		"git-lfs"
 		"git-subtree"
 		"golang"
-		"java-1.8.0-openjdk"
-		"java-11-openjdk"
 		"java-17-openjdk"
 		"java-21-openjdk"
 		"maven"
@@ -32,35 +30,6 @@ install_devel() {
 
 	echo "Installing development libraries..."
 	install_packages "${DEVEL[@]}"
-}
-
-install_python() {
-	local PREREQUISITES=(
-		"zlib-devel"
-		"bzip2"
-		"bzip2-devel"
-		"readline-devel"
-		"sqlite"
-		"sqlite-devel"
-		"openssl-devel"
-		"xz"
-		"xz-devel"
-		"libffi-devel"
-		"findutils"
-	)
-
-	install_packages "${PREREQUISITES[@]}"
-
-	local PACKAGES=(
-		# "pip"
-		# "pipenv"
-		# "pipfile"
-		# "pyenv"
-		"python3"
-		"python3-virtualenv"
-	)
-
-	install_packages "${PACKAGES[@]}"
 }
 
 install_core() {
@@ -245,16 +214,6 @@ install_docs() {
 	install_packages "${DOCS[@]}"
 }
 
-install_fonts() {
-	local FONTS=(
-		jetbrains-mono-fonts-all
-		terminus-fonts
-	)
-
-	echo "Installing fonts..."
-	install_packages "${FONTS[@]}"
-}
-
 install_go_binaries() {
 	go install github.com/antonmedv/fx@latest
 	go install github.com/mikefarah/yq/v4@latest
@@ -268,7 +227,6 @@ install_audio
 install_core
 install_devel
 install_python
-install_fonts
 install_go_binaries
 install_graphical
 install_latex
