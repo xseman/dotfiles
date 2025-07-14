@@ -5,7 +5,6 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 # Plugins
 fisher install jorgebucaran/nvm.fish
 fisher install PatrickF1/fzf.fish
-fisher install reitzig/sdkman-for-fish
 
 # Configs
 fish_config theme choose "Mono Lace"
