@@ -35,16 +35,11 @@ alias ls="ls --group-directories-first --quoting-style=literal --show-control-ch
 alias temp='cd $(mktemp -d)'
 alias tm="tmux attach || tmux"
 
-# Use code-oss for code if present
-if [[ -x "$(command -v code-oss)" ]]; then
-	alias code="code-oss"
-fi
-
 # fish replaces the Bash process, exiting fish will also exit the terminal
 # Tips: https://wiki.archlinux.org/title/fish
 if [[
 	$(ps --no-header --pid=$PPID --format=comm) != "fish" &&
 	-z ${BASH_EXECUTION_STRING}
-]]; then
+]] && command -v fish > /dev/null; then
 	exec fish
 fi
