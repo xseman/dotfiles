@@ -22,10 +22,6 @@ install_devel() {
 		"nodejs"
 		"php"
 		"php-cli"
-		"temurin-8-jdk"
-		"temurin-11-jdk"
-		"temurin-17-jdk"
-		"temurin-21-jdk"
 	)
 
 	echo "Installing development libraries..."
@@ -94,6 +90,8 @@ install_core() {
 install_services() {
 	local SERVICES=(
 		"avahi" # mdns
+		"avahi-tools"
+		"nss-mdns"
 		"docker-compose"
 		"docker"
 		"openssh"
@@ -103,6 +101,9 @@ install_services() {
 
 	echo "Installing services packages..."
 	install_packages "${SERVICES[@]}"
+
+	sudo systemctl enable --now avahi-daemon
+	sudo hostnamectl set-hostname filip-fedora
 }
 
 install_graphical() {
@@ -111,7 +112,6 @@ install_graphical() {
 		"android-file-transfer"
 		"audacity"
 		"brasero"
-		"chromium"
 		"dconf-editor"
 		"firefox"
 		"gimp"
@@ -144,11 +144,10 @@ install_wayland() {
 
 install_gnome_extensions() {
 	local EXTENSIONS=(
-		# "gnome-shell-extension-arcmenu"
-		# "gnome-shell-extension-caffeine"
-		# "gnome-shell-extension-clipboard-history"
-		# "gnome-shell-extension-ddterm"
-		# "gnome-shell-extension-wifiqrcode"
+		"gnome-shell-extension-arcmenu"
+		"gnome-shell-extension-caffeine"
+		"gnome-shell-extension-clipboard-history"
+		"gnome-shell-extension-ddterm"
 	)
 
 	echo "Installing gnome extensions..."
@@ -165,7 +164,7 @@ install_virtualization() {
 	echo "Installing virtualization packages..."
 	install_packages "${VIRT[@]}"
 
-	sudo systemctl enable libvirtd
+	sudo systemctl enable --now libvirtd
 }
 
 install_network() {
@@ -223,6 +222,16 @@ install_go_binaries() {
 	go install github.com/wagoodman/dive@latest
 }
 
+post_install() {
+	mkdir -p ~/.local/{bin,share}
+
+	echo "Running postinstall scripts..."
+	for script in $(find ./ -name "install-*.sh"); do
+		echo "running ${script}"
+		source "${script}"
+	done
+}
+
 install_audio
 install_core
 install_devel
@@ -235,16 +244,4 @@ install_services
 install_virtualization
 install_wayland
 # install_gnome_extensions
-
-
-post_install() {
-	mkdir -p ~/.local/{bin,share}
-
-	echo "Running postinstall scripts..."
-	for script in $(find ./ -name "install-*.sh"); do
-		echo "running ${script}"
-		source "${script}"
-	done
-}
-
 post_install
