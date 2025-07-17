@@ -51,8 +51,13 @@
 	"github.copilot.chat.agent.runTasks": true,
 	"github.copilot.chat.languageContext.fix.typescript.enabled": true,
 	"github.copilot.chat.commitMessageGeneration.instructions": [
-		{ "text": "Use Conventional Commits format: `<type>[optional scope]: <description>` with optional body. Guidelines: Choose type (e.g., `feat`, `fix`) and optional scope. Write concise description, using backticks for code/terms. Use bullet points in body for clarity, detailing motivation/context if needed. Ensure clear & simple messages for readability and tracking. Supported types: feat, fix, perf, type, deps, docs, ops, build, ci, qol, chore, config, refactor, revert, security, test, style, examples." }
-  	],
+		{ "text": "Use Conventional Commits format: `<type>[optional scope]: <description>` with optional body." },
+		{ "text": "Guidelines: Choose type (e.g., `feat`, `fix`) and optional scope." },
+		{ "text": "Write concise description, using backticks for code/terms." },
+		{ "text": "Use bullet points in body for clarity, detailing motivation/context if needed." },
+		{ "text": "Ensure clear & simple messages for readability and tracking." },
+		{ "text": "Supported types: feat, fix, perf, type, deps, docs, ops, build, ci, qol, chore, config, refactor, revert, security, test, style, examples." }
+	],
 
 	"workbench.colorTheme": "Simple light",
 	"workbench.editor.empty.hint": "hidden",
