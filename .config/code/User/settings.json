@@ -45,18 +45,17 @@
 	"chat.agent.maxRequests":25,
 	"chat.tools.autoApprove": true,
 
-	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
-	"github.copilot.chat.completionContext.typescript.mode": "on",
 	"github.copilot.chat.agent.autoFix": true,
 	"github.copilot.chat.agent.runTasks": true,
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
+	"github.copilot.chat.completionContext.typescript.mode": "on",
 	"github.copilot.chat.languageContext.fix.typescript.enabled": true,
 	"github.copilot.chat.commitMessageGeneration.instructions": [
-		{ "text": "Use Conventional Commits format: `<type>[optional scope]: <description>` with optional body." },
-		{ "text": "Guidelines: Choose type (e.g., `feat`, `fix`) and optional scope." },
-		{ "text": "Write concise description, using backticks for code/terms." },
-		{ "text": "Use bullet points in body for clarity, detailing motivation/context if needed." },
-		{ "text": "Ensure clear & simple messages for readability and tracking." },
-		{ "text": "Supported types: feat, fix, perf, type, deps, docs, ops, build, ci, qol, chore, config, refactor, revert, security, test, style, examples." }
+		{ "text": "Use lowercase for the type and scope in the commit message structure: `<type>[optional scope]: <description>`. Separate the type or scope from the description with a colon and a single space. If including a body, ensure the second line is blank and start the body on the third line." },
+		{ "text": "Select an appropriate type from: feat, fix, perf, type, deps, docs, ops, build, ci, qol, chore, config, refactor, revert, security, test, style, examples. Optionally, include a scope (e.g., api, ui, auth) to specify the area affected." },
+		{ "text": "Write the description concisely in the imperative mood and present tense (e.g., 'Add feature' not 'Added feature'). Use backticks to highlight code or technical terms." },
+		{ "text": "In the body, use bullet points to clearly outline the changes, including any necessary motivation or context." },
+		{ "text": "Make clear and simple commit messages to improve readability and tracking." }
 	],
 
 	"workbench.colorTheme": "Simple light",
