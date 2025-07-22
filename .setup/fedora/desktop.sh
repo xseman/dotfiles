@@ -11,6 +11,7 @@ install_packages() {
 
 install_devel() {
 	local DEVEL=(
+		"direnv"
 		"gh"
 		"git"
 		"git-lfs"
@@ -156,8 +157,9 @@ install_gnome_extensions() {
 
 install_virtualization() {
 	local VIRT=(
-		"qemu"
 		"libvirt"
+		"qemu"
+		"virt-install"
 		"virt-manager"
 	)
 
@@ -190,6 +192,7 @@ install_audio() {
 install_latex() {
 	local LATEX=(
 		# "texlive-scheme-full"
+		"texlive"
 		"texlive-fontawesome"
 		"texlive-fontsetup"
 		"texlive-fontsize"
@@ -197,7 +200,6 @@ install_latex() {
 		"texlive-parskip"
 		"texlive-pst-graphicx"
 		"texlive-scheme-basic"
-		"texlive"
 	)
 
 	echo "Installing latex tools..."
