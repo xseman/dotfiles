@@ -38,12 +38,20 @@
 	  "source.fixAll.eslint": "explicit"
 	},
 
-	"chat.editRequests": "input",
+	"websearch.preferredEngine": "bing",
+	"websearch.useSearchResultsDirectly": false,
+
 	"chat.editor.fontFamily": "default",
 	"chat.editor.fontSize": 13,
-	"chat.agent.enabled": true,
-	"chat.agent.maxRequests":25,
 	"chat.tools.autoApprove": true,
+    "chat.agent.enabled": true,
+    "chat.editRequests": "inline",
+	"chat.implicitContext.enabled": {
+		"panel": "never"
+	},
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true
+    },
 
 	"github.copilot.chat.agent.autoFix": true,
 	"github.copilot.chat.agent.runTasks": true,
@@ -122,11 +130,30 @@
 	},
 
 	"json.schemas": [
-		{
-			"fileMatch": [".gitlab-ci.yml"],
-			"url": "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json"
-		},
-	],
+        {
+            "fileMatch": [
+                "manifest.json"
+            ],
+            "url": "https://json.schemastore.org/chrome-manifest"
+        }
+    ],
+
+	"yaml.schemas": {
+		"https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-cloud-config-v1.json": [
+			"**/cloud-init/**/*.yml",
+			"**/cloud-init/**/*.yaml",
+			"**/*cloud-config*",
+			"**/user-data"
+		],
+		"https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json": [
+			"*.k8s.yaml",
+			"*.k8s.yml"
+		],
+		"https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
+			".gitlab-ci.yml",
+			"**/.gitlab-ci.yml"
+		]
+	},
 
 	/** CTRL+SHIFT+C */
 	"terminal.external.linuxExec": "/usr/bin/alacritty",
