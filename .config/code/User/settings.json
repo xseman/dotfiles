@@ -139,21 +139,28 @@
     ],
 
 	"yaml.schemas": {
-		"https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-cloud-config-v1.json": [
-			"**/cloud-init/**/*.yml",
-			"**/cloud-init/**/*.yaml",
-			"**/*cloud-config*",
-			"**/user-data"
-		],
-		"https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json": [
-			"*.k8s.yaml",
-			"*.k8s.yml"
-		],
-		"https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
-			".gitlab-ci.yml",
-			"**/.gitlab-ci.yml"
-		]
-	},
+        "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-cloud-config-v1.json": [
+            "*cloud-config*",
+            "*user-data*",
+            "cloud-config.yml",
+            "cloud-config.yaml",
+            "user-data.yml", 
+            "user-data.yaml"
+        ],
+        "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-network-config-v2.json": [
+            "*network-config*",
+            "network-config.yml",
+            "network-config.yaml"
+        ],
+        "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json": [
+            "*.k8s.yaml",
+            "*.k8s.yml"
+        ],
+        "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
+            ".gitlab-ci.yml",
+            "**/.gitlab-ci.yml"
+        ]
+    },
 
 	/** CTRL+SHIFT+C */
 	"terminal.external.linuxExec": "/usr/bin/alacritty",
