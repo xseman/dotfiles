@@ -43,6 +43,7 @@
 
 	"chat.editor.fontFamily": "default",
 	"chat.editor.fontSize": 13,
+	"chat.todoListTool.enabled": true,
 	"chat.tools.autoApprove": true,
     "chat.agent.enabled": true,
     "chat.editRequests": "inline",
@@ -159,8 +160,22 @@
         "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
             ".gitlab-ci.yml",
             "**/.gitlab-ci.yml"
-        ]
+        ],
+		"https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json": [
+            "*inventory*",
+            "inventory.yml",
+            "inventory.yaml"
+        ],
+        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json": [
+            "playbook.yml",
+            "playbook.yaml",
+        ],
     },
+
+	"ansible.ansible.path": "~/.local/bin/ansible",
+    "ansible.python.interpreterPath": "/usr/sbin/python3",
+    "ansible.validation.enabled": true,
+    "ansible.validation.lint.path": "~/.local/bin/ansible-lint",
 
 	/** CTRL+SHIFT+C */
 	"terminal.external.linuxExec": "/usr/bin/alacritty",
