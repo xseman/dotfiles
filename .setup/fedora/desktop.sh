@@ -13,16 +13,24 @@ install_devel() {
 	local DEVEL=(
 		"direnv"
 		"gh"
-		"git"
+		"git-extras"
 		"git-lfs"
 		"git-subtree"
+		"git"
+		"glib2-devel"
 		"golang"
+		"gtk3-devel"
 		"java-17-openjdk"
 		"java-21-openjdk"
 		"maven"
 		"nodejs"
-		"php"
 		"php-cli"
+		"php"
+		"pkgconfig"
+		"python3-pip"
+		"python3"
+		"webkit2gtk3-devel"
+		"webkit2gtk4.0"
 	)
 
 	echo "Installing development libraries..."
@@ -31,15 +39,16 @@ install_devel() {
 
 install_core() {
 	local CORE=(
-		"ImageMagick"
 		"bash-completion"
 		"bind-utils"
+		"caddy"
 		"entr"
 		"fd-find"
 		"fish"
 		"fzf"
 		"gnuplot"
 		"htop"
+		"ImageMagick"
 		"jq"
 		"links"
 		"lm_sensors"
@@ -79,8 +88,8 @@ install_core() {
 		"wl-clipboard"
 		"xz"
 		"youtube-dl"
-		"zathura"
 		"zathura-pdf-mupdf"
+		"zathura"
 		"zip"
 	)
 
@@ -90,11 +99,12 @@ install_core() {
 
 install_services() {
 	local SERVICES=(
-		"avahi" # mdns
 		"avahi-tools"
-		"nss-mdns"
+		"avahi" # mdns
 		"docker-compose"
 		"docker"
+		"lxc"
+		"nss-mdns"
 		"openssh"
 		"podman-compose"
 		"podman"
@@ -237,7 +247,6 @@ post_install() {
 install_audio
 install_core
 install_devel
-install_python
 install_go_binaries
 install_graphical
 install_latex
