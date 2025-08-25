@@ -41,30 +41,33 @@
 	"websearch.preferredEngine": "bing",
 	"websearch.useSearchResultsDirectly": false,
 
+	"chat.agent.maxRequests": 100,
 	"chat.editor.fontFamily": "default",
 	"chat.editor.fontSize": 13,
 	"chat.todoListTool.enabled": true,
 	"chat.tools.autoApprove": true,
-    "chat.agent.enabled": true,
-    "chat.editRequests": "inline",
+	"chat.agent.enabled": true,
+	"chat.editRequests": "inline",
 	"chat.implicitContext.enabled": {
 		"panel": "never"
 	},
-    "chat.instructionsFilesLocations": {
-        ".github/instructions": true
-    },
-
+	"chat.instructionsFilesLocations": {
+		".github/instructions": true
+	},
+	
 	"github.copilot.chat.agent.autoFix": true,
 	"github.copilot.chat.agent.runTasks": true,
 	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
 	"github.copilot.chat.completionContext.typescript.mode": "on",
 	"github.copilot.chat.languageContext.fix.typescript.enabled": true,
+	"github.copilot.chat.languageContext.typescript.enabled": true,
+	"github.copilot.chat.agent.thinkingTool": true,
 	"github.copilot.chat.commitMessageGeneration.instructions": [
-		{ "text": "Use lowercase for the type and scope in the commit message structure: `<type>[optional scope]: <description>`. Separate the type or scope from the description with a colon and a single space. If including a body, ensure the second line is blank and start the body on the third line." },
-		{ "text": "Select an appropriate type from: feat, fix, perf, type, deps, docs, ops, build, ci, qol, chore, config, refactor, revert, security, test, style, examples. Optionally, include a scope (e.g., api, ui, auth) to specify the area affected." },
-		{ "text": "Write the description concisely in the imperative mood and present tense (e.g., 'Add feature' not 'Added feature'). Use backticks to highlight code or technical terms." },
-		{ "text": "In the body, use bullet points to clearly outline the changes, including any necessary motivation or context." },
-		{ "text": "Make clear and simple commit messages to improve readability and tracking." }
+		{ "text": "Follow the format: `<type>[optional scope]: <description>`. Use lowercase for type/scope. Add a blank line before the body." },
+		{ "text": "Allowed types: feat, fix, perf, type, deps, docs, ops, build, ci, qol, chore, config, refactor, revert, security, test, style, examples. Optionally add a scope (e.g., api, ui, auth)." },
+		{ "text": "Keep the description short, in imperative mood and present tense (e.g., `add feature`, not `added feature`). Use backticks for code/technical terms." },
+		{ "text": "If using a body, write bullet points with motivation, context, or details." },
+		{ "text": "Messages should be clear, simple, and easy to track." }
 	],
 
 	"workbench.colorTheme": "Simple light",
@@ -131,51 +134,51 @@
 	},
 
 	"json.schemas": [
-        {
-            "fileMatch": [
-                "manifest.json"
-            ],
-            "url": "https://json.schemastore.org/chrome-manifest"
-        }
-    ],
+		{
+			"fileMatch": [
+				"manifest.json"
+			],
+			"url": "https://json.schemastore.org/chrome-manifest"
+		}
+	],
 
 	"yaml.schemas": {
-        "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-cloud-config-v1.json": [
-            "*cloud-config*",
-            "*user-data*",
-            "cloud-config.yml",
-            "cloud-config.yaml",
-            "user-data.yml", 
-            "user-data.yaml"
-        ],
-        "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-network-config-v2.json": [
-            "*network-config*",
-            "network-config.yml",
-            "network-config.yaml"
-        ],
-        "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json": [
-            "*.k8s.yaml",
-            "*.k8s.yml"
-        ],
-        "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
-            ".gitlab-ci.yml",
-            "**/.gitlab-ci.yml"
-        ],
+		"https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-cloud-config-v1.json": [
+			"*cloud-config*",
+			"*user-data*",
+			"cloud-config.yml",
+			"cloud-config.yaml",
+			"user-data.yml", 
+			"user-data.yaml"
+		],
+		"https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/schema-network-config-v2.json": [
+			"*network-config*",
+			"network-config.yml",
+			"network-config.yaml"
+		],
+		"https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json": [
+			"*.k8s.yaml",
+			"*.k8s.yml"
+		],
+		"https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": [
+			".gitlab-ci.yml",
+			"**/.gitlab-ci.yml"
+		],
 		"https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json": [
-            "*inventory*",
-            "inventory.yml",
-            "inventory.yaml"
-        ],
-        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json": [
-            "playbook.yml",
-            "playbook.yaml",
-        ],
-    },
+			"*inventory*",
+			"inventory.yml",
+			"inventory.yaml"
+		],
+		"https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json": [
+			"playbook.yml",
+			"playbook.yaml",
+		],
+	},
 
 	"ansible.ansible.path": "~/.local/bin/ansible",
-    "ansible.python.interpreterPath": "/usr/sbin/python3",
-    "ansible.validation.enabled": true,
-    "ansible.validation.lint.path": "~/.local/bin/ansible-lint",
+	"ansible.python.interpreterPath": "/usr/sbin/python3",
+	"ansible.validation.enabled": true,
+	"ansible.validation.lint.path": "~/.local/bin/ansible-lint",
 
 	/** CTRL+SHIFT+C */
 	"terminal.external.linuxExec": "/usr/bin/alacritty",
