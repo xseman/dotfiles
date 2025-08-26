@@ -350,11 +350,18 @@
 		"editor.defaultFormatter": "redhat.vscode-xml",
 		"editor.tabSize": 4
 	},
-	"[yml][yaml]": {
-		"editor.defaultFormatter": "redhat.vscode-yaml",
-		"editor.formatOnSave": false,
-		"editor.tabSize": 4
-	},
+	"[ansible]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.ansible",
+    },
+    "[yml][yaml]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
 	"[dockercompose][dockerfile]": {
 		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
 	},
